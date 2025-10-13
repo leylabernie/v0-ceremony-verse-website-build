@@ -2,7 +2,7 @@ import Navigation from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { ArrowLeft, Calendar, Clock, Shield, CheckCircle2 } from "lucide-react"
+import { ArrowLeft, Calendar, Clock, Shield, CheckCircle } from "@/components/icons"
 import SocialShare from "@/components/social-share"
 import Footer from "@/components/footer"
 
@@ -174,7 +174,7 @@ export default function EscrowProtectionGuidePage() {
                 refund within 10 days.
               </p>
               <div className="flex items-center gap-2 text-sm text-secondary">
-                <CheckCircle2 className="w-4 h-4" />
+                <CheckCircle className="w-4 h-4" />
                 <span className="font-semibold">Protected: $8,500</span>
               </div>
             </div>
@@ -188,7 +188,7 @@ export default function EscrowProtectionGuidePage() {
                 receipt.
               </p>
               <div className="flex items-center gap-2 text-sm text-secondary">
-                <CheckCircle2 className="w-4 h-4" />
+                <CheckCircle className="w-4 h-4" />
                 <span className="font-semibold">Would Have Protected: $12,000</span>
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function EscrowProtectionGuidePage() {
                 undelivered items, and Amara had time to source replacements without losing her entire investment.
               </p>
               <div className="flex items-center gap-2 text-sm text-secondary">
-                <CheckCircle2 className="w-4 h-4" />
+                <CheckCircle className="w-4 h-4" />
                 <span className="font-semibold">Protected: $6,000 + Maintained Timeline</span>
               </div>
             </div>

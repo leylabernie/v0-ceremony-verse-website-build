@@ -2,7 +2,7 @@ import Navigation from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { Calendar, ArrowRight } from "lucide-react"
+import { Calendar, ArrowRight } from "@/components/icons"
 
 export const metadata: Metadata = {
   title: "Wedding Planning Blog & Resources | CeremonyVerse",

@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import { X, Sparkles } from "lucide-react"
+import { X, Sparkles } from "@/components/icons"
 
 export default function LeadCapturePopup() {
   const [isVisible, setIsVisible] = useState(false)

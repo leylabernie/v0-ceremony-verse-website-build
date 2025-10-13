@@ -1,4 +1,4 @@
-import { Shield, CheckCircle2, Lock, Video } from "lucide-react"
+import { Shield, CheckCircle, Lock, Video } from "@/components/icons"
 
 export function TrustBadges() {
   const badges = [
@@ -18,7 +18,7 @@ export function TrustBadges() {
       description: "Video calls with suppliers",
     },
     {
-      icon: CheckCircle2,
+      icon: CheckCircle,
       title: "Quality Guaranteed",
       description: "Pre-shipment inspection available",
     },

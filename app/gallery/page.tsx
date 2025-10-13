@@ -1,6 +1,6 @@
 import Navigation from "@/components/navigation"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from "@/components/icons"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
 
@@ -63,6 +63,23 @@ export default function GalleryPage() {
           <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             Every wedding tells a unique story of heritage, harmony, and love
           </p>
+        </div>
+      </section>
+
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="font-serif text-3xl sm:text-4xl text-foreground mb-3">Featured Wedding Video</h2>
+            <p className="text-muted-foreground">Experience the magic of a CeremonyVerse celebration</p>
+          </div>
+          <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl bg-muted">
+            <video
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edDYlmwPdmgQyNZgdg88F_output-X8anb1c6FUAcekBlxo22B3zxTtG9KH.mp4"
+              controls
+              className="w-full h-full object-cover"
+              poster="/beach-wedding-couple-mandap.jpg"
+            />
+          </div>
         </div>
       </section>
 

@@ -4,7 +4,7 @@ import SocialShare from "@/components/social-share"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { ArrowLeft, Calendar, Clock } from "lucide-react"
+import { ArrowLeft, Calendar, Clock } from "@/components/icons"
 
 export const metadata: Metadata = {
   title: "10 Essential Elements of an Authentic Indian-American Fusion Wedding | CeremonyVerse",

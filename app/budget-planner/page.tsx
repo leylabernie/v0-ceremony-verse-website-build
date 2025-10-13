@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
-import { Download, Calculator, TrendingDown, CheckCircle2, Phone } from "lucide-react"
+import { Download, Calculator, TrendingDown, CheckCircle, Phone } from "@/components/icons"
 import { Footer } from "@/components/footer"
 
 export default function BudgetPlannerPage() {
@@ -193,15 +193,15 @@ export default function BudgetPlannerPage() {
                 </div>
                 <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
                     <span>Detailed line-item budget</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
                     <span>Vendor payment schedule</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
                     <span>Cost-saving alternatives</span>
                   </li>
                 </ul>
@@ -225,15 +225,15 @@ export default function BudgetPlannerPage() {
                 </div>
                 <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
                     <span>Multi-day event breakdown</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
                     <span>Cultural ceremony costs</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
                     <span>Vendor comparison sheets</span>
                   </li>
                 </ul>
@@ -252,15 +252,15 @@ export default function BudgetPlannerPage() {
                 </div>
                 <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
                     <span>Premium vendor categories</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
                     <span>Destination wedding costs</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
                     <span>Luxury service add-ons</span>
                   </li>
                 </ul>

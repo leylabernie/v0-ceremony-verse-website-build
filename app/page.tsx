@@ -10,28 +10,28 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section - Clean & Visual */}
-      <section className="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+      {/* Hero Section - Clean & Visual with Video */}
+      <section className="relative pt-36 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left - Content */}
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary/10 border border-secondary/20 rounded-full">
                 <Sparkles className="h-3.5 w-3.5 text-secondary" />
-                <span className="text-xs font-semibold text-secondary tracking-wide uppercase">
+                <span className="text-xs font-sans font-semibold text-secondary tracking-wide uppercase">
                   Luxury Fusion Weddings
                 </span>
               </div>
 
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light text-foreground leading-tight">
-                Your Heritage.
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light leading-tight">
+                <span className="text-[#1a4d6d]">Your Heritage.</span>
                 <br />
-                <span className="text-secondary">Your Harmony.</span>
+                <span className="text-[#0891b2]">Your Harmony.</span>
                 <br />
-                <span className="text-primary italic">Your Perfect Day.</span>
+                <span className="text-[#d4a574] italic">Your Perfect Day.</span>
               </h1>
 
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+              <p className="text-lg font-sans text-muted-foreground leading-relaxed max-w-xl">
                 Expert wedding planning for Indian-American couples seeking authentic fusion celebrations.
               </p>
 
@@ -72,15 +72,16 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right - Hero Image */}
+            {/* Right - Hero Video */}
             <div className="relative">
-              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/beach-wedding-couple-mandap.jpg"
-                  alt="Beautiful fusion wedding ceremony"
-                  fill
-                  className="object-cover"
-                  priority
+              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl bg-muted">
+                <video
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edDYlmwPdmgQyNZgdg88F_output-X8anb1c6FUAcekBlxo22B3zxTtG9KH.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>

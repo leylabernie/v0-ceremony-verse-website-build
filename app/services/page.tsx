@@ -1,6 +1,18 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Check, Video, ShoppingBag, Sparkles, Music, Utensils, Camera, Flower2, Car, Palette, Gift } from "lucide-react"
+import {
+  Check,
+  Video,
+  ShoppingBag,
+  Sparkles,
+  Music,
+  Utensils,
+  Camera,
+  Flower2,
+  Car,
+  Palette,
+  Gift,
+} from "@/components/icons"
 import Image from "next/image"
 import Footer from "@/components/footer"
 import Navigation from "@/components/navigation"

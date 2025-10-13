@@ -1,6 +1,6 @@
 "use client"
 
-import { Facebook, Twitter, Linkedin, LinkIcon } from "lucide-react"
+import { Facebook, Twitter, Linkedin, LinkIcon } from "@/components/icons"
 import { useState } from "react"
 
 interface SocialShareProps {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
-import { Phone } from "lucide-react"
+import { Phone } from "@/components/icons"
 import Link from "next/link"
 
 export const metadata: Metadata = {
