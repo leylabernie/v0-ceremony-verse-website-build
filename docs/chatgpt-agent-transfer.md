@@ -39,3 +39,21 @@ If you shared a repository URL and the agent reports that the link is inaccessib
 5. **Repeat the request.** Ask the agent to review the uploaded artifacts specifically. Clarify that the web link was unavailable and that the files in the conversation should be used instead.
 
 These steps ensure the agent still receives the updated code even when repository links cannot be opened.
+
+## Asking an Agent to Push Changes to GitHub (No Local Commands Required)
+
+If you want a ChatGPT agent to push the latest commits to GitHub without installing tools or running commands on your computer, follow this playbook:
+
+1. **Create a short-lived GitHub personal access token (PAT).** From the GitHub web UI, go to **Settings → Developer settings → Personal access tokens → Fine-grained tokens** and generate a token with `contents:write` permission for the target repository. Set an expiration date so the token automatically expires after the push.
+2. **Share repository connection details with the agent.** In your chat, provide:
+   - The HTTPS URL of the repository (for example, `https://github.com/your-org/your-repo.git`).
+   - The PAT value. Mention that it should only be used for the current session and can be revoked immediately after the push.
+3. **Ask the agent to configure the remote.** The agent will run commands like:
+   ```bash
+   git remote add origin https://<PAT>@github.com/your-org/your-repo.git
+   git push -u origin <branch-name>
+   ```
+   Because the PAT is embedded in the URL, no additional credential prompts appear.
+4. **Confirm the push in GitHub.** Refresh the repository page in your browser to verify that the commits (and any accompanying pull request) are now visible. Once confirmed, revoke the PAT from the GitHub settings page to keep your account secure.
+
+This flow keeps all command-line work inside the agent environment while ensuring you maintain control over repository access.
