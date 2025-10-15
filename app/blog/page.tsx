@@ -1,4 +1,5 @@
 import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -14,6 +15,33 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const articles = [
+    {
+      title: "Finding the Perfect Indian Wedding Planner in USA: Complete Guide 2025",
+      excerpt:
+        "Everything you need to know about hiring an Indian wedding planner for your fusion celebration in America. Cultural expertise, vendor networks, and what to look for in a specialized planner.",
+      date: "January 18, 2025",
+      readTime: "15 min read",
+      category: "Planning Guide",
+      slug: "indian-wedding-planner-usa",
+    },
+    {
+      title: "South Asian Wedding Budget Guide 2025: Complete Cost Breakdown",
+      excerpt:
+        "Complete budget guide for Indian, Pakistani, and South Asian weddings in USA. Average costs, money-saving tips, and detailed breakdown by ceremony to plan your dream wedding within budget.",
+      date: "January 15, 2025",
+      readTime: "12 min read",
+      category: "Financial Planning",
+      slug: "south-asian-wedding-budget-guide",
+    },
+    {
+      title: "The Ultimate Mehndi Ceremony Guide: Traditions, Planning & Modern Ideas",
+      excerpt:
+        "Everything you need to create an unforgettable Mehndi night that honors tradition while celebrating your unique style. From decor to artists to aftercare tips.",
+      date: "January 20, 2025",
+      readTime: "14 min read",
+      category: "Cultural Traditions",
+      slug: "mehndi-ceremony-guide",
+    },
     {
       title: "10 Essential Elements of an Authentic Indian-American Fusion Wedding",
       excerpt:
@@ -75,12 +103,12 @@ export default function BlogPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <section className="pt-40 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0891b2]/5 to-[#1a4d6d]/5">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-foreground mb-6">
-            Wedding Planning <span className="text-primary">Resources</span>
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#1a4d6d] mb-6">
+            Wedding Planning <span className="text-[#0891b2]">Resources</span>
           </h1>
-          <p className="text-xl text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl text-[#1a4d6d]/70 leading-relaxed max-w-3xl mx-auto font-sans">
             Expert guides, tips, and insights for planning your perfect Indian-American fusion wedding. Learn from
             experienced planners who understand your unique needs.
           </p>
@@ -193,58 +221,7 @@ export default function BlogPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground/5 py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-serif text-xl font-semibold mb-4">CeremonyVerse</h3>
-              <p className="text-sm text-foreground/70">Your Heritage. Your Harmony. Your Perfect Day.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <div className="space-y-2">
-                <Link href="/our-story" className="block text-sm text-foreground/70 hover:text-foreground">
-                  Our Story
-                </Link>
-                <Link href="/services" className="block text-sm text-foreground/70 hover:text-foreground">
-                  Services
-                </Link>
-                <Link href="/heritage-harmony" className="block text-sm text-foreground/70 hover:text-foreground">
-                  Heritage & Harmony Plan
-                </Link>
-                <Link href="/how-it-works" className="block text-sm text-foreground/70 hover:text-foreground">
-                  How It Works
-                </Link>
-                <Link href="/faq" className="block text-sm text-foreground/70 hover:text-foreground">
-                  FAQ
-                </Link>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <div className="space-y-2 text-sm text-foreground/70">
-                <p>
-                  <a href="tel:+12153419990" className="hover:text-foreground">
-                    +1-215-341-9990
-                  </a>
-                </p>
-                <p>
-                  <a href="mailto:hello@ceremonyverse.com" className="hover:text-foreground">
-                    hello@ceremonyverse.com
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Service Areas</h4>
-              <p className="text-sm text-foreground/70">United States & Mexico</p>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-border text-center text-sm text-foreground/60">
-            <p>&copy; 2025 CeremonyVerse. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

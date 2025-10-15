@@ -4,6 +4,12 @@ import { Cormorant_Garamond, Inter } from "next/font/google"
 import "./globals.css"
 import { Suspense } from "react"
 import LeadCapturePopup from "@/components/lead-capture-popup"
+import { WhatsAppWidget } from "@/components/whatsapp-widget"
+import { StickyCTA } from "@/components/sticky-cta"
+import ExitIntentPopup from "@/components/exit-intent-popup"
+import { MobileBottomNav } from "@/components/mobile-bottom-nav"
+import LeadMagnetPopup from "@/components/lead-magnet-popup"
+import { CalendlyWidget } from "@/components/calendly-widget"
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -57,7 +63,7 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
     apple: "/favicon.png",
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -78,6 +84,7 @@ export default function RootLayout({
               description:
                 "Luxury Indian-American fusion wedding planning with verified suppliers and escrow protection",
               telephone: "+1-215-341-9990",
+              email: "hello@ceremonyverse.com",
               priceRange: "$$$",
               areaServed: ["United States", "Mexico"],
               serviceType: ["Wedding Planning", "Event Coordination", "Virtual Shopping Services"],
@@ -106,47 +113,32 @@ export default function RootLayout({
             }),
           }}
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"}`}
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX', {
+              gtag('config', '${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"}', {
                 page_path: window.location.pathname,
               });
             `,
           }}
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', 'YOUR_PIXEL_ID');
-              fbq('track', 'PageView');
-            `,
-          }}
-        />
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
-          />
-        </noscript>
       </head>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased pb-16 md:pb-0">
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <LeadCapturePopup />
+        <ExitIntentPopup />
+        <LeadMagnetPopup />
+        <WhatsAppWidget />
+        <StickyCTA />
+        <MobileBottomNav />
+        <CalendlyWidget />
       </body>
     </html>
   )

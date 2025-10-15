@@ -33,132 +33,162 @@ export default function TestimonialsPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto space-y-16">
           {/* Testimonial 1 - Priya & Michael */}
-          <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-3xl p-12 space-y-8">
-            <div className="flex items-start justify-between">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
-                <Quote className="h-8 w-8 text-primary" />
-              </div>
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
+          <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-3xl overflow-hidden">
+            <div className="h-64 md:h-80 bg-muted relative">
+              <img
+                src="/indian-bride-and-groom-portrait.jpg"
+                alt="Priya and Michael Thompson wedding portrait"
+                className="w-full h-full object-cover"
+              />
             </div>
 
-            <blockquote className="text-2xl font-light text-foreground leading-relaxed italic">
-              "CeremonyVerse transformed what could have been an overwhelming experience into the most magical weekend
-              of our lives."
-            </blockquote>
-
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                As a second-generation Indian-American marrying someone from outside my culture, I was worried about
-                balancing traditions while making Michael's family feel included. CeremonyVerse understood exactly what
-                we needed.
-              </p>
-              <p>
-                Their coordinator helped us design a three-day celebration that honored my parents' expectations while
-                feeling authentic to us. The escrow payment system gave us complete confidence when ordering my lehenga
-                and jewelry from India—something I never would have done on my own.
-              </p>
-              <p>
-                Every vendor was verified, every detail was managed, and we actually got to enjoy our engagement instead
-                of drowning in logistics. Worth every penny.
-              </p>
-            </div>
-
-            <div className="pt-6 border-t border-border/50 flex items-center justify-between">
-              <div>
-                <p className="font-semibold text-lg text-foreground">Priya & Michael Thompson</p>
-                <p className="text-sm text-muted-foreground">San Francisco, CA • 250 guests • June 2024</p>
+            <div className="p-12 space-y-8">
+              <div className="flex items-start justify-between">
+                <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Quote className="h-8 w-8 text-primary" />
+                </div>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                  ))}
+                </div>
               </div>
-              <div className="text-sm text-muted-foreground">Heritage & Harmony Plan</div>
+
+              <blockquote className="text-2xl font-light text-foreground leading-relaxed italic">
+                "CeremonyVerse transformed what could have been an overwhelming experience into the most magical weekend
+                of our lives."
+              </blockquote>
+
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  As a second-generation Indian-American marrying someone from outside my culture, I was worried about
+                  balancing traditions while making Michael's family feel included. CeremonyVerse understood exactly
+                  what we needed.
+                </p>
+                <p>
+                  Their coordinator helped us design a three-day celebration that honored my parents' expectations while
+                  feeling authentic to us. The escrow payment system gave us complete confidence when ordering my
+                  lehenga and jewelry from India—something I never would have done on my own.
+                </p>
+                <p>
+                  Every vendor was verified, every detail was managed, and we actually got to enjoy our engagement
+                  instead of drowning in logistics. Worth every penny.
+                </p>
+              </div>
+
+              <div className="pt-6 border-t border-border/50 flex items-center justify-between">
+                <div>
+                  <p className="font-semibold text-lg text-foreground">Priya & Michael Thompson</p>
+                  <p className="text-sm text-muted-foreground">San Francisco, CA • 250 guests • June 2024</p>
+                </div>
+                <div className="text-sm text-muted-foreground">Heritage & Harmony Plan</div>
+              </div>
             </div>
           </div>
 
           {/* Testimonial 2 - Anjali & Rajesh */}
-          <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-3xl p-12 space-y-8">
-            <div className="flex items-start justify-between">
-              <div className="h-16 w-16 rounded-full bg-secondary/10 flex items-center justify-center">
-                <Quote className="h-8 w-8 text-secondary" />
-              </div>
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
+          <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-3xl overflow-hidden">
+            <div className="h-64 md:h-80 bg-muted relative">
+              <img
+                src="/south-asian-couple-wedding-photo.jpg"
+                alt="Anjali and Rajesh Kumar wedding celebration"
+                className="w-full h-full object-cover"
+              />
             </div>
 
-            <blockquote className="text-2xl font-light text-foreground leading-relaxed italic">
-              "As two busy professionals, we needed someone who could handle everything. CeremonyVerse exceeded our
-              expectations."
-            </blockquote>
-
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Between our demanding careers and planning a wedding across three countries, we were completely
-                overwhelmed. Our CeremonyVerse coordinator became our lifeline—managing vendors in India, coordinating
-                with our venue in Austin, and keeping both sets of parents informed.
-              </p>
-              <p>
-                The virtual shopping service was incredible. We had live video calls with suppliers in Mumbai and Delhi,
-                saw everything in real-time, and the quality was exactly as promised. The three-tier verification
-                process meant we never worried about authenticity.
-              </p>
-              <p>
-                On our wedding day, we were completely present because we knew every detail was handled. That peace of
-                mind was priceless.
-              </p>
-            </div>
-
-            <div className="pt-6 border-t border-border/50 flex items-center justify-between">
-              <div>
-                <p className="font-semibold text-lg text-foreground">Anjali & Rajesh Kumar</p>
-                <p className="text-sm text-muted-foreground">Austin, TX • 180 guests • September 2024</p>
+            <div className="p-12 space-y-8">
+              <div className="flex items-start justify-between">
+                <div className="h-16 w-16 rounded-full bg-secondary/10 flex items-center justify-center">
+                  <Quote className="h-8 w-8 text-secondary" />
+                </div>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                  ))}
+                </div>
               </div>
-              <div className="text-sm text-muted-foreground">Luxury Concierge Package</div>
+
+              <blockquote className="text-2xl font-light text-foreground leading-relaxed italic">
+                "As two busy professionals, we needed someone who could handle everything. CeremonyVerse exceeded our
+                expectations."
+              </blockquote>
+
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Between our demanding careers and planning a wedding across three countries, we were completely
+                  overwhelmed. Our CeremonyVerse coordinator became our lifeline—managing vendors in India, coordinating
+                  with our venue in Austin, and keeping both sets of parents informed.
+                </p>
+                <p>
+                  The virtual shopping service was incredible. We had live video calls with suppliers in Mumbai and
+                  Delhi, saw everything in real-time, and the quality was exactly as promised. The three-tier
+                  verification process meant we never worried about authenticity.
+                </p>
+                <p>
+                  On our wedding day, we were completely present because we knew every detail was handled. That peace of
+                  mind was priceless.
+                </p>
+              </div>
+
+              <div className="pt-6 border-t border-border/50 flex items-center justify-between">
+                <div>
+                  <p className="font-semibold text-lg text-foreground">Anjali & Rajesh Kumar</p>
+                  <p className="text-sm text-muted-foreground">Austin, TX • 180 guests • September 2024</p>
+                </div>
+                <div className="text-sm text-muted-foreground">Luxury Concierge Package</div>
+              </div>
             </div>
           </div>
 
           {/* Testimonial 3 - Zara & Omar */}
-          <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-3xl p-12 space-y-8">
-            <div className="flex items-start justify-between">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
-                <Quote className="h-8 w-8 text-primary" />
-              </div>
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
+          <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-3xl overflow-hidden">
+            <div className="h-64 md:h-80 bg-muted relative">
+              <img
+                src="/elegant-wedding-couple-portrait.jpg"
+                alt="Zara and Omar Khan wedding portrait"
+                className="w-full h-full object-cover"
+              />
             </div>
 
-            <blockquote className="text-2xl font-light text-foreground leading-relaxed italic">
-              "The transparency and quality assurance gave us confidence to invest in our dream wedding without fear."
-            </blockquote>
-
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Planning from Mexico City with suppliers in India seemed impossible until we found CeremonyVerse. The
-                escrow protection was non-negotiable for us, and they made it seamless.
-              </p>
-              <p>
-                Every payment was protected, every supplier was verified, and we had complete transparency throughout
-                the process. When there was a minor issue with one of the decorative pieces, CeremonyVerse handled it
-                immediately—we didn't even have to get involved.
-              </p>
-              <p>
-                The quality of everything—from my bridal jewelry to the mandap decorations—exceeded what we saw at
-                weddings that cost twice as much. This is truly a luxury service that delivers on its promises.
-              </p>
-            </div>
-
-            <div className="pt-6 border-t border-border/50 flex items-center justify-between">
-              <div>
-                <p className="font-semibold text-lg text-foreground">Zara & Omar Khan</p>
-                <p className="text-sm text-muted-foreground">Mexico City, Mexico • 300 guests • November 2024</p>
+            <div className="p-12 space-y-8">
+              <div className="flex items-start justify-between">
+                <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Quote className="h-8 w-8 text-primary" />
+                </div>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                  ))}
+                </div>
               </div>
-              <div className="text-sm text-muted-foreground">Heritage & Harmony Plan</div>
+
+              <blockquote className="text-2xl font-light text-foreground leading-relaxed italic">
+                "The transparency and quality assurance gave us confidence to invest in our dream wedding without fear."
+              </blockquote>
+
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Planning from Mexico City with suppliers in India seemed impossible until we found CeremonyVerse. The
+                  escrow protection was non-negotiable for us, and they made it seamless.
+                </p>
+                <p>
+                  Every payment was protected, every supplier was verified, and we had complete transparency throughout
+                  the process. When there was a minor issue with one of the decorative pieces, CeremonyVerse handled it
+                  immediately—we didn't even have to get involved.
+                </p>
+                <p>
+                  The quality of everything—from my bridal jewelry to the mandap decorations—exceeded what we saw at
+                  weddings that cost twice as much. This is truly a luxury service that delivers on its promises.
+                </p>
+              </div>
+
+              <div className="pt-6 border-t border-border/50 flex items-center justify-between">
+                <div>
+                  <p className="font-semibold text-lg text-foreground">Zara & Omar Khan</p>
+                  <p className="text-sm text-muted-foreground">Mexico City, Mexico • 300 guests • November 2024</p>
+                </div>
+                <div className="text-sm text-muted-foreground">Heritage & Harmony Plan</div>
+              </div>
             </div>
           </div>
 

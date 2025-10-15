@@ -120,21 +120,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/branding" className="text-muted-foreground hover:text-primary transition-colors">
-                  Brand Guidelines
-                </Link>
-              </li>
-              <li>
                 <Link
                   href="/marketing-materials"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Marketing Materials
-                </Link>
-              </li>
-              <li>
-                <Link href="/launch-guide" className="text-muted-foreground hover:text-primary transition-colors">
-                  Launch Guide
                 </Link>
               </li>
             </ul>

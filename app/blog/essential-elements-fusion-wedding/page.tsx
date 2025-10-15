@@ -19,10 +19,13 @@ export default function FusionWeddingGuidePage() {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <article className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <article className="pt-40 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Back Button */}
-          <Link href="/blog" className="inline-flex items-center text-sm text-foreground/60 hover:text-foreground mb-8">
+          <Link
+            href="/blog"
+            className="inline-flex items-center text-sm font-sans text-[#1a4d6d]/60 hover:text-[#0891b2] mb-8"
+          >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Blog
           </Link>
@@ -30,10 +33,10 @@ export default function FusionWeddingGuidePage() {
           {/* Article Header */}
           <header className="mb-12">
             <div className="flex items-center gap-4 mb-6">
-              <span className="px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full">
+              <span className="px-3 py-1 bg-[#0891b2]/10 text-[#0891b2] text-sm font-sans font-semibold rounded-full">
                 Planning Guide
               </span>
-              <div className="flex items-center gap-4 text-sm text-foreground/60">
+              <div className="flex items-center gap-4 text-sm font-sans text-[#1a4d6d]/60">
                 <div className="flex items-center gap-1">
                   <Calendar className="w-4 h-4" />
                   <span>January 15, 2025</span>
@@ -44,10 +47,10 @@ export default function FusionWeddingGuidePage() {
                 </div>
               </div>
             </div>
-            <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#1a4d6d] mb-6 leading-tight">
               10 Essential Elements of an Authentic Indian-American Fusion Wedding
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed">
+            <p className="text-xl text-[#1a4d6d]/70 leading-relaxed font-sans">
               Planning a wedding that honors both your Indian heritage and American lifestyle? This comprehensive guide
               reveals the essential elements that make fusion weddings truly special, from traditional ceremonies to
               modern celebrations.
@@ -55,8 +58,8 @@ export default function FusionWeddingGuidePage() {
           </header>
 
           {/* Article Content */}
-          <div className="prose prose-lg max-w-none">
-            <p className="text-foreground/80 leading-relaxed mb-6">
+          <div className="prose prose-lg max-w-none font-sans">
+            <p className="text-[#1a4d6d]/80 leading-relaxed mb-6">
               Indian-American fusion weddings are more than just combining two cultures—they're about creating a
               meaningful celebration that reflects your unique journey. Whether you're reconnecting with your heritage
               or introducing your partner's family to Indian traditions, these ten elements will help you create an

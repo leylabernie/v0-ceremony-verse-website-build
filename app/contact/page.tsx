@@ -93,43 +93,12 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Wedding Location</label>
-                  <Input
-                    type="text"
-                    className="w-full border-border focus:border-primary focus:ring-primary"
-                    placeholder="City, State/Country"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Estimated Guest Count</label>
-                  <Input
-                    type="number"
-                    className="w-full border-border focus:border-primary focus:ring-primary"
-                    placeholder="e.g., 200"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Tell Us About Your Vision *</label>
+                  <label className="block text-sm font-medium text-foreground mb-2">Tell Us About Your Vision</label>
                   <Textarea
-                    required
-                    rows={5}
+                    rows={4}
                     className="w-full border-border focus:border-primary focus:ring-primary"
                     placeholder="Share your wedding vision, cultural elements you want to include, any specific concerns or questions..."
                   />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">How did you hear about us?</label>
-                  <select className="w-full border border-border rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                    <option value="">Select an option</option>
-                    <option value="google">Google Search</option>
-                    <option value="social">Social Media</option>
-                    <option value="referral">Friend/Family Referral</option>
-                    <option value="wedding-site">Wedding Website/Directory</option>
-                    <option value="other">Other</option>
-                  </select>
                 </div>
 
                 <Button
@@ -138,7 +107,7 @@ export default function ContactPage() {
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg"
                 >
                   <Send className="mr-2 h-5 w-5" />
-                  Schedule My Free Consultation
+                  Get Your Free Wedding Plan
                 </Button>
 
                 <p className="text-sm text-muted-foreground text-center">

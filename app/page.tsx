@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight, Shield, Check, Sparkles, Star, Heart, Calendar } from "@/components/icons"
 import Image from "next/image"
+import InstagramFeed from "@/components/instagram-feed"
+import GoogleReviewsWidget from "@/components/google-reviews-widget"
 
 export default function HomePage() {
   return (
@@ -11,38 +13,41 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section - Clean & Visual with Video */}
-      <section className="relative pt-36 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-40 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left - Content */}
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary/10 border border-secondary/20 rounded-full">
-                <Sparkles className="h-3.5 w-3.5 text-secondary" />
-                <span className="text-xs font-sans font-semibold text-secondary tracking-wide uppercase">
-                  Luxury Fusion Weddings
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#0891b2]/10 border border-[#0891b2]/20 rounded-full">
+                <Sparkles className="h-3.5 w-3.5 text-[#0891b2]" />
+                <span className="text-xs font-sans font-semibold text-[#0891b2] tracking-wide uppercase">
+                  Indian-American Fusion Wedding Specialists
                 </span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light leading-tight">
-                <span className="text-[#1a4d6d]">Your Heritage.</span>
-                <br />
-                <span className="text-[#0891b2]">Your Harmony.</span>
-                <br />
-                <span className="text-[#d4a574] italic">Your Perfect Day.</span>
+                <span className="text-[#1a4d6d] block">Your Heritage,</span>
+                <span className="text-[#0891b2] block">Your Harmony,</span>
+                <span className="text-[#d4a574] block">Your Perfect Day</span>
               </h1>
 
-              <p className="text-lg font-sans text-muted-foreground leading-relaxed max-w-xl">
-                Expert wedding planning for Indian-American couples seeking authentic fusion celebrations.
+              <p className="text-xl font-sans text-[#1a4d6d] leading-relaxed font-medium">
+                Where Your Parents' Dreams Meet Your Modern Vision
+              </p>
+
+              <p className="text-lg font-sans text-[#1a4d6d]/70 leading-relaxed max-w-xl">
+                Expert wedding planning for Indian-American fusion celebrations. Multilingual team. Cultural
+                authenticity guaranteed.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button
                   size="lg"
                   asChild
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 text-base h-14 px-8 rounded-full shadow-lg hover:shadow-xl transition-all font-semibold"
+                  className="bg-[#0891b2] text-white hover:bg-[#0891b2]/90 text-base h-14 px-8 rounded-full shadow-lg hover:shadow-xl transition-all font-sans font-semibold"
                 >
                   <Link href="/contact">
-                    Book Free Consultation
+                    Get Free Wedding Timeline + Budget Guide
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
@@ -50,24 +55,24 @@ export default function HomePage() {
                   size="lg"
                   variant="outline"
                   asChild
-                  className="text-base h-14 px-8 rounded-full border-2 hover:bg-secondary/10 transition-all font-semibold bg-transparent"
+                  className="text-base h-14 px-8 rounded-full border-2 border-[#1a4d6d] text-[#1a4d6d] hover:bg-[#1a4d6d]/10 transition-all font-sans font-semibold bg-transparent"
                 >
-                  <Link href="/services">View Services</Link>
+                  <Link href="/muhurat">Find Auspicious Dates</Link>
                 </Button>
               </div>
 
               <div className="flex flex-wrap items-center gap-4 pt-4">
-                <div className="flex items-center gap-2 text-sm">
-                  <Shield className="h-4 w-4 text-secondary" />
-                  <span className="font-medium">Escrow Protected</span>
+                <div className="flex items-center gap-2 text-sm font-sans">
+                  <Shield className="h-4 w-4 text-[#0891b2]" />
+                  <span className="font-medium text-[#1a4d6d]">Escrow Protected</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <Check className="h-4 w-4 text-secondary" />
-                  <span className="font-medium">Verified Suppliers</span>
+                <div className="flex items-center gap-2 text-sm font-sans">
+                  <Check className="h-4 w-4 text-[#0891b2]" />
+                  <span className="font-medium text-[#1a4d6d]">Verified Vendors</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <Star className="h-4 w-4 text-accent fill-accent" />
-                  <span className="font-medium">5-Star Service</span>
+                <div className="flex items-center gap-2 text-sm bg-[#d4a574]/10 px-3 py-1 rounded-full font-sans">
+                  <Calendar className="h-4 w-4 text-[#d4a574]" />
+                  <span className="font-semibold text-[#d4a574]">Now Booking 2025-2026</span>
                 </div>
               </div>
             </div>
@@ -82,6 +87,7 @@ export default function HomePage() {
                   loop
                   playsInline
                   className="w-full h-full object-cover"
+                  aria-label="Beautiful Indian-American fusion wedding celebration showcasing traditional ceremonies and modern elegance"
                 />
               </div>
             </div>
@@ -93,10 +99,10 @@ export default function HomePage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl font-light text-foreground mb-3">
+            <h2 className="font-serif text-3xl sm:text-4xl font-light text-[#1a4d6d] mb-3">
               Everything You Need for Your Perfect Day
             </h2>
-            <p className="text-muted-foreground text-lg">One partner. Complete peace of mind.</p>
+            <p className="text-[#1a4d6d]/70 text-lg font-sans">One partner. Complete peace of mind.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -205,26 +211,34 @@ export default function HomePage() {
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-4">
               Loved by Couples Worldwide
             </h2>
+            <p className="text-muted-foreground text-lg">Real stories from real couples</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 quote:
-                  "CeremonyVerse made our dream fusion wedding a reality. The escrow system gave us complete peace of mind.",
+                  "CeremonyVerse made our dream fusion wedding a reality. The escrow system gave us complete peace of mind when ordering from India.",
                 author: "Priya & Michael",
                 location: "San Francisco, CA",
-              },
-              {
-                quote: "As busy professionals, we needed someone to handle everything. Our coordinator was incredible!",
-                author: "Anjali & Rajesh",
-                location: "Austin, TX",
+                wedding: "Hindu-Christian Fusion, 250 guests",
+                image: "/indian-bride-and-groom-portrait.jpg",
               },
               {
                 quote:
-                  "The quality of every item exceeded our expectations. Truly a luxury experience from start to finish.",
+                  "As busy professionals, we needed someone to handle everything. Our coordinator was incredible and understood both our cultures perfectly!",
+                author: "Anjali & Rajesh",
+                location: "Austin, TX",
+                wedding: "Traditional Indian Wedding, 400 guests",
+                image: "/south-asian-couple-wedding-photo.jpg",
+              },
+              {
+                quote:
+                  "The quality of every item exceeded our expectations. The virtual shopping experience from India was seamless. Truly a luxury experience from start to finish.",
                 author: "Zara & Omar",
                 location: "Mexico City",
+                wedding: "Muslim-Hindu Fusion, 300 guests",
+                image: "/elegant-wedding-couple-portrait.jpg",
               },
             ].map((testimonial, i) => (
               <div key={i} className="bg-card rounded-xl p-8 border border-border shadow-sm">
@@ -234,13 +248,37 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-foreground mb-6 leading-relaxed italic">"{testimonial.quote}"</p>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                <div className="flex items-center gap-4">
+                  <Image
+                    src={testimonial.image || "/placeholder.svg"}
+                    alt={`${testimonial.author} wedding photo`}
+                    width={60}
+                    height={60}
+                    className="rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold text-foreground">{testimonial.author}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{testimonial.wedding}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Instagram Feed */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <InstagramFeed />
+        </div>
+      </section>
+
+      {/* Google Reviews Widget */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <GoogleReviewsWidget />
         </div>
       </section>
 
@@ -259,7 +297,7 @@ export default function HomePage() {
             className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg h-16 px-12 rounded-full shadow-xl"
           >
             <Link href="/contact">
-              Book Your Free Consultation
+              Get Your Free Wedding Plan
               <ArrowRight className="ml-2 h-6 w-6" />
             </Link>
           </Button>
