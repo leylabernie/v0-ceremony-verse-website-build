@@ -153,7 +153,7 @@ export default function HeritageHarmonyPage() {
               {/* Curated Vendor Network */}
               <div className="bg-gradient-to-br from-[#F5F9F5] to-white p-8 rounded-2xl border border-[#9CAF88]/20">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#9CAF88] to-[#8a9e7a] rounded-full flex items-center justify-center mb-6">
-                  <Sparkles className="h-8 w-8 text-white" />
+                  <Star className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-serif text-2xl text-[#36454F] mb-4">Curated Vendor Network</h3>
                 <ul className="space-y-3">
