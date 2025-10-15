@@ -134,10 +134,7 @@ export default function VenuePartnersPage() {
                     src={venue.image || "/placeholder.svg"}
                     alt={venue.name}
                     className="w-full h-full object-cover"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement
-                      target.src = `/placeholder.svg?height=400&width=640&query=${encodeURIComponent(venue.name)}`
-                    }}
+                    loading="lazy"
                   />
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium">
                     {venue.priceRange}

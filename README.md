@@ -10,6 +10,8 @@
 This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
 Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
 
+For the rebuild effort requested in the new project brief, review the [CeremonyVerse Modernization Roadmap](./docs/modernization-roadmap.md) for the proposed architecture, phased execution plan, and success metrics that will guide future development.
+
 ## Deployment
 
 Your project is live at:
