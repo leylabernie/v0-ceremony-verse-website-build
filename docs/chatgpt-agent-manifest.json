@@ -1,0 +1,968 @@
+{
+  "generatedAt": "2025-10-15T15:06:12.766Z",
+  "root": "v0-ceremony-verse-website-build",
+  "totalFiles": 192,
+  "totalBytes": 39492139,
+  "files": [
+    {
+      "path": ".eslintrc.json",
+      "bytes": 61,
+      "modified": "2025-10-15T15:04:09.621Z"
+    },
+    {
+      "path": "app/api/leads/route.ts",
+      "bytes": 1699,
+      "modified": "2025-10-15T15:04:09.621Z"
+    },
+    {
+      "path": "app/bengali-wedding-planner/page.tsx",
+      "bytes": 11804,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/escrow-protection-guide/page.tsx",
+      "bytes": 19139,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/essential-elements-fusion-wedding/page.tsx",
+      "bytes": 17649,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/fusion-wedding-timeline/page.tsx",
+      "bytes": 31712,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/indian-wedding-planner-usa/page.tsx",
+      "bytes": 28242,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/indian-wedding-traditions-guide/page.tsx",
+      "bytes": 28865,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/mehndi-ceremony-guide/page.tsx",
+      "bytes": 29693,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/page.tsx",
+      "bytes": 11131,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/south-asian-wedding-budget-guide/page.tsx",
+      "bytes": 21399,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/vendor-verification-guide/page.tsx",
+      "bytes": 22042,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/blog/virtual-shopping-india-guide/page.tsx",
+      "bytes": 31047,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/budget-planner/page.tsx",
+      "bytes": 20205,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/contact/page.tsx",
+      "bytes": 10616,
+      "modified": "2025-10-15T15:04:09.625Z"
+    },
+    {
+      "path": "app/faq/page.tsx",
+      "bytes": 9293,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/gallery/page.tsx",
+      "bytes": 6099,
+      "modified": "2025-10-15T15:04:09.625Z"
+    },
+    {
+      "path": "app/globals.css",
+      "bytes": 5914,
+      "modified": "2025-10-15T15:04:09.625Z"
+    },
+    {
+      "path": "app/guest-estimator/page.tsx",
+      "bytes": 6437,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/guide/page.tsx",
+      "bytes": 17893,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/gujarati-wedding-planner/page.tsx",
+      "bytes": 7743,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/heritage-harmony/page.tsx",
+      "bytes": 19231,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/how-it-works/page.tsx",
+      "bytes": 8252,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/launch-guide/page.tsx",
+      "bytes": 20542,
+      "modified": "2025-10-15T14:10:53.796Z"
+    },
+    {
+      "path": "app/layout.tsx",
+      "bytes": 4889,
+      "modified": "2025-10-15T15:04:09.629Z"
+    },
+    {
+      "path": "app/marketing-materials/page.tsx",
+      "bytes": 12110,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/menu-planner/page.tsx",
+      "bytes": 7443,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/muhurat/page.tsx",
+      "bytes": 5929,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/our-story/page.tsx",
+      "bytes": 10799,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/outfit-coordinator/page.tsx",
+      "bytes": 8127,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/page.tsx",
+      "bytes": 15182,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/privacy-policy/page.tsx",
+      "bytes": 12633,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/punjabi-wedding-planner/page.tsx",
+      "bytes": 8076,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/quiz/page.tsx",
+      "bytes": 11451,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/robots.ts",
+      "bytes": 256,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/services/page.tsx",
+      "bytes": 45145,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/sitemap.ts",
+      "bytes": 5887,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/social-media-guide/page.tsx",
+      "bytes": 15894,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/south-indian-wedding-coordinator/page.tsx",
+      "bytes": 7988,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/special-offers/page.tsx",
+      "bytes": 13292,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/telugu-wedding-coordinator/page.tsx",
+      "bytes": 11865,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/terms-of-service/page.tsx",
+      "bytes": 16451,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/testimonials/page.tsx",
+      "bytes": 13483,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/thank-you/page.tsx",
+      "bytes": 8852,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/vendor-comparison/page.tsx",
+      "bytes": 7316,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/vendors/loading.tsx",
+      "bytes": 52,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/vendors/page.tsx",
+      "bytes": 13175,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "app/venue-partners/page.tsx",
+      "bytes": 9546,
+      "modified": "2025-10-15T15:04:09.629Z"
+    },
+    {
+      "path": "components.json",
+      "bytes": 427,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/calendly-widget.tsx",
+      "bytes": 2501,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/contact/contact-lead-form.tsx",
+      "bytes": 12594,
+      "modified": "2025-10-15T15:04:09.629Z"
+    },
+    {
+      "path": "components/exit-intent-popup.tsx",
+      "bytes": 3680,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/footer.tsx",
+      "bytes": 7536,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/google-reviews-widget.tsx",
+      "bytes": 2358,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/icons.tsx",
+      "bytes": 3964,
+      "modified": "2025-10-15T15:04:09.633Z"
+    },
+    {
+      "path": "components/instagram-feed.tsx",
+      "bytes": 2950,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/lead-capture-popup.tsx",
+      "bytes": 5187,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/lead-magnet-popup.tsx",
+      "bytes": 3663,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/logo.tsx",
+      "bytes": 2483,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/mobile-bottom-nav.tsx",
+      "bytes": 1748,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/navigation.tsx",
+      "bytes": 7561,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/schema-markup.tsx",
+      "bytes": 320,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/social-share.tsx",
+      "bytes": 2677,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/sticky-cta.tsx",
+      "bytes": 1870,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/theme-provider.tsx",
+      "bytes": 292,
+      "modified": "2025-10-15T14:10:53.800Z"
+    },
+    {
+      "path": "components/trust-badges.tsx",
+      "bytes": 1213,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "components/ui/badge.tsx",
+      "bytes": 1632,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "bytes": 2143,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "components/ui/card.tsx",
+      "bytes": 1990,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "components/ui/dialog.tsx",
+      "bytes": 3985,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "components/ui/input.tsx",
+      "bytes": 963,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "components/ui/textarea.tsx",
+      "bytes": 760,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "components/whatsapp-widget.tsx",
+      "bytes": 1242,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "docs/modernization-roadmap.md",
+      "bytes": 6375,
+      "modified": "2025-10-15T15:04:09.633Z"
+    },
+    {
+      "path": "IMPLEMENTATION_SUMMARY.md",
+      "bytes": 5105,
+      "modified": "2025-10-15T14:10:53.792Z"
+    },
+    {
+      "path": "lib/utils.ts",
+      "bytes": 166,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "lib/validators/contact-lead.ts",
+      "bytes": 2230,
+      "modified": "2025-10-15T15:04:09.633Z"
+    },
+    {
+      "path": "next.config.mjs",
+      "bytes": 228,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "package.json",
+      "bytes": 2304,
+      "modified": "2025-10-15T15:04:09.633Z"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 129393,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "bytes": 144,
+      "modified": "2025-10-15T14:10:53.804Z"
+    },
+    {
+      "path": "public/beach-sunset-wedding-couple.jpg",
+      "bytes": 1753325,
+      "modified": "2025-10-15T14:10:53.816Z"
+    },
+    {
+      "path": "public/beach-wedding-couple-mandap.jpg",
+      "bytes": 1851540,
+      "modified": "2025-10-15T14:10:53.828Z"
+    },
+    {
+      "path": "public/beautiful-indian-bride-with-intricate-mehndi-henna.jpg",
+      "bytes": 183047,
+      "modified": "2025-10-15T14:10:53.832Z"
+    },
+    {
+      "path": "public/bengali-bride-in-white-red-border-saree-with-topor.jpg",
+      "bytes": 134478,
+      "modified": "2025-10-15T14:10:53.832Z"
+    },
+    {
+      "path": "public/blue-lehenga-mehendi-ceremony.jpg",
+      "bytes": 1674315,
+      "modified": "2025-10-15T14:10:53.844Z"
+    },
+    {
+      "path": "public/bridal-jewelry-boutique-display.jpg",
+      "bytes": 1289063,
+      "modified": "2025-10-15T14:10:53.852Z"
+    },
+    {
+      "path": "public/bride-pastel-mint-pink-lehenga.jpg",
+      "bytes": 1641060,
+      "modified": "2025-10-15T14:10:53.860Z"
+    },
+    {
+      "path": "public/ceremonyverse-logo-solid.jpg",
+      "bytes": 52710,
+      "modified": "2025-10-15T14:10:53.860Z"
+    },
+    {
+      "path": "public/ceremonyverse-logo-solid.png",
+      "bytes": 20578,
+      "modified": "2025-10-15T14:10:53.860Z"
+    },
+    {
+      "path": "public/ceremonyverse-logo-tagline.png",
+      "bytes": 605729,
+      "modified": "2025-10-15T14:10:53.864Z"
+    },
+    {
+      "path": "public/ceremonyverse-logo.jpg",
+      "bytes": 64301,
+      "modified": "2025-10-15T14:10:53.864Z"
+    },
+    {
+      "path": "public/ceremonyverse-logo.png",
+      "bytes": 622438,
+      "modified": "2025-10-15T14:10:53.868Z"
+    },
+    {
+      "path": "public/colorful-indian-wedding-sangeet-celebration-dancin.jpg",
+      "bytes": 150185,
+      "modified": "2025-10-15T14:10:53.868Z"
+    },
+    {
+      "path": "public/colorful-mehndi-ceremony-decoration-with-marigold-.jpg",
+      "bytes": 331405,
+      "modified": "2025-10-15T14:10:53.868Z"
+    },
+    {
+      "path": "public/elegant-ballroom-wedding-venue-with-chandeliers.jpg",
+      "bytes": 158404,
+      "modified": "2025-10-15T14:10:53.872Z"
+    },
+    {
+      "path": "public/elegant-indian-american-bride-in-red-lehenga-with-.jpg",
+      "bytes": 152625,
+      "modified": "2025-10-15T14:10:53.872Z"
+    },
+    {
+      "path": "public/elegant-indian-american-fusion-wedding-ceremony-ma.jpg",
+      "bytes": 257548,
+      "modified": "2025-10-15T14:10:53.872Z"
+    },
+    {
+      "path": "public/elegant-indian-american-fusion-wedding-ceremony-wi.jpg",
+      "bytes": 228857,
+      "modified": "2025-10-15T14:10:53.876Z"
+    },
+    {
+      "path": "public/elegant-indian-wedding-lehenga-red-and-gold-embr.jpg",
+      "bytes": 216845,
+      "modified": "2025-10-15T14:10:53.876Z"
+    },
+    {
+      "path": "public/elegant-indian-wedding-reception-decor-with-flower.jpg",
+      "bytes": 181612,
+      "modified": "2025-10-15T14:10:53.876Z"
+    },
+    {
+      "path": "public/elegant-wedding-catering-display-with-colorful-app.jpg",
+      "bytes": 205723,
+      "modified": "2025-10-15T14:10:53.880Z"
+    },
+    {
+      "path": "public/elegant-wedding-couple-portrait.jpg",
+      "bytes": 113257,
+      "modified": "2025-10-15T14:10:53.880Z"
+    },
+    {
+      "path": "public/favicon.jpg",
+      "bytes": 640893,
+      "modified": "2025-10-15T14:10:53.880Z"
+    },
+    {
+      "path": "public/favicon.png",
+      "bytes": 879732,
+      "modified": "2025-10-15T14:10:53.888Z"
+    },
+    {
+      "path": "public/founder-story-elegant-indian-american-bride.jpg",
+      "bytes": 69943,
+      "modified": "2025-10-15T14:10:53.888Z"
+    },
+    {
+      "path": "public/fusion-wedding-ceremony-blending-indian-and-wester.jpg",
+      "bytes": 168536,
+      "modified": "2025-10-15T14:10:53.888Z"
+    },
+    {
+      "path": "public/gallery-wedding-1.jpg",
+      "bytes": 200516,
+      "modified": "2025-10-15T14:10:53.888Z"
+    },
+    {
+      "path": "public/gallery-wedding-2.jpg",
+      "bytes": 132829,
+      "modified": "2025-10-15T14:10:53.888Z"
+    },
+    {
+      "path": "public/gallery-wedding-3.jpg",
+      "bytes": 275124,
+      "modified": "2025-10-15T14:10:53.892Z"
+    },
+    {
+      "path": "public/gallery-wedding-4.jpg",
+      "bytes": 80351,
+      "modified": "2025-10-15T14:10:53.892Z"
+    },
+    {
+      "path": "public/gallery-wedding-5.jpg",
+      "bytes": 169418,
+      "modified": "2025-10-15T14:10:53.892Z"
+    },
+    {
+      "path": "public/gallery-wedding-6.jpg",
+      "bytes": 202987,
+      "modified": "2025-10-15T14:10:53.892Z"
+    },
+    {
+      "path": "public/gallery-wedding-7.jpg",
+      "bytes": 170633,
+      "modified": "2025-10-15T14:10:53.896Z"
+    },
+    {
+      "path": "public/gallery-wedding-8.jpg",
+      "bytes": 149707,
+      "modified": "2025-10-15T14:10:53.896Z"
+    },
+    {
+      "path": "public/garden-couple-traditional-attire.jpg",
+      "bytes": 2096490,
+      "modified": "2025-10-15T14:10:53.920Z"
+    },
+    {
+      "path": "public/garden-wedding-venue-with-flowers-and-greenery.jpg",
+      "bytes": 349448,
+      "modified": "2025-10-15T14:10:53.924Z"
+    },
+    {
+      "path": "public/groom-traditional-sherwani-portrait.jpg",
+      "bytes": 157858,
+      "modified": "2025-10-15T14:10:53.924Z"
+    },
+    {
+      "path": "public/gujarati-wedding-couple-traditional-chaniya-choli-.jpg",
+      "bytes": 239265,
+      "modified": "2025-10-15T14:10:53.924Z"
+    },
+    {
+      "path": "public/haldi-ceremony-yellow-outfit.jpg",
+      "bytes": 129718,
+      "modified": "2025-10-15T14:10:53.924Z"
+    },
+    {
+      "path": "public/heritage-harmony-brochure.jpg",
+      "bytes": 140108,
+      "modified": "2025-10-15T14:10:53.928Z"
+    },
+    {
+      "path": "public/heritage-harmony-wedding-details.jpg",
+      "bytes": 162251,
+      "modified": "2025-10-15T14:10:53.928Z"
+    },
+    {
+      "path": "public/indian-bridal-jewelry-kundan.jpg",
+      "bytes": 185535,
+      "modified": "2025-10-15T14:10:53.928Z"
+    },
+    {
+      "path": "public/indian-bridal-lehenga-shop.jpg",
+      "bytes": 266708,
+      "modified": "2025-10-15T14:10:53.928Z"
+    },
+    {
+      "path": "public/indian-bridal-mehndi-henna-design.jpg",
+      "bytes": 183482,
+      "modified": "2025-10-15T14:10:53.928Z"
+    },
+    {
+      "path": "public/indian-bride-and-groom-portrait.jpg",
+      "bytes": 171704,
+      "modified": "2025-10-15T14:10:53.932Z"
+    },
+    {
+      "path": "public/indian-bride-hands-with-intricate-mehndi-henna-des.jpg",
+      "bytes": 138801,
+      "modified": "2025-10-15T14:10:53.932Z"
+    },
+    {
+      "path": "public/indian-bride-in-red-lehenga-with-gold-jewelry.jpg",
+      "bytes": 132052,
+      "modified": "2025-10-15T14:10:53.932Z"
+    },
+    {
+      "path": "public/indian-wedding-catering-buffet.jpg",
+      "bytes": 286269,
+      "modified": "2025-10-15T14:10:53.932Z"
+    },
+    {
+      "path": "public/indian-wedding-dj-setup.jpg",
+      "bytes": 279436,
+      "modified": "2025-10-15T14:10:53.936Z"
+    },
+    {
+      "path": "public/indian-wedding-mandap-ceremony-with-priest-and-cou.jpg",
+      "bytes": 246056,
+      "modified": "2025-10-15T14:10:53.936Z"
+    },
+    {
+      "path": "public/indian-wedding-mandap-decoration.jpg",
+      "bytes": 258952,
+      "modified": "2025-10-15T14:10:53.936Z"
+    },
+    {
+      "path": "public/indian-wedding-planner-coordinating-beautiful-mand.jpg",
+      "bytes": 227044,
+      "modified": "2025-10-15T14:10:53.940Z"
+    },
+    {
+      "path": "public/indian-wedding-sangeet-night-with-dancing-and-ligh.jpg",
+      "bytes": 221428,
+      "modified": "2025-10-15T14:10:53.940Z"
+    },
+    {
+      "path": "public/indian-wedding-sangeet-night-with-dancing-and-perf.jpg",
+      "bytes": 266046,
+      "modified": "2025-10-15T14:10:53.940Z"
+    },
+    {
+      "path": "public/lakeside-wedding-venue-with-gazebo.jpg",
+      "bytes": 259717,
+      "modified": "2025-10-15T14:10:53.944Z"
+    },
+    {
+      "path": "public/live-band-performing-at-elegant-wedding-reception-.jpg",
+      "bytes": 179145,
+      "modified": "2025-10-15T14:10:53.944Z"
+    },
+    {
+      "path": "public/logo-horizontal.jpg",
+      "bytes": 23680,
+      "modified": "2025-10-15T14:10:53.944Z"
+    },
+    {
+      "path": "public/logo-icon.jpg",
+      "bytes": 31139,
+      "modified": "2025-10-15T14:10:53.944Z"
+    },
+    {
+      "path": "public/luxury-designer-bride-red-gold-lehenga.jpg",
+      "bytes": 159741,
+      "modified": "2025-10-15T14:10:53.948Z"
+    },
+    {
+      "path": "public/luxury-designer-bridesmaids-pastel-lehengas.jpg",
+      "bytes": 164633,
+      "modified": "2025-10-15T14:10:53.948Z"
+    },
+    {
+      "path": "public/luxury-designer-groom-sherwani-ivory-gold.jpg",
+      "bytes": 143387,
+      "modified": "2025-10-15T14:10:53.948Z"
+    },
+    {
+      "path": "public/luxury-indian-bridal-jewelry-gold-kundan-necklac.jpg",
+      "bytes": 118508,
+      "modified": "2025-10-15T14:10:53.952Z"
+    },
+    {
+      "path": "public/luxury-indian-wedding-decor-flowers-mandap-elegant.jpg",
+      "bytes": 263199,
+      "modified": "2025-10-15T14:10:53.952Z"
+    },
+    {
+      "path": "public/luxury-indian-wedding-details-gold-jewelry-silk-fa.jpg",
+      "bytes": 202034,
+      "modified": "2025-10-15T14:10:53.952Z"
+    },
+    {
+      "path": "public/luxury-ivory-gold-designer-wedding-lehenga.jpg",
+      "bytes": 238501,
+      "modified": "2025-10-15T14:10:53.956Z"
+    },
+    {
+      "path": "public/luxury-lavender-designer-bridal-lehenga.jpg",
+      "bytes": 173869,
+      "modified": "2025-10-15T14:10:53.956Z"
+    },
+    {
+      "path": "public/luxury-mint-green-designer-sangeet-outfit.jpg",
+      "bytes": 203586,
+      "modified": "2025-10-15T14:10:53.956Z"
+    },
+    {
+      "path": "public/luxury-pastel-pink-designer-bridal-lehenga.jpg",
+      "bytes": 171462,
+      "modified": "2025-10-15T14:10:53.960Z"
+    },
+    {
+      "path": "public/luxury-yellow-designer-mehendi-lehenga.jpg",
+      "bytes": 213409,
+      "modified": "2025-10-15T14:10:53.960Z"
+    },
+    {
+      "path": "public/mehendi-ceremony-green-outfit.jpg",
+      "bytes": 152839,
+      "modified": "2025-10-15T14:10:53.960Z"
+    },
+    {
+      "path": "public/mehndi-artist-applying-intricate-henna-design-on-b.jpg",
+      "bytes": 128103,
+      "modified": "2025-10-15T14:10:53.960Z"
+    },
+    {
+      "path": "public/mehndi-ceremony-bride-green-lehenga.jpg",
+      "bytes": 2112893,
+      "modified": "2025-10-15T14:10:53.988Z"
+    },
+    {
+      "path": "public/modern-minimalist-indian-wedding-white-gold-decor.jpg",
+      "bytes": 174636,
+      "modified": "2025-10-15T14:10:53.988Z"
+    },
+    {
+      "path": "public/modern-wedding-venue-with-city-views.jpg",
+      "bytes": 125660,
+      "modified": "2025-10-15T14:10:53.992Z"
+    },
+    {
+      "path": "public/orange-designer-bridal-lehenga.jpg",
+      "bytes": 161486,
+      "modified": "2025-10-15T14:10:53.992Z"
+    },
+    {
+      "path": "public/outdoor-indian-wedding-garden-floral-mandap.jpg",
+      "bytes": 302212,
+      "modified": "2025-10-15T14:10:53.992Z"
+    },
+    {
+      "path": "public/outdoor-mandap-ceremony-setup.jpg",
+      "bytes": 1854764,
+      "modified": "2025-10-15T14:10:54.004Z"
+    },
+    {
+      "path": "public/pastel-blue-indian-groom-sherwani-elegant.jpg",
+      "bytes": 113188,
+      "modified": "2025-10-15T14:10:54.004Z"
+    },
+    {
+      "path": "public/pastel-bridesmaids-group-portrait.jpg",
+      "bytes": 189306,
+      "modified": "2025-10-15T14:10:54.004Z"
+    },
+    {
+      "path": "public/pastel-lavender-indian-wedding-decor-flowers.jpg",
+      "bytes": 192623,
+      "modified": "2025-10-15T14:10:54.008Z"
+    },
+    {
+      "path": "public/pastel-mint-green-indian-sangeet-outfit.jpg",
+      "bytes": 155486,
+      "modified": "2025-10-15T14:10:54.008Z"
+    },
+    {
+      "path": "public/pastel-peach-indian-bridesmaids-lehengas.jpg",
+      "bytes": 162212,
+      "modified": "2025-10-15T14:10:54.008Z"
+    },
+    {
+      "path": "public/pastel-pink-indian-bride-lehenga-soft-elegant.jpg",
+      "bytes": 137729,
+      "modified": "2025-10-15T14:10:54.008Z"
+    },
+    {
+      "path": "public/pastel-yellow-indian-mehendi-ceremony-outfit.jpg",
+      "bytes": 164782,
+      "modified": "2025-10-15T14:10:54.012Z"
+    },
+    {
+      "path": "public/pink-roses-wedding-bouquet-close-up.jpg",
+      "bytes": 146712,
+      "modified": "2025-10-15T14:10:54.012Z"
+    },
+    {
+      "path": "public/placeholder-logo.png",
+      "bytes": 568,
+      "modified": "2025-10-15T14:10:54.012Z"
+    },
+    {
+      "path": "public/placeholder-logo.svg",
+      "bytes": 3208,
+      "modified": "2025-10-15T14:10:54.012Z"
+    },
+    {
+      "path": "public/placeholder-user.jpg",
+      "bytes": 1635,
+      "modified": "2025-10-15T14:10:54.012Z"
+    },
+    {
+      "path": "public/placeholder.jpg",
+      "bytes": 1064,
+      "modified": "2025-10-15T14:10:54.012Z"
+    },
+    {
+      "path": "public/placeholder.svg",
+      "bytes": 3253,
+      "modified": "2025-10-15T14:10:54.012Z"
+    },
+    {
+      "path": "public/priya-michael-garden-wedding.jpg",
+      "bytes": 344198,
+      "modified": "2025-10-15T14:10:54.016Z"
+    },
+    {
+      "path": "public/professional-photograph-of-elegant-indian-american.jpg",
+      "bytes": 240938,
+      "modified": "2025-10-15T14:10:54.016Z"
+    },
+    {
+      "path": "public/professional-photograph-of-indian-wedding-details-.jpg",
+      "bytes": 129200,
+      "modified": "2025-10-15T14:10:54.016Z"
+    },
+    {
+      "path": "public/professional-videographer-filming-bride-at-elegant.jpg",
+      "bytes": 119625,
+      "modified": "2025-10-15T14:10:54.016Z"
+    },
+    {
+      "path": "public/punjabi-sikh-wedding-couple-anand-karaj-ceremony.jpg",
+      "bytes": 190995,
+      "modified": "2025-10-15T14:10:54.020Z"
+    },
+    {
+      "path": "public/red-bridal-lehenga-palace-portrait.jpg",
+      "bytes": 1474346,
+      "modified": "2025-10-15T14:10:54.028Z"
+    },
+    {
+      "path": "public/romantic-couple-sunset-portrait.jpg",
+      "bytes": 1374608,
+      "modified": "2025-10-15T14:10:54.036Z"
+    },
+    {
+      "path": "public/rose-garden-pastel-couple.jpg",
+      "bytes": 1864861,
+      "modified": "2025-10-15T14:10:54.048Z"
+    },
+    {
+      "path": "public/sangeet-dance-couple-celebration.jpg",
+      "bytes": 1897920,
+      "modified": "2025-10-15T14:10:54.060Z"
+    },
+    {
+      "path": "public/services-brochure-cover.jpg",
+      "bytes": 131476,
+      "modified": "2025-10-15T14:10:54.060Z"
+    },
+    {
+      "path": "public/sophisticated-indian-bride-red-lehenga-jewelry.jpg",
+      "bytes": 139074,
+      "modified": "2025-10-15T14:10:54.060Z"
+    },
+    {
+      "path": "public/south-asian-couple-wedding-photo.jpg",
+      "bytes": 146203,
+      "modified": "2025-10-15T14:10:54.064Z"
+    },
+    {
+      "path": "public/south-indian-tamil-wedding-couple-traditional-silk.jpg",
+      "bytes": 187951,
+      "modified": "2025-10-15T14:10:54.064Z"
+    },
+    {
+      "path": "public/telugu-bride-in-red-kanjivaram-silk-saree-with-tra.jpg",
+      "bytes": 145260,
+      "modified": "2025-10-15T14:10:54.064Z"
+    },
+    {
+      "path": "public/wedding-planner-consulting-with-couple-in-bright-e.jpg",
+      "bytes": 115633,
+      "modified": "2025-10-15T14:10:54.064Z"
+    },
+    {
+      "path": "public/white-wedding-cake-with-peach-roses-elegant-lighti.jpg",
+      "bytes": 107445,
+      "modified": "2025-10-15T14:10:54.064Z"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1446,
+      "modified": "2025-10-15T15:04:09.621Z"
+    },
+    {
+      "path": "scripts/generate-chatgpt-agent-manifest.mjs",
+      "bytes": 1459,
+      "modified": "2025-10-15T15:06:10.436Z"
+    },
+    {
+      "path": "scripts/run-lint.mjs",
+      "bytes": 1602,
+      "modified": "2025-10-15T15:04:09.637Z"
+    },
+    {
+      "path": "styles/globals.css",
+      "bytes": 4337,
+      "modified": "2025-10-15T14:10:54.064Z"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 595,
+      "modified": "2025-10-15T14:10:54.064Z"
+    }
+  ]
+}

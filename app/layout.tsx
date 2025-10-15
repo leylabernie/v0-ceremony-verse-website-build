@@ -1,8 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Cormorant_Garamond, Inter } from "next/font/google"
-import "./globals.css"
 import { Suspense } from "react"
+import { GeistSans } from "geist/font/sans"
+import { GeistMono } from "geist/font/mono"
+import "./globals.css"
 import LeadCapturePopup from "@/components/lead-capture-popup"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 import { StickyCTA } from "@/components/sticky-cta"
@@ -11,18 +12,8 @@ import { MobileBottomNav } from "@/components/mobile-bottom-nav"
 import LeadMagnetPopup from "@/components/lead-magnet-popup"
 import { CalendlyWidget } from "@/components/calendly-widget"
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-cormorant",
-  display: "swap",
-})
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-})
+const geistSans = GeistSans
+const geistMono = GeistMono
 
 export const metadata: Metadata = {
   title: "CeremonyVerse | Luxury Indian-American Fusion Wedding Planning Services",
@@ -72,8 +63,21 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4HC7P2Q6C"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X4HC7P2Q6C');
+`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -111,22 +115,6 @@ export default function RootLayout({
                 ],
               },
             }),
-          }}
-        />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"}`}
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"}', {
-                page_path: window.location.pathname,
-              });
-            `,
           }}
         />
       </head>
