@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Check, Shield, Video, Calendar, Users, Sparkles, Phone, Mail } from "lucide-react"
+import { Check, Shield, Video, Calendar, Users, Star, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Footer from "@/components/footer"
 
