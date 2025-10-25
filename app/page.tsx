@@ -15,83 +15,83 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section - Clean & Visual with Video */}
-      <section className="relative pt-40 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Left - Content */}
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-sm">
-                <Sparkles className="h-3.5 w-3.5 text-primary" />
-                <span className="text-xs font-sans font-semibold text-primary tracking-wider uppercase">
-                  Indian-American Fusion Wedding Specialists
-                </span>
-              </div>
+      {/* Hero Section - Kalki Fashion Style: Full-width image with centered text overlay */}
+      <section className="relative h-[90vh] min-h-[600px]">
+        {/* Background Video */}
+        <div className="absolute inset-0">
+          <video
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edDYlmwPdmgQyNZgdg88F_output-X8anb1c6FUAcekBlxo22B3zxTtG9KH.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            aria-label="Beautiful Indian-American fusion wedding celebration"
+          />
+          {/* Elegant dark overlay - Kalki style */}
+          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/30 to-charcoal/60" />
+        </div>
 
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light leading-tight">
-                <span className="text-charcoal block">Your Heritage,</span>
-                <span className="text-primary block">Your Harmony,</span>
-                <span className="text-accent block">Your Perfect Day</span>
-              </h1>
-
-              <p className="text-xl font-sans text-charcoal leading-relaxed font-medium">
-                Where Your Parents' Dreams Meet Your Modern Vision
-              </p>
-
-              <p className="text-lg font-sans text-charcoal/70 leading-relaxed max-w-xl">
-                Expert wedding planning for Indian-American fusion celebrations. Multilingual team. Cultural
-                authenticity guaranteed.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                <Button
-                  size="lg"
-                  asChild
-                  className="btn-primary shadow-lg hover:shadow-xl"
-                >
-                  <Link href="/contact">
-                    Get Free Wedding Timeline + Budget Guide
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  asChild
-                  className="btn-secondary"
-                >
-                  <Link href="/muhurat">Find Auspicious Dates</Link>
-                </Button>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-4 pt-4">
-                <div className="flex items-center gap-2 text-sm font-sans">
-                  <Shield className="h-4 w-4 text-primary" />
-                  <span className="font-medium text-charcoal">Escrow Protected</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm font-sans">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span className="font-medium text-charcoal">Verified Vendors</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm bg-accent/10 px-3 py-1 rounded-sm font-sans">
-                  <Calendar className="h-4 w-4 text-accent" />
-                  <span className="font-semibold text-accent">Now Booking 2025-2026</span>
-                </div>
-              </div>
+        {/* Centered Content - Boho minimalist approach */}
+        <div className="relative h-full flex items-center justify-center px-4">
+          <div className="text-center max-w-4xl space-y-8">
+            {/* Small elegant badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20">
+              <Sparkles className="h-4 w-4 text-accent" />
+              <span className="text-xs font-sans font-medium text-white tracking-[0.2em] uppercase">
+                Indian-American Fusion Weddings
+              </span>
             </div>
 
-            {/* Right - Hero Video */}
-            <div className="relative">
-              <div className="aspect-[4/5] rounded-sm overflow-hidden shadow-2xl bg-warm-beige">
-                <video
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edDYlmwPdmgQyNZgdg88F_output-X8anb1c6FUAcekBlxo22B3zxTtG9KH.mp4"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="w-full h-full object-cover"
-                  aria-label="Beautiful Indian-American fusion wedding celebration showcasing traditional ceremonies and modern elegance"
-                />
+            {/* Large, elegant typography - Boho style */}
+            <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extralight leading-[1.1] text-white tracking-tight">
+              Your Heritage,
+              <br />
+              <span className="text-accent">Your Harmony</span>
+            </h1>
+
+            {/* Minimal subtitle - Boho approach */}
+            <p className="text-lg sm:text-xl text-white/90 font-light leading-relaxed max-w-2xl mx-auto">
+              Where tradition meets modernity in perfect celebration
+            </p>
+
+            {/* Clean CTA buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button
+                size="lg"
+                asChild
+                className="bg-white text-charcoal hover:bg-white/90 text-base h-14 px-10 font-medium tracking-wide"
+              >
+                <Link href="/contact">
+                  Begin Your Journey
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="border-2 border-white text-white hover:bg-white hover:text-charcoal text-base h-14 px-10 font-medium tracking-wide bg-transparent"
+              >
+                <Link href="/gallery">Explore Our Work</Link>
+              </Button>
+            </div>
+
+            {/* Minimal trust badges */}
+            <div className="flex flex-wrap items-center justify-center gap-6 pt-8 text-white/80 text-sm">
+              <div className="flex items-center gap-2">
+                <Shield className="h-4 w-4" />
+                <span className="font-light">Escrow Protected</span>
+              </div>
+              <div className="w-px h-4 bg-white/30" />
+              <div className="flex items-center gap-2">
+                <Check className="h-4 w-4" />
+                <span className="font-light">Verified Vendors</span>
+              </div>
+              <div className="w-px h-4 bg-white/30" />
+              <div className="flex items-center gap-2">
+                <Calendar className="h-4 w-4" />
+                <span className="font-light">Now Booking 2025-2026</span>
               </div>
             </div>
           </div>
@@ -107,92 +107,159 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Quick Services Grid - Visual & Interactive */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 texture-cream">
+      {/* Services Grid - Kalki Fashion product grid style with large images */}
+      <section className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <FadeInSection>
-            <div className="text-center mb-16">
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-charcoal mb-4">
-                Everything You Need for Your Perfect Day
+            {/* Boho minimalist heading */}
+            <div className="text-center mb-20">
+              <h2 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-extralight text-charcoal mb-6 tracking-tight">
+                Our Services
               </h2>
-              <p className="text-charcoal/70 text-lg font-sans">One partner. Complete peace of mind.</p>
+              <div className="w-24 h-px bg-accent mx-auto mb-6" />
+              <p className="text-charcoal/60 text-lg font-light max-w-2xl mx-auto">
+                Curated experiences for your celebration
+              </p>
             </div>
           </FadeInSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Service Card 1 */}
+          {/* Kalki-style grid with image-focused cards */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Service Card 1 - Image based like Kalki products */}
             <Link href="/services" className="group">
-              <div className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-8 border border-warm-beige/50">
-                <div className="h-14 w-14 rounded-sm bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Calendar className="h-7 w-7 text-primary" />
+              <div className="relative overflow-hidden bg-cream">
+                <div className="aspect-[3/4] relative overflow-hidden">
+                  <Image
+                    src="/mehndi-ceremony-bride-green-lehenga.jpg"
+                    alt="Full Wedding Planning"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
                 </div>
-                <h3 className="font-serif text-xl font-light mb-3 text-charcoal">Full Planning</h3>
-                <p className="text-sm text-charcoal/70 leading-relaxed">Complete coordination from start to finish</p>
+                <div className="p-6 text-center">
+                  <h3 className="font-serif text-2xl font-light mb-2 text-charcoal tracking-wide">Full Planning</h3>
+                  <p className="text-sm text-charcoal/60 font-light leading-relaxed">
+                    End-to-end coordination
+                  </p>
+                </div>
               </div>
             </Link>
 
             {/* Service Card 2 */}
             <Link href="/services" className="group">
-              <div className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-8 border border-warm-beige/50">
-                <div className="h-14 w-14 rounded-sm bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Heart className="h-7 w-7 text-secondary" />
+              <div className="relative overflow-hidden bg-cream">
+                <div className="aspect-[3/4] relative overflow-hidden">
+                  <Image
+                    src="/sangeet-dance-couple-celebration.jpg"
+                    alt="Cultural Fusion"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
                 </div>
-                <h3 className="font-serif text-xl font-light mb-3 text-charcoal">Cultural Fusion</h3>
-                <p className="text-sm text-charcoal/70 leading-relaxed">Authentic traditions meet modern style</p>
+                <div className="p-6 text-center">
+                  <h3 className="font-serif text-2xl font-light mb-2 text-charcoal tracking-wide">Cultural Fusion</h3>
+                  <p className="text-sm text-charcoal/60 font-light leading-relaxed">
+                    Tradition meets modernity
+                  </p>
+                </div>
               </div>
             </Link>
 
             {/* Service Card 3 */}
             <Link href="/services" className="group">
-              <div className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-8 border border-warm-beige/50">
-                <div className="h-14 w-14 rounded-sm bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Shield className="h-7 w-7 text-accent" />
+              <div className="relative overflow-hidden bg-cream">
+                <div className="aspect-[3/4] relative overflow-hidden">
+                  <Image
+                    src="/indian-bride-and-groom-portrait.jpg"
+                    alt="Verified Vendors"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
                 </div>
-                <h3 className="font-serif text-xl font-light mb-3 text-charcoal">Verified Vendors</h3>
-                <p className="text-sm text-charcoal/70 leading-relaxed">Quality-assured suppliers worldwide</p>
+                <div className="p-6 text-center">
+                  <h3 className="font-serif text-2xl font-light mb-2 text-charcoal tracking-wide">Verified Vendors</h3>
+                  <p className="text-sm text-charcoal/60 font-light leading-relaxed">
+                    Quality-assured partners
+                  </p>
+                </div>
               </div>
             </Link>
 
             {/* Service Card 4 */}
             <Link href="/services" className="group">
-              <div className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-8 border border-warm-beige/50">
-                <div className="h-14 w-14 rounded-sm bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Sparkles className="h-7 w-7 text-primary" />
+              <div className="relative overflow-hidden bg-cream">
+                <div className="aspect-[3/4] relative overflow-hidden">
+                  <Image
+                    src="/bride-pastel-mint-pink-lehenga.jpg"
+                    alt="Virtual Shopping"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
                 </div>
-                <h3 className="font-serif text-xl font-light mb-3 text-charcoal">Virtual Shopping</h3>
-                <p className="text-sm text-charcoal/70 leading-relaxed">Shop authentic items from anywhere</p>
+                <div className="p-6 text-center">
+                  <h3 className="font-serif text-2xl font-light mb-2 text-charcoal tracking-wide">Virtual Shopping</h3>
+                  <p className="text-sm text-charcoal/60 font-light leading-relaxed">
+                    Shop from anywhere
+                  </p>
+                </div>
               </div>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Featured Gallery - Large Visual Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* Featured Gallery - Kalki Fashion masonry-style grid */}
+      <section className="py-32 px-4 sm:px-6 lg:px-8 bg-cream">
         <div className="max-w-7xl mx-auto">
           <FadeInSection>
-            <div className="text-center mb-12">
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-4">
-                Real Weddings, Real Joy
+            {/* Boho minimalist heading with decorative line */}
+            <div className="text-center mb-20">
+              <h2 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-extralight text-charcoal mb-6 tracking-tight">
+                Celebrations
               </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                See how we've helped couples create unforgettable fusion celebrations
+              <div className="w-24 h-px bg-accent mx-auto mb-6" />
+              <p className="text-charcoal/60 text-lg font-light max-w-2xl mx-auto">
+                Every moment, beautifully crafted
               </p>
             </div>
           </FadeInSection>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Kalki-style varied grid layout */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Large featured image */}
+            <Link href="/gallery" className="col-span-2 row-span-2 group relative overflow-hidden">
+              <div className="aspect-square relative">
+                <Image
+                  src="/mehndi-ceremony-bride-green-lehenga.jpg"
+                  alt="Mehndi Celebration"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-8 left-8 right-8">
+                    <h3 className="font-serif text-3xl text-white font-light tracking-wide">Mehndi Celebration</h3>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Standard images */}
             {[
-              { img: "/mehndi-ceremony-bride-green-lehenga.jpg", title: "Mehndi Celebration" },
               { img: "/bride-pastel-mint-pink-lehenga.jpg", title: "Bridal Portrait" },
               { img: "/sangeet-dance-couple-celebration.jpg", title: "Sangeet Night" },
               { img: "/garden-couple-traditional-attire.jpg", title: "Garden Ceremony" },
               { img: "/beach-sunset-wedding-couple.jpg", title: "Beach Wedding" },
               { img: "/rose-garden-pastel-couple.jpg", title: "Reception" },
+              { img: "/south-asian-couple-wedding-photo.jpg", title: "Traditional" },
             ].map((item, i) => (
-              <div
+              <Link
                 key={i}
-                className="group relative aspect-[4/5] rounded-sm overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+                href="/gallery"
+                className="group relative overflow-hidden aspect-square"
               >
                 <Image
                   src={item.img || "/placeholder.svg"}
@@ -200,19 +267,25 @@ export default function HomePage() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 gradient-overlay-maroon opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-8 left-8 right-8">
-                    <h3 className="font-serif text-2xl text-white font-light tracking-wide">{item.title}</h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="font-serif text-lg text-white font-light">{item.title}</h3>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg" asChild className="btn-secondary">
+          {/* Minimal CTA button - Boho style */}
+          <div className="text-center mt-16">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              asChild 
+              className="border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white h-14 px-10 font-light tracking-wide bg-transparent"
+            >
               <Link href="/gallery">
-                View Full Gallery
+                View All Work
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -220,19 +293,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Social Proof - Testimonials */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 texture-cream">
-        <div className="max-w-7xl mx-auto">
+      {/* Testimonials - Boho minimalist single column layout */}
+      <section className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
           <FadeInSection>
-            <div className="text-center mb-12">
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-4">
-                Loved by Couples Worldwide
+            {/* Minimal heading */}
+            <div className="text-center mb-20">
+              <h2 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-extralight text-charcoal mb-6 tracking-tight">
+                Kind Words
               </h2>
-              <p className="text-muted-foreground text-lg">Real stories from real couples</p>
+              <div className="w-24 h-px bg-accent mx-auto" />
             </div>
           </FadeInSection>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Single column testimonials - Boho style */}
+          <div className="space-y-16">
             {[
               {
                 quote:
@@ -259,25 +334,31 @@ export default function HomePage() {
                 image: "/elegant-wedding-couple-portrait.jpg",
               },
             ].map((testimonial, i) => (
-              <div key={i} className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-10 border border-warm-beige/50">
-                <div className="flex gap-1 mb-6">
+              <div key={i} className="text-center space-y-6 pb-16 border-b border-warm-beige/30 last:border-0">
+                {/* Quote with elegant typography */}
+                <p className="text-2xl sm:text-3xl font-serif font-light text-charcoal leading-relaxed italic">
+                  "{testimonial.quote}"
+                </p>
+                
+                {/* Small decorative separator */}
+                <div className="flex items-center justify-center gap-2">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-accent fill-accent" />
+                    <div key={i} className="w-1 h-1 rounded-full bg-accent" />
                   ))}
                 </div>
-                <p className="text-charcoal mb-8 leading-relaxed italic font-light text-base">"{testimonial.quote}"</p>
-                <div className="flex items-center gap-4">
+                
+                {/* Author info with image */}
+                <div className="flex items-center justify-center gap-4">
                   <Image
                     src={testimonial.image || "/placeholder.svg"}
-                    alt={`${testimonial.author} wedding photo`}
-                    width={60}
-                    height={60}
-                    className="rounded-sm object-cover"
+                    alt={testimonial.author}
+                    width={64}
+                    height={64}
+                    className="rounded-full object-cover"
                   />
-                  <div>
-                    <p className="font-medium text-charcoal">{testimonial.author}</p>
-                    <p className="text-sm text-charcoal/70">{testimonial.location}</p>
-                    <p className="text-xs text-charcoal/60 mt-1">{testimonial.wedding}</p>
+                  <div className="text-left">
+                    <p className="font-serif text-lg text-charcoal font-light">{testimonial.author}</p>
+                    <p className="text-sm text-charcoal/60 font-light">{testimonial.location}</p>
                   </div>
                 </div>
               </div>
@@ -319,27 +400,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Strong CTA Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 gradient-overlay-maroon">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-white mb-8">
-            Ready to Start Planning Your Perfect Day?
+      {/* CTA Section - Boho minimalist with elegant simplicity */}
+      <section className="py-32 px-4 sm:px-6 lg:px-8 bg-cream">
+        <div className="max-w-3xl mx-auto text-center space-y-10">
+          <h2 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-extralight text-charcoal leading-tight tracking-tight">
+            Let's Create
+            <br />
+            Something Beautiful
           </h2>
-          <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Schedule a complimentary consultation to discuss your vision and discover how we can bring it to life.
+          
+          <div className="w-24 h-px bg-accent mx-auto" />
+          
+          <p className="text-xl text-charcoal/70 font-light leading-relaxed max-w-xl mx-auto">
+            Begin your journey with a complimentary consultation
           </p>
-          <Button
-            size="lg"
-            asChild
-            className="btn-accent shadow-2xl hover:scale-105 transition-transform text-lg h-16 px-12"
-          >
-            <Link href="/contact">
-              Get Your Free Wedding Plan
-              <ArrowRight className="ml-2 h-6 w-6" />
-            </Link>
-          </Button>
-          <p className="text-sm text-white/80 mt-8 italic">
-            No obligation. Just honest conversation about your perfect day.
+          
+          <div className="pt-4">
+            <Button
+              size="lg"
+              asChild
+              className="bg-charcoal text-white hover:bg-charcoal/90 h-14 px-12 font-light tracking-wide text-base"
+            >
+              <Link href="/contact">
+                Schedule Consultation
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+          
+          <p className="text-sm text-charcoal/50 font-light italic">
+            Thoughtful planning, exceptional celebration
           </p>
         </div>
       </section>
