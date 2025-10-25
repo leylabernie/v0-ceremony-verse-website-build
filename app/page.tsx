@@ -17,7 +17,7 @@ export default function HomePage() {
 
       {/* Hero Section - Kalki Fashion Style: Full-width image with centered text overlay */}
       <section className="relative h-[90vh] min-h-[600px]">
-        {/* Background Video */}
+        {/* Background Video - Optimized Loading */}
         <div className="absolute inset-0">
           <video
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edDYlmwPdmgQyNZgdg88F_output-X8anb1c6FUAcekBlxo22B3zxTtG9KH.mp4"
@@ -25,6 +25,7 @@ export default function HomePage() {
             muted
             loop
             playsInline
+            preload="metadata"
             className="w-full h-full object-cover"
             aria-label="Beautiful Indian-American fusion wedding celebration"
           />
@@ -123,7 +124,7 @@ export default function HomePage() {
             </div>
           </FadeInSection>
 
-          {/* Kalki-style grid with image-focused cards */}
+          {/* Kalki-style grid with image-focused cards - NO DUPLICATE IMAGES */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Service Card 1 - Image based like Kalki products */}
             <Link href="/services" className="group">
@@ -132,7 +133,9 @@ export default function HomePage() {
                   <Image
                     src="/mehndi-ceremony-bride-green-lehenga.jpg"
                     alt="Full Wedding Planning"
-                    fill
+                    width={400}
+                    height={533}
+                    loading="lazy"
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
@@ -151,9 +154,11 @@ export default function HomePage() {
               <div className="relative overflow-hidden bg-cream">
                 <div className="aspect-[3/4] relative overflow-hidden">
                   <Image
-                    src="/sangeet-dance-couple-celebration.jpg"
+                    src="/garden-couple-traditional-attire.jpg"
                     alt="Cultural Fusion"
-                    fill
+                    width={400}
+                    height={533}
+                    loading="lazy"
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
@@ -172,9 +177,11 @@ export default function HomePage() {
               <div className="relative overflow-hidden bg-cream">
                 <div className="aspect-[3/4] relative overflow-hidden">
                   <Image
-                    src="/indian-bride-and-groom-portrait.jpg"
+                    src="/beach-sunset-wedding-couple.jpg"
                     alt="Verified Vendors"
-                    fill
+                    width={400}
+                    height={533}
+                    loading="lazy"
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
@@ -193,9 +200,11 @@ export default function HomePage() {
               <div className="relative overflow-hidden bg-cream">
                 <div className="aspect-[3/4] relative overflow-hidden">
                   <Image
-                    src="/bride-pastel-mint-pink-lehenga.jpg"
+                    src="/rose-garden-pastel-couple.jpg"
                     alt="Virtual Shopping"
-                    fill
+                    width={400}
+                    height={533}
+                    loading="lazy"
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
@@ -228,33 +237,33 @@ export default function HomePage() {
             </div>
           </FadeInSection>
 
-          {/* Kalki-style varied grid layout */}
+          {/* Kalki-style varied grid layout - UNIQUE IMAGES ONLY */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Large featured image */}
             <Link href="/gallery" className="col-span-2 row-span-2 group relative overflow-hidden">
               <div className="aspect-square relative">
                 <Image
-                  src="/mehndi-ceremony-bride-green-lehenga.jpg"
-                  alt="Mehndi Celebration"
-                  fill
+                  src="/sangeet-dance-couple-celebration.jpg"
+                  alt="Sangeet Celebration"
+                  width={800}
+                  height={800}
+                  loading="lazy"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-8 left-8 right-8">
-                    <h3 className="font-serif text-3xl text-white font-light tracking-wide">Mehndi Celebration</h3>
+                    <h3 className="font-serif text-3xl text-white font-light tracking-wide">Sangeet Celebration</h3>
                   </div>
                 </div>
               </div>
             </Link>
 
-            {/* Standard images */}
+            {/* Standard images - ALL UNIQUE */}
             {[
               { img: "/bride-pastel-mint-pink-lehenga.jpg", title: "Bridal Portrait" },
-              { img: "/sangeet-dance-couple-celebration.jpg", title: "Sangeet Night" },
-              { img: "/garden-couple-traditional-attire.jpg", title: "Garden Ceremony" },
-              { img: "/beach-sunset-wedding-couple.jpg", title: "Beach Wedding" },
-              { img: "/rose-garden-pastel-couple.jpg", title: "Reception" },
-              { img: "/south-asian-couple-wedding-photo.jpg", title: "Traditional" },
+              { img: "/indian-bride-and-groom-portrait.jpg", title: "Couple Portrait" },
+              { img: "/south-asian-couple-wedding-photo.jpg", title: "Traditional Ceremony" },
+              { img: "/elegant-wedding-couple-portrait.jpg", title: "Reception" },
             ].map((item, i) => (
               <Link
                 key={i}
@@ -264,7 +273,9 @@ export default function HomePage() {
                 <Image
                   src={item.img || "/placeholder.svg"}
                   alt={item.title}
-                  fill
+                  width={400}
+                  height={400}
+                  loading="lazy"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -306,7 +317,7 @@ export default function HomePage() {
             </div>
           </FadeInSection>
 
-          {/* Single column testimonials - Boho style */}
+          {/* Single column testimonials - Boho style - Images already unique, just optimize */}
           <div className="space-y-16">
             {[
               {
@@ -315,7 +326,6 @@ export default function HomePage() {
                 author: "Priya & Michael",
                 location: "San Francisco, CA",
                 wedding: "Hindu-Christian Fusion, 250 guests",
-                image: "/indian-bride-and-groom-portrait.jpg",
               },
               {
                 quote:
@@ -323,7 +333,6 @@ export default function HomePage() {
                 author: "Anjali & Rajesh",
                 location: "Austin, TX",
                 wedding: "Traditional Indian Wedding, 400 guests",
-                image: "/south-asian-couple-wedding-photo.jpg",
               },
               {
                 quote:
@@ -331,7 +340,6 @@ export default function HomePage() {
                 author: "Zara & Omar",
                 location: "Mexico City",
                 wedding: "Muslim-Hindu Fusion, 300 guests",
-                image: "/elegant-wedding-couple-portrait.jpg",
               },
             ].map((testimonial, i) => (
               <div key={i} className="text-center space-y-6 pb-16 border-b border-warm-beige/30 last:border-0">
@@ -347,19 +355,10 @@ export default function HomePage() {
                   ))}
                 </div>
                 
-                {/* Author info with image */}
-                <div className="flex items-center justify-center gap-4">
-                  <Image
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.author}
-                    width={64}
-                    height={64}
-                    className="rounded-full object-cover"
-                  />
-                  <div className="text-left">
-                    <p className="font-serif text-lg text-charcoal font-light">{testimonial.author}</p>
-                    <p className="text-sm text-charcoal/60 font-light">{testimonial.location}</p>
-                  </div>
+                {/* Author info - Simplified without images for speed */}
+                <div className="flex flex-col items-center justify-center">
+                  <p className="font-serif text-lg text-charcoal font-light">{testimonial.author}</p>
+                  <p className="text-sm text-charcoal/60 font-light">{testimonial.location}</p>
                 </div>
               </div>
             ))}

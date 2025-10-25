@@ -10,18 +10,19 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/98 backdrop-blur-md border-b border-warm-beige/40 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/98 backdrop-blur-md border-b border-warm-beige/40">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-40">
+        <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center group">
-            <Image
-              src="/ceremonyverse-logo.png"
-              alt="CeremonyVerse - Your Heritage, Your Harmony, Your Perfect Day"
-              width={700}
-              height={245}
-              priority
-              className="h-32 md:h-36 lg:h-40 w-auto object-contain transition-transform group-hover:scale-105"
-            />
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center">
+                <span className="text-white font-serif text-xl font-light">C</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif text-xl font-light text-charcoal tracking-wide">CeremonyVerse</span>
+                <span className="text-xs font-sans font-light text-charcoal/60 tracking-widest uppercase">Wedding Planning</span>
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
