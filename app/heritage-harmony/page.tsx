@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Check, Shield, Video, Calendar, Users, Star, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Footer from "@/components/footer"
+import Navigation from "@/components/navigation"
 
 export const metadata: Metadata = {
   title: "Heritage & Harmony Plan - Luxury Indian-American Fusion Wedding Planning | CeremonyVerse",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 export default function HeritageHarmonyPage() {
   return (
     <main className="min-h-screen">
+      <Navigation />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#FFF8F0] via-white to-[#F5F9F5] py-20 md:py-32">
         <div className="container mx-auto px-4">

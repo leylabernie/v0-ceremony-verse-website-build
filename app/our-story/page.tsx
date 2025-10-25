@@ -1,10 +1,12 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Footer from "@/components/footer"
+import Navigation from "@/components/navigation"
 
 export default function OurStoryPage() {
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Hero Section */}
       <section className="relative py-32 px-6">
         <div className="max-w-4xl mx-auto text-center">

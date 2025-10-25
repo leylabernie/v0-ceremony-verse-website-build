@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Download, FileText, ImageIcon, Presentation } from "lucide-react"
 import Footer from "@/components/footer"
+import Navigation from "@/components/navigation"
 
 export const metadata: Metadata = {
   title: "Marketing Materials | CeremonyVerse",
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function MarketingMaterialsPage() {
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-b from-primary/5 to-background">
         <div className="max-w-4xl mx-auto text-center">

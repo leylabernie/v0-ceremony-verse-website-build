@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle2, ExternalLink, AlertCircle } from "lucide-react"
 import Footer from "@/components/footer"
+import Navigation from "@/components/navigation"
 
 export const metadata: Metadata = {
   title: "Website Launch Guide | CeremonyVerse",
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function LaunchGuidePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 via-white to-amber-50">
+      <Navigation />
       {/* Header */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
