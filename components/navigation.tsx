@@ -84,7 +84,7 @@ export function Navigation() {
                 asChild
                 className="btn-accent shadow-md text-base font-sans font-semibold px-6 py-2.5 h-auto"
               >
-                <Link href="/contact">Book Consultation</Link>
+                <Link href="/book-consultation">Book Consultation</Link>
               </Button>
             </div>
           </div>
@@ -167,7 +167,7 @@ export function Navigation() {
                   className="w-full btn-accent font-sans font-semibold"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <Link href="/contact">Book Consultation</Link>
+                  <Link href="/book-consultation">Book Consultation</Link>
                 </Button>
               </div>
             </div>
