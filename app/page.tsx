@@ -18,24 +18,24 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left - Content */}
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#0891b2]/10 border border-[#0891b2]/20 rounded-full">
-                <Sparkles className="h-3.5 w-3.5 text-[#0891b2]" />
-                <span className="text-xs font-sans font-semibold text-[#0891b2] tracking-wide uppercase">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-sm">
+                <Sparkles className="h-3.5 w-3.5 text-primary" />
+                <span className="text-xs font-sans font-semibold text-primary tracking-wider uppercase">
                   Indian-American Fusion Wedding Specialists
                 </span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light leading-tight">
-                <span className="text-[#1a4d6d] block">Your Heritage,</span>
-                <span className="text-[#0891b2] block">Your Harmony,</span>
-                <span className="text-[#d4a574] block">Your Perfect Day</span>
+                <span className="text-charcoal block">Your Heritage,</span>
+                <span className="text-primary block">Your Harmony,</span>
+                <span className="text-accent block">Your Perfect Day</span>
               </h1>
 
-              <p className="text-xl font-sans text-[#1a4d6d] leading-relaxed font-medium">
+              <p className="text-xl font-sans text-charcoal leading-relaxed font-medium">
                 Where Your Parents' Dreams Meet Your Modern Vision
               </p>
 
-              <p className="text-lg font-sans text-[#1a4d6d]/70 leading-relaxed max-w-xl">
+              <p className="text-lg font-sans text-charcoal/70 leading-relaxed max-w-xl">
                 Expert wedding planning for Indian-American fusion celebrations. Multilingual team. Cultural
                 authenticity guaranteed.
               </p>
@@ -44,7 +44,7 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   asChild
-                  className="bg-[#0891b2] text-white hover:bg-[#0891b2]/90 text-base h-14 px-8 rounded-full shadow-lg hover:shadow-xl transition-all font-sans font-semibold"
+                  className="btn-primary shadow-lg hover:shadow-xl"
                 >
                   <Link href="/contact">
                     Get Free Wedding Timeline + Budget Guide
@@ -55,7 +55,7 @@ export default function HomePage() {
                   size="lg"
                   variant="outline"
                   asChild
-                  className="text-base h-14 px-8 rounded-full border-2 border-[#1a4d6d] text-[#1a4d6d] hover:bg-[#1a4d6d]/10 transition-all font-sans font-semibold bg-transparent"
+                  className="btn-secondary"
                 >
                   <Link href="/muhurat">Find Auspicious Dates</Link>
                 </Button>
@@ -63,23 +63,23 @@ export default function HomePage() {
 
               <div className="flex flex-wrap items-center gap-4 pt-4">
                 <div className="flex items-center gap-2 text-sm font-sans">
-                  <Shield className="h-4 w-4 text-[#0891b2]" />
-                  <span className="font-medium text-[#1a4d6d]">Escrow Protected</span>
+                  <Shield className="h-4 w-4 text-primary" />
+                  <span className="font-medium text-charcoal">Escrow Protected</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm font-sans">
-                  <Check className="h-4 w-4 text-[#0891b2]" />
-                  <span className="font-medium text-[#1a4d6d]">Verified Vendors</span>
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="font-medium text-charcoal">Verified Vendors</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm bg-[#d4a574]/10 px-3 py-1 rounded-full font-sans">
-                  <Calendar className="h-4 w-4 text-[#d4a574]" />
-                  <span className="font-semibold text-[#d4a574]">Now Booking 2025-2026</span>
+                <div className="flex items-center gap-2 text-sm bg-accent/10 px-3 py-1 rounded-sm font-sans">
+                  <Calendar className="h-4 w-4 text-accent" />
+                  <span className="font-semibold text-accent">Now Booking 2025-2026</span>
                 </div>
               </div>
             </div>
 
             {/* Right - Hero Video */}
             <div className="relative">
-              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl bg-muted">
+              <div className="aspect-[4/5] rounded-sm overflow-hidden shadow-2xl bg-warm-beige">
                 <video
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edDYlmwPdmgQyNZgdg88F_output-X8anb1c6FUAcekBlxo22B3zxTtG9KH.mp4"
                   autoPlay
@@ -96,57 +96,57 @@ export default function HomePage() {
       </section>
 
       {/* Quick Services Grid - Visual & Interactive */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 texture-cream">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl font-light text-[#1a4d6d] mb-3">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-charcoal mb-4">
               Everything You Need for Your Perfect Day
             </h2>
-            <p className="text-[#1a4d6d]/70 text-lg font-sans">One partner. Complete peace of mind.</p>
+            <p className="text-charcoal/70 text-lg font-sans">One partner. Complete peace of mind.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Service Card 1 */}
             <Link href="/services" className="group">
-              <div className="bg-card rounded-xl p-6 border border-border hover:border-primary/40 hover:shadow-lg transition-all">
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Calendar className="h-6 w-6 text-primary" />
+              <div className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-8 border border-warm-beige/50">
+                <div className="h-14 w-14 rounded-sm bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Calendar className="h-7 w-7 text-primary" />
                 </div>
-                <h3 className="font-serif text-xl font-medium mb-2">Full Planning</h3>
-                <p className="text-sm text-muted-foreground">Complete coordination from start to finish</p>
+                <h3 className="font-serif text-xl font-light mb-3 text-charcoal">Full Planning</h3>
+                <p className="text-sm text-charcoal/70 leading-relaxed">Complete coordination from start to finish</p>
               </div>
             </Link>
 
             {/* Service Card 2 */}
             <Link href="/services" className="group">
-              <div className="bg-card rounded-xl p-6 border border-border hover:border-secondary/40 hover:shadow-lg transition-all">
-                <div className="h-12 w-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Heart className="h-6 w-6 text-secondary" />
+              <div className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-8 border border-warm-beige/50">
+                <div className="h-14 w-14 rounded-sm bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Heart className="h-7 w-7 text-secondary" />
                 </div>
-                <h3 className="font-serif text-xl font-medium mb-2">Cultural Fusion</h3>
-                <p className="text-sm text-muted-foreground">Authentic traditions meet modern style</p>
+                <h3 className="font-serif text-xl font-light mb-3 text-charcoal">Cultural Fusion</h3>
+                <p className="text-sm text-charcoal/70 leading-relaxed">Authentic traditions meet modern style</p>
               </div>
             </Link>
 
             {/* Service Card 3 */}
             <Link href="/services" className="group">
-              <div className="bg-card rounded-xl p-6 border border-border hover:border-accent/40 hover:shadow-lg transition-all">
-                <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Shield className="h-6 w-6 text-accent" />
+              <div className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-8 border border-warm-beige/50">
+                <div className="h-14 w-14 rounded-sm bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Shield className="h-7 w-7 text-accent" />
                 </div>
-                <h3 className="font-serif text-xl font-medium mb-2">Verified Vendors</h3>
-                <p className="text-sm text-muted-foreground">Quality-assured suppliers worldwide</p>
+                <h3 className="font-serif text-xl font-light mb-3 text-charcoal">Verified Vendors</h3>
+                <p className="text-sm text-charcoal/70 leading-relaxed">Quality-assured suppliers worldwide</p>
               </div>
             </Link>
 
             {/* Service Card 4 */}
             <Link href="/services" className="group">
-              <div className="bg-card rounded-xl p-6 border border-border hover:border-primary/40 hover:shadow-lg transition-all">
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Sparkles className="h-6 w-6 text-primary" />
+              <div className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-8 border border-warm-beige/50">
+                <div className="h-14 w-14 rounded-sm bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Sparkles className="h-7 w-7 text-primary" />
                 </div>
-                <h3 className="font-serif text-xl font-medium mb-2">Virtual Shopping</h3>
-                <p className="text-sm text-muted-foreground">Shop authentic items from anywhere</p>
+                <h3 className="font-serif text-xl font-light mb-3 text-charcoal">Virtual Shopping</h3>
+                <p className="text-sm text-charcoal/70 leading-relaxed">Shop authentic items from anywhere</p>
               </div>
             </Link>
           </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { img: "/mehndi-ceremony-bride-green-lehenga.jpg", title: "Mehndi Celebration" },
               { img: "/bride-pastel-mint-pink-lehenga.jpg", title: "Bridal Portrait" },
@@ -176,25 +176,25 @@ export default function HomePage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="group relative aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+                className="group relative aspect-[4/5] rounded-sm overflow-hidden shadow-lg hover:shadow-2xl transition-all"
               >
                 <Image
                   src={item.img || "/placeholder.svg"}
                   alt={item.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="font-serif text-2xl text-white">{item.title}</h3>
+                <div className="absolute inset-0 gradient-overlay-maroon opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-8 left-8 right-8">
+                    <h3 className="font-serif text-2xl text-white font-light tracking-wide">{item.title}</h3>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="text-center mt-10">
-            <Button variant="outline" size="lg" asChild className="rounded-full bg-transparent">
+          <div className="text-center mt-12">
+            <Button variant="outline" size="lg" asChild className="btn-secondary">
               <Link href="/gallery">
                 View Full Gallery
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -205,7 +205,7 @@ export default function HomePage() {
       </section>
 
       {/* Social Proof - Testimonials */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 texture-cream">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-4">
@@ -241,25 +241,25 @@ export default function HomePage() {
                 image: "/elegant-wedding-couple-portrait.jpg",
               },
             ].map((testimonial, i) => (
-              <div key={i} className="bg-card rounded-xl p-8 border border-border shadow-sm">
-                <div className="flex gap-1 mb-4">
+              <div key={i} className="card-hover bg-white/80 backdrop-blur-sm rounded-sm p-10 border border-warm-beige/50">
+                <div className="flex gap-1 mb-6">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-accent fill-accent" />
                   ))}
                 </div>
-                <p className="text-foreground mb-6 leading-relaxed italic">"{testimonial.quote}"</p>
+                <p className="text-charcoal mb-8 leading-relaxed italic font-light text-base">"{testimonial.quote}"</p>
                 <div className="flex items-center gap-4">
                   <Image
                     src={testimonial.image || "/placeholder.svg"}
                     alt={`${testimonial.author} wedding photo`}
                     width={60}
                     height={60}
-                    className="rounded-full object-cover"
+                    className="rounded-sm object-cover"
                   />
                   <div>
-                    <p className="font-semibold text-foreground">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{testimonial.wedding}</p>
+                    <p className="font-medium text-charcoal">{testimonial.author}</p>
+                    <p className="text-sm text-charcoal/70">{testimonial.location}</p>
+                    <p className="text-xs text-charcoal/60 mt-1">{testimonial.wedding}</p>
                   </div>
                 </div>
               </div>
@@ -276,32 +276,32 @@ export default function HomePage() {
       </section>
 
       {/* Google Reviews Widget */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 texture-cream">
         <div className="max-w-7xl mx-auto">
           <GoogleReviewsWidget />
         </div>
       </section>
 
       {/* Strong CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 gradient-overlay-maroon">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-6">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-white mb-8">
             Ready to Start Planning Your Perfect Day?
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
             Schedule a complimentary consultation to discuss your vision and discover how we can bring it to life.
           </p>
           <Button
             size="lg"
             asChild
-            className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg h-16 px-12 rounded-full shadow-xl"
+            className="btn-accent shadow-2xl hover:scale-105 transition-transform text-lg h-16 px-12"
           >
             <Link href="/contact">
               Get Your Free Wedding Plan
               <ArrowRight className="ml-2 h-6 w-6" />
             </Link>
           </Button>
-          <p className="text-sm text-muted-foreground mt-6 italic">
+          <p className="text-sm text-white/80 mt-8 italic">
             No obligation. Just honest conversation about your perfect day.
           </p>
         </div>
