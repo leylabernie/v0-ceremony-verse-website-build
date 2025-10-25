@@ -1,10 +1,8 @@
 import type { Metadata } from "next"
-import { Phone, Mail, MapPin, Clock, Send } from "@/components/icons"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Phone, Mail, MapPin, Clock } from "@/components/icons"
 import Footer from "@/components/footer"
 import Navigation from "@/components/navigation"
+import ContactForm from "@/components/contact-form"
 
 export const metadata: Metadata = {
   title: "Contact Us - Free Wedding Planning Consultation | CeremonyVerse",
@@ -45,75 +43,7 @@ export default function ContactPage() {
                 verified supplier network.
               </p>
 
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">First Name *</label>
-                    <Input
-                      type="text"
-                      required
-                      className="w-full border-border focus:border-primary focus:ring-primary"
-                      placeholder="Your first name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">Last Name *</label>
-                    <Input
-                      type="text"
-                      required
-                      className="w-full border-border focus:border-primary focus:ring-primary"
-                      placeholder="Your last name"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Email Address *</label>
-                  <Input
-                    type="email"
-                    required
-                    className="w-full border-border focus:border-primary focus:ring-primary"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Phone Number *</label>
-                  <Input
-                    type="tel"
-                    required
-                    className="w-full border-border focus:border-primary focus:ring-primary"
-                    placeholder="+1-215-341-9990"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Wedding Date (if known)</label>
-                  <Input type="date" className="w-full border-border focus:border-primary focus:ring-primary" />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Tell Us About Your Vision</label>
-                  <Textarea
-                    rows={4}
-                    className="w-full border-border focus:border-primary focus:ring-primary"
-                    placeholder="Share your wedding vision, cultural elements you want to include, any specific concerns or questions..."
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg"
-                >
-                  <Send className="mr-2 h-5 w-5" />
-                  Get Your Free Wedding Plan
-                </Button>
-
-                <p className="text-sm text-muted-foreground text-center">
-                  We'll respond within 24 hours. Your information is kept confidential.
-                </p>
-              </form>
+              <ContactForm source="contact_page" />
             </div>
 
             {/* Contact Information */}

@@ -10,6 +10,7 @@ import ExitIntentPopup from "@/components/exit-intent-popup"
 import { MobileBottomNav } from "@/components/mobile-bottom-nav"
 import LeadMagnetPopup from "@/components/lead-magnet-popup"
 import { CalendlyWidget } from "@/components/calendly-widget"
+import { GoogleAnalytics, MetaPixel } from "@/components/analytics"
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -131,6 +132,8 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased pb-16 md:pb-0">
+        <GoogleAnalytics />
+        <MetaPixel />
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <LeadCapturePopup />
         <ExitIntentPopup />

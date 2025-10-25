@@ -1,16 +1,10 @@
+"use client"
+
 import Navigation from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "@/components/icons"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
-
-export const metadata = {
-  title: "Wedding Gallery | CeremonyVerse - Real Fusion Weddings",
-  description:
-    "Explore stunning Indian-American fusion weddings planned by CeremonyVerse. See real celebrations blending heritage and harmony with pastel and vibrant color palettes.",
-  keywords:
-    "Indian wedding gallery, fusion wedding photos, South Asian wedding inspiration, pastel wedding outfits, Indian bridal fashion, wedding decor ideas",
-}
 
 export default function GalleryPage() {
   const weddings = [

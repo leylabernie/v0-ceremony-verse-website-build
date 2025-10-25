@@ -1,17 +1,10 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, MapPin, Users, Star, ArrowRight } from "@/components/icons"
 import Link from "next/link"
-import type { Metadata } from "next"
-
-export const metadata: Metadata = {
-  title: "Venue Partners | CeremonyVerse - Trusted Wedding Venues",
-  description:
-    "Explore our network of verified wedding venues perfect for Indian-American fusion celebrations. From ballrooms to gardens, find your dream location.",
-  keywords:
-    "Indian wedding venues, fusion wedding locations, South Asian wedding venues, wedding venue partners, verified wedding venues",
-}
 
 export default function VenuePartnersPage() {
   const venues = [
