@@ -6,6 +6,9 @@ import { ArrowRight, Shield, Check, Sparkles, Star, Heart, Calendar } from "@/co
 import Image from "next/image"
 import InstagramFeed from "@/components/instagram-feed"
 import GoogleReviewsWidget from "@/components/google-reviews-widget"
+import AnimatedStats from "@/components/animated-stats"
+import FadeInSection from "@/components/fade-in-section"
+import InteractiveProcess from "@/components/interactive-process"
 
 export default function HomePage() {
   return (
@@ -95,15 +98,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Stats Section - Animated Numbers */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white border-y border-warm-beige/30">
+        <div className="max-w-7xl mx-auto">
+          <FadeInSection>
+            <AnimatedStats />
+          </FadeInSection>
+        </div>
+      </section>
+
       {/* Quick Services Grid - Visual & Interactive */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 texture-cream">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-charcoal mb-4">
-              Everything You Need for Your Perfect Day
-            </h2>
-            <p className="text-charcoal/70 text-lg font-sans">One partner. Complete peace of mind.</p>
-          </div>
+          <FadeInSection>
+            <div className="text-center mb-16">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-charcoal mb-4">
+                Everything You Need for Your Perfect Day
+              </h2>
+              <p className="text-charcoal/70 text-lg font-sans">One partner. Complete peace of mind.</p>
+            </div>
+          </FadeInSection>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Service Card 1 */}
@@ -156,14 +170,16 @@ export default function HomePage() {
       {/* Featured Gallery - Large Visual Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-4">
-              Real Weddings, Real Joy
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              See how we've helped couples create unforgettable fusion celebrations
-            </p>
-          </div>
+          <FadeInSection>
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-4">
+                Real Weddings, Real Joy
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                See how we've helped couples create unforgettable fusion celebrations
+              </p>
+            </div>
+          </FadeInSection>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -207,12 +223,14 @@ export default function HomePage() {
       {/* Social Proof - Testimonials */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 texture-cream">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-4">
-              Loved by Couples Worldwide
-            </h2>
-            <p className="text-muted-foreground text-lg">Real stories from real couples</p>
-          </div>
+          <FadeInSection>
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-4">
+                Loved by Couples Worldwide
+              </h2>
+              <p className="text-muted-foreground text-lg">Real stories from real couples</p>
+            </div>
+          </FadeInSection>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -265,6 +283,25 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* How It Works - Interactive Process */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <FadeInSection>
+            <div className="text-center mb-16">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-charcoal mb-4">
+                Your Journey to the Perfect Day
+              </h2>
+              <p className="text-charcoal/70 text-lg font-sans max-w-2xl mx-auto">
+                From first call to final celebration, we're with you every step of the way
+              </p>
+            </div>
+          </FadeInSection>
+          <FadeInSection delay={200}>
+            <InteractiveProcess />
+          </FadeInSection>
         </div>
       </section>
 
