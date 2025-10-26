@@ -16,6 +16,33 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const articles = [
     {
+      title: "Complete Wedding Planning Checklist & 12-Month Timeline",
+      excerpt:
+        "The ultimate month-by-month wedding planning guide for Indian-American fusion weddings. Comprehensive task list from engagement to honeymoon with expert tips, cultural considerations, and deadlines for every phase.",
+      date: "January 22, 2025",
+      readTime: "20 min read",
+      category: "Planning Guide",
+      slug: "wedding-planning-checklist-timeline",
+    },
+    {
+      title: "Wedding Registry Guide for Indian-American Couples",
+      excerpt:
+        "Navigate the balance between traditional cash gifts (Shagun) and modern registries. Complete guide to honoring cultural expectations while creating a registry that works for all your guests.",
+      date: "January 21, 2025",
+      readTime: "12 min read",
+      category: "Planning Guide",
+      slug: "wedding-registry-guide-indian-american",
+    },
+    {
+      title: "The Ultimate Mehndi Ceremony Guide: Traditions, Planning & Modern Ideas",
+      excerpt:
+        "Everything you need to create an unforgettable Mehndi night that honors tradition while celebrating your unique style. From decor to artists to aftercare tips.",
+      date: "January 20, 2025",
+      readTime: "14 min read",
+      category: "Cultural Traditions",
+      slug: "mehndi-ceremony-guide",
+    },
+    {
       title: "Finding the Perfect Indian Wedding Planner in USA: Complete Guide 2025",
       excerpt:
         "Everything you need to know about hiring an Indian wedding planner for your fusion celebration in America. Cultural expertise, vendor networks, and what to look for in a specialized planner.",
@@ -32,15 +59,6 @@ export default function BlogPage() {
       readTime: "12 min read",
       category: "Financial Planning",
       slug: "south-asian-wedding-budget-guide",
-    },
-    {
-      title: "The Ultimate Mehndi Ceremony Guide: Traditions, Planning & Modern Ideas",
-      excerpt:
-        "Everything you need to create an unforgettable Mehndi night that honors tradition while celebrating your unique style. From decor to artists to aftercare tips.",
-      date: "January 20, 2025",
-      readTime: "14 min read",
-      category: "Cultural Traditions",
-      slug: "mehndi-ceremony-guide",
     },
     {
       title: "10 Essential Elements of an Authentic Indian-American Fusion Wedding",
