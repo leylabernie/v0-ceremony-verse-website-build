@@ -45,43 +45,43 @@ export function Navigation() {
           <div className="hidden lg:flex items-center gap-1">
             <Link
               href="/our-story"
-              className="px-3 xl:px-4 py-2.5 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+              className="font-sans px-3 xl:px-4 py-2.5 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
             >
               Our Story
             </Link>
             <Link
               href="/services"
-              className="px-3 xl:px-4 py-2.5 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+              className="font-sans px-3 xl:px-4 py-2.5 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
             >
               Services
             </Link>
             <Link
               href="/heritage-harmony"
-              className="px-3 xl:px-4 py-2.5 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all whitespace-nowrap"
+              className="font-sans px-3 xl:px-4 py-2.5 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all whitespace-nowrap"
             >
               Heritage & Harmony
             </Link>
             <Link
               href="/budget-planner"
-              className="px-3 xl:px-4 py-2.5 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+              className="font-sans px-3 xl:px-4 py-2.5 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
             >
               Budget Planner
             </Link>
             <Link
               href="/blog"
-              className="px-3 xl:px-4 py-2.5 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+              className="font-sans px-3 xl:px-4 py-2.5 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
             >
               Blog
             </Link>
             <Link
               href="/faq"
-              className="px-3 xl:px-4 py-2.5 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+              className="font-sans px-3 xl:px-4 py-2.5 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
             >
               FAQ
             </Link>
             <Link
               href="/contact"
-              className="px-3 xl:px-4 py-2.5 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+              className="font-sans px-3 xl:px-4 py-2.5 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
             >
               Contact
             </Link>
@@ -90,7 +90,7 @@ export function Navigation() {
             <div className="flex items-center gap-3 ml-3 pl-3 border-l border-warm-beige/40">
               <a
                 href="tel:+12153419990"
-                className="flex items-center gap-2 px-3 py-2.5 text-base font-sans font-semibold text-primary hover:text-accent transition-colors"
+                className="font-sans flex items-center gap-2 px-3 py-2.5 text-[15px] font-semibold text-primary hover:text-accent transition-colors"
               >
                 <Phone className="h-4 w-4" />
                 <span className="hidden xl:inline whitespace-nowrap">+1-215-341-9990</span>
@@ -121,49 +121,49 @@ export function Navigation() {
             <div className="flex flex-col gap-2">
               <Link
                 href="/our-story"
-                className="px-4 py-3 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+                className="font-sans px-4 py-3 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Our Story
               </Link>
               <Link
                 href="/services"
-                className="px-4 py-3 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+                className="font-sans px-4 py-3 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="/heritage-harmony"
-                className="px-4 py-3 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+                className="font-sans px-4 py-3 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Heritage & Harmony
               </Link>
               <Link
                 href="/budget-planner"
-                className="px-4 py-3 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+                className="font-sans px-4 py-3 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Budget Planner
               </Link>
               <Link
                 href="/blog"
-                className="px-4 py-3 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+                className="font-sans px-4 py-3 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Blog
               </Link>
               <Link
                 href="/faq"
-                className="px-4 py-3 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+                className="font-sans px-4 py-3 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 FAQ
               </Link>
               <Link
                 href="/contact"
-                className="px-4 py-3 text-base font-sans font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
+                className="font-sans px-4 py-3 text-[15px] font-medium text-charcoal hover:text-primary hover:bg-warm-beige/30 rounded-sm transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
@@ -172,7 +172,7 @@ export function Navigation() {
               <div className="mt-4 pt-4 border-t border-warm-beige/40 space-y-3">
                 <a
                   href="tel:+12153419990"
-                  className="flex items-center gap-2 px-4 py-3 text-base font-sans font-semibold text-primary hover:text-accent transition-colors"
+                  className="font-sans flex items-center gap-2 px-4 py-3 text-[15px] font-semibold text-primary hover:text-accent transition-colors"
                 >
                   <Phone className="h-5 w-5" />
                   <span>+1-215-341-9990</span>
