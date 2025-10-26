@@ -261,11 +261,12 @@ export default function ServicesPage() {
               </ul>
 
               <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="w-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground bg-transparent text-base"
               >
-                Learn More
+                <Link href="/contact">Learn More</Link>
               </Button>
             </div>
 
@@ -363,11 +364,12 @@ export default function ServicesPage() {
               </ul>
 
               <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent text-base"
               >
-                Request Consultation
+                <Link href="/book-consultation">Request Consultation</Link>
               </Button>
             </div>
           </div>

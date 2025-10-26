@@ -4,7 +4,7 @@ import Script from "next/script"
 import { useEffect } from "react"
 import { usePathname } from "next/navigation"
 
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "G-X4HC7P2Q6C"
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
 
 export function GoogleAnalytics() {

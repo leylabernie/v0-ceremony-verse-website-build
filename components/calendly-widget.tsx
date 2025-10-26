@@ -12,10 +12,10 @@ export function CalendlyWidget() {
       {/* Floating Calendly Button */}
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-24 right-6 z-40 bg-gradient-to-r from-[#0891b2] to-[#1a4d6d] text-white hover:from-[#0891b2]/90 hover:to-[#1a4d6d]/90 shadow-2xl rounded-full h-14 px-6 flex items-center gap-2"
+        className="font-sans fixed bottom-24 right-6 z-40 bg-gradient-to-r from-primary via-primary to-accent text-white hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] shadow-2xl rounded-full h-14 px-6 flex items-center gap-2 transition-all duration-300 hover:scale-105 ring-2 ring-accent/20 hover:ring-accent/40"
       >
         <Calendar className="h-5 w-5" />
-        <span className="hidden sm:inline">Book Consultation</span>
+        <span className="hidden sm:inline font-semibold">Book Consultation</span>
       </Button>
 
       {/* Calendly Modal */}
@@ -30,26 +30,13 @@ export function CalendlyWidget() {
             </button>
             <div className="h-[80vh]">
               <iframe
-                src="https://calendly.com/your-calendly-link/30min"
+                src="https://calendly.com/ceremonyverse/consultation"
                 width="100%"
                 height="100%"
                 frameBorder="0"
                 title="Schedule a consultation with CeremonyVerse"
+                className="rounded-b-2xl"
               />
-              {/* Placeholder message until user adds their Calendly link */}
-              <div className="flex items-center justify-center h-full bg-gradient-to-br from-[#1a4d6d]/5 to-[#0891b2]/5 p-8">
-                <div className="text-center max-w-md">
-                  <Calendar className="h-16 w-16 mx-auto mb-4 text-[#1a4d6d]" />
-                  <h3 className="text-2xl font-serif text-[#1a4d6d] mb-3">Book Your Free Consultation</h3>
-                  <p className="text-gray-600 mb-6">
-                    Connect your Calendly account to enable instant booking. Replace the iframe src with your Calendly
-                    link in components/calendly-widget.tsx
-                  </p>
-                  <p className="text-sm text-gray-500">
-                    Or call us directly at <strong>(555) 123-4567</strong>
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

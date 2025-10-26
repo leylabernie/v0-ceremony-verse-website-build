@@ -45,8 +45,8 @@ export default function LeadMagnetPopup() {
         </button>
 
         <DialogHeader>
-          <DialogTitle className="text-2xl font-serif">Free Indian-American Wedding Planning Checklist</DialogTitle>
-          <DialogDescription className="text-base">
+          <DialogTitle className="font-sans text-2xl font-serif">Free Indian-American Wedding Planning Checklist</DialogTitle>
+          <DialogDescription className="font-sans text-base">
             Get our comprehensive 12-month timeline with cultural ceremony checklists, budget templates, and vendor
             comparison sheets.
           </DialogDescription>
@@ -54,20 +54,20 @@ export default function LeadMagnetPopup() {
 
         <div className="space-y-4 pt-4">
           <div className="bg-muted/50 p-4 rounded-lg space-y-2">
-            <div className="flex items-start gap-2 text-sm">
-              <Download className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+            <div className="font-sans flex items-start gap-2 text-sm">
+              <Download className="font-sans h-4 w-4 text-primary mt-0.5 shrink-0" />
               <span>Complete 12-month planning timeline</span>
             </div>
-            <div className="flex items-start gap-2 text-sm">
-              <Download className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+            <div className="font-sans flex items-start gap-2 text-sm">
+              <Download className="font-sans h-4 w-4 text-primary mt-0.5 shrink-0" />
               <span>Cultural ceremony checklists (Hindu, Sikh, Muslim)</span>
             </div>
-            <div className="flex items-start gap-2 text-sm">
-              <Download className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+            <div className="font-sans flex items-start gap-2 text-sm">
+              <Download className="font-sans h-4 w-4 text-primary mt-0.5 shrink-0" />
               <span>Budget breakdown templates</span>
             </div>
-            <div className="flex items-start gap-2 text-sm">
-              <Download className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+            <div className="font-sans flex items-start gap-2 text-sm">
+              <Download className="font-sans h-4 w-4 text-primary mt-0.5 shrink-0" />
               <span>Vendor comparison worksheets</span>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function LeadMagnetPopup() {
             </Button>
           </form>
 
-          <p className="text-xs text-muted-foreground text-center">
+          <p className="font-sans text-xs text-muted-foreground text-center">
             No spam. Unsubscribe anytime. Your email is safe with us.
           </p>
         </div>

@@ -153,13 +153,13 @@ function createEmailHTML(lead: any): string {
       <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
         .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-        .header { background: linear-gradient(135deg, #1a4d6d 0%, #0891b2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+        .header { background: linear-gradient(135deg, #8B1538 0%, #D4AF37 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
         .content { background: #fff; padding: 30px; border: 1px solid #e5e5e5; }
         .field { margin-bottom: 20px; }
-        .label { font-weight: bold; color: #1a4d6d; }
+        .label { font-weight: bold; color: #8B1538; }
         .value { margin-top: 5px; padding: 10px; background: #f9f9f9; border-radius: 5px; }
         .footer { background: #f5f5f5; padding: 20px; text-align: center; font-size: 12px; color: #666; border-radius: 0 0 10px 10px; }
-        .cta { display: inline-block; background: #0891b2; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; }
+        .cta { display: inline-block; background: #8B1538; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; }
       </style>
     </head>
     <body>

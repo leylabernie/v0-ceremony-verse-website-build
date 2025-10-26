@@ -47,16 +47,16 @@ export default function VenuePartnersPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1a4d6d]/5 to-background">
+      <section className="pt-40 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[var(--primary)]/5 to-background">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-[#0891b2]/10 text-[#0891b2] px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 bg-[var(--accent)]/10 text-[var(--accent)] px-4 py-2 rounded-full text-sm font-medium mb-6">
             <CheckCircle className="h-4 w-4" />
             Verified Venue Partners
           </div>
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-foreground mb-6 leading-tight">
-            <span className="text-[#1a4d6d]">Venues That</span>
+            <span className="text-[var(--primary)]">Venues That</span>
             <br />
-            <span className="text-[#0891b2]">Understand Your Vision</span>
+            <span className="text-[var(--accent)]">Understand Your Vision</span>
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             Every venue in our network has been personally vetted and has experience hosting Indian-American fusion
@@ -73,8 +73,8 @@ export default function VenuePartnersPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card rounded-2xl p-8 border border-border">
-              <div className="h-12 w-12 rounded-full bg-[#1a4d6d]/10 flex items-center justify-center mb-4">
-                <CheckCircle className="h-6 w-6 text-[#1a4d6d]" />
+              <div className="h-12 w-12 rounded-full bg-[var(--primary)]/10 flex items-center justify-center mb-4">
+                <CheckCircle className="h-6 w-6 text-[var(--primary)]" />
               </div>
               <h3 className="font-serif text-xl text-foreground mb-3">Cultural Understanding</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -83,8 +83,8 @@ export default function VenuePartnersPage() {
               </p>
             </div>
             <div className="bg-card rounded-2xl p-8 border border-border">
-              <div className="h-12 w-12 rounded-full bg-[#0891b2]/10 flex items-center justify-center mb-4">
-                <Star className="h-6 w-6 text-[#0891b2]" />
+              <div className="h-12 w-12 rounded-full bg-[var(--accent)]/10 flex items-center justify-center mb-4">
+                <Star className="h-6 w-6 text-[var(--accent)]" />
               </div>
               <h3 className="font-serif text-xl text-foreground mb-3">Verified Quality</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -93,8 +93,8 @@ export default function VenuePartnersPage() {
               </p>
             </div>
             <div className="bg-card rounded-2xl p-8 border border-border">
-              <div className="h-12 w-12 rounded-full bg-[#d4a574]/10 flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-[#d4a574]" />
+              <div className="h-12 w-12 rounded-full bg-[var(--accent)]/10 flex items-center justify-center mb-4">
+                <Users className="h-6 w-6 text-[var(--accent)]" />
               </div>
               <h3 className="font-serif text-xl text-foreground mb-3">Preferred Pricing</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -148,14 +148,14 @@ export default function VenuePartnersPage() {
                   <div className="space-y-2 mb-6">
                     {venue.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <CheckCircle className="h-4 w-4 text-[#0891b2]" />
+                        <CheckCircle className="h-4 w-4 text-[var(--accent)]" />
                         <span>{feature}</span>
                       </div>
                     ))}
                   </div>
                   <Button
                     asChild
-                    className="w-full bg-gradient-to-r from-[#1a4d6d] to-[#0891b2] text-white hover:from-[#1a4d6d]/90 hover:to-[#0891b2]/90"
+                    className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white hover:from-[var(--primary)]/90 hover:to-[var(--accent)]/90"
                   >
                     <Link href="/contact">
                       Request Venue Tour
@@ -170,7 +170,7 @@ export default function VenuePartnersPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#1a4d6d] via-[#1a4d6d]/95 to-[#0891b2]/90 text-white">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[var(--primary)] via-[var(--primary)]/95 to-[var(--accent)]/90 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-serif text-4xl sm:text-5xl mb-6 leading-tight">Ready to Find Your Perfect Venue?</h2>
           <p className="text-lg text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
@@ -179,7 +179,7 @@ export default function VenuePartnersPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-white text-[#1a4d6d] hover:bg-white/90 px-10 py-6 text-lg shadow-lg"
+              className="bg-white text-[var(--primary)] hover:bg-white/90 px-10 py-6 text-lg shadow-lg"
               asChild
             >
               <Link href="/contact">

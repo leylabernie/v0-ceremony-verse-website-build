@@ -16,6 +16,51 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const articles = [
     {
+      title: "How to Choose Your Perfect Wedding Venue",
+      excerpt:
+        "Complete guide to selecting the ideal venue for your Indian-American fusion wedding. Multi-day event considerations, capacity planning, budget tips, questions to ask, and red flags to avoid when booking your dream location.",
+      date: "January 24, 2025",
+      readTime: "16 min read",
+      category: "Planning Guide",
+      slug: "choosing-perfect-wedding-venue",
+    },
+    {
+      title: "Complete Honeymoon Planning Guide",
+      excerpt:
+        "Plan your perfect post-wedding getaway with confidence. Everything from timing and budgeting to destination ideas, booking timeline, and expert tips to make your honeymoon stress-free and unforgettable.",
+      date: "January 23, 2025",
+      readTime: "14 min read",
+      category: "Planning Guide",
+      slug: "honeymoon-planning-guide",
+    },
+    {
+      title: "Complete Wedding Planning Checklist & 12-Month Timeline",
+      excerpt:
+        "The ultimate month-by-month wedding planning guide for Indian-American fusion weddings. Comprehensive task list from engagement to honeymoon with expert tips, cultural considerations, and deadlines for every phase.",
+      date: "January 22, 2025",
+      readTime: "20 min read",
+      category: "Planning Guide",
+      slug: "wedding-planning-checklist-timeline",
+    },
+    {
+      title: "Wedding Registry Guide for Indian-American Couples",
+      excerpt:
+        "Navigate the balance between traditional cash gifts (Shagun) and modern registries. Complete guide to honoring cultural expectations while creating a registry that works for all your guests.",
+      date: "January 21, 2025",
+      readTime: "12 min read",
+      category: "Planning Guide",
+      slug: "wedding-registry-guide-indian-american",
+    },
+    {
+      title: "The Ultimate Mehndi Ceremony Guide: Traditions, Planning & Modern Ideas",
+      excerpt:
+        "Everything you need to create an unforgettable Mehndi night that honors tradition while celebrating your unique style. From decor to artists to aftercare tips.",
+      date: "January 20, 2025",
+      readTime: "14 min read",
+      category: "Cultural Traditions",
+      slug: "mehndi-ceremony-guide",
+    },
+    {
       title: "Finding the Perfect Indian Wedding Planner in USA: Complete Guide 2025",
       excerpt:
         "Everything you need to know about hiring an Indian wedding planner for your fusion celebration in America. Cultural expertise, vendor networks, and what to look for in a specialized planner.",
@@ -32,15 +77,6 @@ export default function BlogPage() {
       readTime: "12 min read",
       category: "Financial Planning",
       slug: "south-asian-wedding-budget-guide",
-    },
-    {
-      title: "The Ultimate Mehndi Ceremony Guide: Traditions, Planning & Modern Ideas",
-      excerpt:
-        "Everything you need to create an unforgettable Mehndi night that honors tradition while celebrating your unique style. From decor to artists to aftercare tips.",
-      date: "January 20, 2025",
-      readTime: "14 min read",
-      category: "Cultural Traditions",
-      slug: "mehndi-ceremony-guide",
     },
     {
       title: "10 Essential Elements of an Authentic Indian-American Fusion Wedding",
@@ -103,12 +139,12 @@ export default function BlogPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-40 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0891b2]/5 to-[#1a4d6d]/5">
+      <section className="pt-40 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#1a4d6d] mb-6">
-            Wedding Planning <span className="text-[#0891b2]">Resources</span>
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
+            Wedding Planning <span className="text-accent">Resources</span>
           </h1>
-          <p className="text-xl text-[#1a4d6d]/70 leading-relaxed max-w-3xl mx-auto font-sans">
+          <p className="text-xl text-foreground/70 leading-relaxed max-w-3xl mx-auto font-sans">
             Expert guides, tips, and insights for planning your perfect Indian-American fusion wedding. Learn from
             experienced planners who understand your unique needs.
           </p>

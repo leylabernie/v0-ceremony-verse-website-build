@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Check, Shield, Video, Calendar, Users, Star, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Footer from "@/components/footer"
+import Navigation from "@/components/navigation"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Heritage & Harmony Plan - Luxury Indian-American Fusion Wedding Planning | CeremonyVerse",
@@ -19,14 +21,15 @@ export const metadata: Metadata = {
 export default function HeritageHarmonyPage() {
   return (
     <main className="min-h-screen">
+      <Navigation />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#FFF8F0] via-white to-[#F5F9F5] py-20 md:py-32">
+      <section className="relative bg-gradient-to-br from-[var(--cream)] via-white to-[var(--background)] py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-gradient-to-r from-[#E8B4B8] to-[#9CAF88] text-white px-6 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-block bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white px-6 py-2 rounded-full text-sm font-medium mb-6">
               Our Flagship Service
             </div>
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-[#36454F] mb-6 leading-tight">
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-[var(--foreground)] mb-6 leading-tight">
               The Heritage & Harmony Plan
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
@@ -34,31 +37,34 @@ export default function HeritageHarmonyPage() {
               your multi-day celebration
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-[#E8B4B8] hover:bg-[#d9a5a9] text-white px-8 py-6 text-lg">
-                <Phone className="mr-2 h-5 w-5" />
-                Call +1-215-341-9990
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
+                <a href="tel:+12153419990">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call +1-215-341-9990
+                </a>
               </Button>
               <Button
+                asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#36454F] text-[#36454F] hover:bg-[#36454F] hover:text-white px-8 py-6 text-lg bg-transparent"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg"
               >
-                Schedule Free Consultation
+                <Link href="/book-consultation">Schedule Free Consultation</Link>
               </Button>
             </div>
 
             {/* Trust Indicators */}
             <div className="flex flex-wrap justify-center gap-6 mt-12">
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
-                <Shield className="h-5 w-5 text-[#9CAF88]" />
+                <Shield className="h-5 w-5 text-[var(--accent)]" />
                 <span className="text-sm font-medium">100% Escrow Protected</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
-                <Check className="h-5 w-5 text-[#9CAF88]" />
+                <Check className="h-5 w-5 text-[var(--accent)]" />
                 <span className="text-sm font-medium">Verified Suppliers</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
-                <Video className="h-5 w-5 text-[#9CAF88]" />
+                <Video className="h-5 w-5 text-[var(--accent)]" />
                 <span className="text-sm font-medium">Live Virtual Shopping</span>
               </div>
             </div>
@@ -71,7 +77,7 @@ export default function HeritageHarmonyPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl md:text-5xl text-[#36454F] mb-4">
+              <h2 className="font-serif text-4xl md:text-5xl text-[var(--foreground)] mb-4">
                 Everything You Need for Your Perfect Day
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -82,11 +88,11 @@ export default function HeritageHarmonyPage() {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Multi-Day Event Planning */}
-              <div className="bg-gradient-to-br from-[#FFF8F0] to-white p-8 rounded-2xl border border-[#E8B4B8]/20">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#E8B4B8] to-[#d9a5a9] rounded-full flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-[var(--cream)] to-white p-8 rounded-2xl border border-[var(--primary)]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-[var(--primary)] to-[var(--primary)] rounded-full flex items-center justify-center mb-6">
                   <Calendar className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-serif text-2xl text-[#36454F] mb-4">Multi-Day Event Planning</h3>
+                <h3 className="font-serif text-2xl text-[var(--foreground)] mb-4">Multi-Day Event Planning</h3>
                 <ul className="space-y-3">
                   {[
                     "Mehendi Ceremony coordination",
@@ -97,7 +103,7 @@ export default function HeritageHarmonyPage() {
                     "Western-style reception coordination",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-[#9CAF88] mt-0.5 flex-shrink-0" />
+                      <Check className="h-5 w-5 text-[var(--accent)] mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -105,11 +111,11 @@ export default function HeritageHarmonyPage() {
               </div>
 
               {/* Dedicated Wedding Coordinator */}
-              <div className="bg-gradient-to-br from-[#F5F9F5] to-white p-8 rounded-2xl border border-[#9CAF88]/20">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#9CAF88] to-[#8a9e7a] rounded-full flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-[var(--background)] to-white p-8 rounded-2xl border border-[var(--accent)]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-[var(--accent)] to-[var(--accent)] rounded-full flex items-center justify-center mb-6">
                   <Users className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-serif text-2xl text-[#36454F] mb-4">Dedicated Wedding Coordinator</h3>
+                <h3 className="font-serif text-2xl text-[var(--foreground)] mb-4">Dedicated Wedding Coordinator</h3>
                 <ul className="space-y-3">
                   {[
                     "Single point of contact throughout",
@@ -120,7 +126,7 @@ export default function HeritageHarmonyPage() {
                     "Day-of coordination for all events",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-[#E8B4B8] mt-0.5 flex-shrink-0" />
+                      <Check className="h-5 w-5 text-[var(--primary)] mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -128,11 +134,11 @@ export default function HeritageHarmonyPage() {
               </div>
 
               {/* Virtual Shopping Concierge */}
-              <div className="bg-gradient-to-br from-[#FFF8F0] to-white p-8 rounded-2xl border border-[#E8B4B8]/20">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#E8B4B8] to-[#d9a5a9] rounded-full flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-[var(--cream)] to-white p-8 rounded-2xl border border-[var(--primary)]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-[var(--primary)] to-[var(--primary)] rounded-full flex items-center justify-center mb-6">
                   <Video className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-serif text-2xl text-[#36454F] mb-4">Virtual Shopping Concierge</h3>
+                <h3 className="font-serif text-2xl text-[var(--foreground)] mb-4">Virtual Shopping Concierge</h3>
                 <ul className="space-y-3">
                   {[
                     "Live video consultations with Indian suppliers",
@@ -143,7 +149,7 @@ export default function HeritageHarmonyPage() {
                     "Invitations and save-the-dates",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-[#9CAF88] mt-0.5 flex-shrink-0" />
+                      <Check className="h-5 w-5 text-[var(--accent)] mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -151,11 +157,11 @@ export default function HeritageHarmonyPage() {
               </div>
 
               {/* Curated Vendor Network */}
-              <div className="bg-gradient-to-br from-[#F5F9F5] to-white p-8 rounded-2xl border border-[#9CAF88]/20">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#9CAF88] to-[#8a9e7a] rounded-full flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-[var(--background)] to-white p-8 rounded-2xl border border-[var(--accent)]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-[var(--accent)] to-[var(--accent)] rounded-full flex items-center justify-center mb-6">
                   <Star className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-serif text-2xl text-[#36454F] mb-4">Curated Vendor Network</h3>
+                <h3 className="font-serif text-2xl text-[var(--foreground)] mb-4">Curated Vendor Network</h3>
                 <ul className="space-y-3">
                   {[
                     "Verified photographers and videographers",
@@ -166,7 +172,7 @@ export default function HeritageHarmonyPage() {
                     "Transportation and logistics coordination",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-[#E8B4B8] mt-0.5 flex-shrink-0" />
+                      <Check className="h-5 w-5 text-[var(--primary)] mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -178,51 +184,51 @@ export default function HeritageHarmonyPage() {
       </section>
 
       {/* Unique Value Propositions */}
-      <section className="py-20 bg-gradient-to-br from-[#FFF8F0] via-white to-[#F5F9F5]">
+      <section className="py-20 bg-gradient-to-br from-[var(--cream)] via-white to-[var(--background)]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl md:text-5xl text-[#36454F] mb-4">Why We're Different</h2>
+              <h2 className="font-serif text-4xl md:text-5xl text-[var(--foreground)] mb-4">Why We're Different</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Unique features you won't find with other wedding planners
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#E8B4B8]">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#E8B4B8] to-[#d9a5a9] rounded-full flex items-center justify-center mb-4">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[var(--primary)]">
+                <div className="w-12 h-12 bg-gradient-to-br from-[var(--primary)] to-[var(--primary)] rounded-full flex items-center justify-center mb-4">
                   <Shield className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-serif text-xl text-[#36454F] mb-3">Escrow Payment Protection</h3>
+                <h3 className="font-serif text-xl text-[var(--foreground)] mb-3">Escrow Payment Protection</h3>
                 <p className="text-gray-600 mb-4">
                   Your payments are held securely until services are delivered to your satisfaction. No other wedding
                   planner offers this level of financial protection.
                 </p>
-                <div className="text-sm text-[#9CAF88] font-medium">100% Risk-Free</div>
+                <div className="text-sm text-[var(--accent)] font-medium">100% Risk-Free</div>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#9CAF88]">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#9CAF88] to-[#8a9e7a] rounded-full flex items-center justify-center mb-4">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[var(--accent)]">
+                <div className="w-12 h-12 bg-gradient-to-br from-[var(--accent)] to-[var(--accent)] rounded-full flex items-center justify-center mb-4">
                   <Check className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-serif text-xl text-[#36454F] mb-3">Three-Tier Supplier Verification</h3>
+                <h3 className="font-serif text-xl text-[var(--foreground)] mb-3">Three-Tier Supplier Verification</h3>
                 <p className="text-gray-600 mb-4">
                   Every supplier undergoes legal verification, quality assessment, and reference checks. We personally
                   inspect workshops via video before recommending them.
                 </p>
-                <div className="text-sm text-[#E8B4B8] font-medium">Verified Quality</div>
+                <div className="text-sm text-[var(--primary)] font-medium">Verified Quality</div>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#36454F]">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#36454F] to-[#2a353d] rounded-full flex items-center justify-center mb-4">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[var(--foreground)]">
+                <div className="w-12 h-12 bg-gradient-to-br from-[var(--foreground)] to-[var(--foreground)] rounded-full flex items-center justify-center mb-4">
                   <Video className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-serif text-xl text-[#36454F] mb-3">Live Virtual Shopping from India</h3>
+                <h3 className="font-serif text-xl text-[var(--foreground)] mb-3">Live Virtual Shopping from India</h3>
                 <p className="text-gray-600 mb-4">
                   Shop authentic Indian wedding items via live video with our verified suppliers. See fabrics, try
                   jewelry virtually, and make confident decisions from home.
                 </p>
-                <div className="text-sm text-[#9CAF88] font-medium">Authentic & Convenient</div>
+                <div className="text-sm text-[var(--accent)] font-medium">Authentic & Convenient</div>
               </div>
             </div>
           </div>
@@ -234,45 +240,46 @@ export default function HeritageHarmonyPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="font-serif text-4xl md:text-5xl text-[#36454F] mb-4">Investment</h2>
+              <h2 className="font-serif text-4xl md:text-5xl text-[var(--foreground)] mb-4">Investment</h2>
               <p className="text-xl text-gray-600">Transparent pricing for your complete fusion wedding</p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#FFF8F0] to-white p-12 rounded-3xl border-2 border-[#E8B4B8] shadow-xl">
+            <div className="bg-gradient-to-br from-[var(--cream)] to-white p-12 rounded-3xl border-2 border-[var(--primary)] shadow-xl">
               <div className="text-center mb-8">
-                <div className="text-5xl font-serif text-[#36454F] mb-2">Starting at $15,000</div>
+                <div className="text-5xl font-serif text-[var(--foreground)] mb-2">Starting at $15,000</div>
                 <p className="text-gray-600">For complete multi-day wedding coordination</p>
               </div>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
                   <span className="text-gray-700">Planning & Coordination (all events)</span>
-                  <span className="font-medium text-[#36454F]">Included</span>
+                  <span className="font-medium text-[var(--foreground)]">Included</span>
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
                   <span className="text-gray-700">Virtual Shopping Concierge</span>
-                  <span className="font-medium text-[#36454F]">Included</span>
+                  <span className="font-medium text-[var(--foreground)]">Included</span>
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
                   <span className="text-gray-700">Vendor Sourcing & Management</span>
-                  <span className="font-medium text-[#36454F]">Included</span>
+                  <span className="font-medium text-[var(--foreground)]">Included</span>
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
                   <span className="text-gray-700">Day-of Coordination Team</span>
-                  <span className="font-medium text-[#36454F]">Included</span>
+                  <span className="font-medium text-[var(--foreground)]">Included</span>
                 </div>
                 <div className="flex items-center justify-between py-3">
                   <span className="text-gray-700">Escrow Payment Protection</span>
-                  <span className="font-medium text-[#9CAF88]">Always Free</span>
+                  <span className="font-medium text-[var(--accent)]">Always Free</span>
                 </div>
               </div>
 
               <div className="text-center">
                 <Button
+                  asChild
                   size="lg"
-                  className="bg-gradient-to-r from-[#E8B4B8] to-[#9CAF88] hover:opacity-90 text-white px-12 py-6 text-lg"
+                  className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white px-12 py-6 text-lg"
                 >
-                  Schedule Your Free Consultation
+                  <Link href="/book-consultation">Schedule Your Free Consultation</Link>
                 </Button>
                 <p className="text-sm text-gray-500 mt-4">No obligation. Just honest conversation about your vision.</p>
               </div>
@@ -282,10 +289,10 @@ export default function HeritageHarmonyPage() {
       </section>
 
       {/* FAQ Section for SEO */}
-      <section className="py-20 bg-gradient-to-br from-[#F5F9F5] to-white">
+      <section className="py-20 bg-gradient-to-br from-[var(--background)] to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl text-[#36454F] mb-12 text-center">
+            <h2 className="font-serif text-4xl md:text-5xl text-[var(--foreground)] mb-12 text-center">
               Frequently Asked Questions
             </h2>
 
@@ -313,7 +320,7 @@ export default function HeritageHarmonyPage() {
                 },
               ].map((faq, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                  <h3 className="font-serif text-xl text-[#36454F] mb-3">{faq.q}</h3>
+                  <h3 className="font-serif text-xl text-[var(--foreground)] mb-3">{faq.q}</h3>
                   <p className="text-gray-600 leading-relaxed">{faq.a}</p>
                 </div>
               ))}
@@ -323,21 +330,21 @@ export default function HeritageHarmonyPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#E8B4B8] to-[#9CAF88] text-white">
+      <section className="py-20 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-serif text-4xl md:text-5xl mb-6">Ready to Start Planning?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-95">
             Schedule your free consultation today and discover how we make fusion wedding planning stress-free
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-[#36454F] hover:bg-gray-100 px-8 py-6 text-lg">
+            <Button size="lg" className="bg-white text-[var(--foreground)] hover:bg-gray-100 px-8 py-6 text-lg">
               <Phone className="mr-2 h-5 w-5" />
               Call +1-215-341-9990
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#36454F] px-8 py-6 text-lg bg-transparent"
+              className="border-2 border-white text-white hover:bg-white hover:text-[var(--foreground)] px-8 py-6 text-lg bg-transparent"
             >
               <Mail className="mr-2 h-5 w-5" />
               Email Us

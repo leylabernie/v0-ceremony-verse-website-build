@@ -61,8 +61,12 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
   },
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+    ],
     apple: "/favicon.png",
+    shortcut: "/favicon.ico",
   },
   generator: "v0.app",
 }
@@ -75,6 +79,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <head>
+        {/* Favicon with cache busting */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=2" />
+        <link rel="apple-touch-icon" href="/favicon.png?v=2" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -116,7 +124,7 @@ export default function RootLayout({
         />
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"}`}
+          src="https://www.googletagmanager.com/gtag/js?id=G-X4HC7P2Q6C"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -124,7 +132,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"}', {
+              gtag('config', 'G-X4HC7P2Q6C', {
                 page_path: window.location.pathname,
               });
             `,
@@ -135,13 +143,10 @@ export default function RootLayout({
         <GoogleAnalytics />
         <MetaPixel />
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
-        <LeadCapturePopup />
-        <ExitIntentPopup />
-        <LeadMagnetPopup />
+        {/* Simplified: Only essential widgets to avoid clutter */}
         <WhatsAppWidget />
-        <StickyCTA />
-        <MobileBottomNav />
         <CalendlyWidget />
+        <MobileBottomNav />
       </body>
     </html>
   )
