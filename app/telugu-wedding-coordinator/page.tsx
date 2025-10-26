@@ -33,9 +33,9 @@ export default function TeluguWeddingCoordinator() {
                   Telugu Wedding Specialists
                 </div>
                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-charcoal mb-6 leading-tight">
-                  <span className="text-[#1a4d6d]">Traditional Telugu</span>
+                  <span className="text-[var(--primary)]">Traditional Telugu</span>
                   <br />
-                  <span className="text-[#0891b2]">Wedding Coordination</span>
+                  <span className="text-[var(--accent)]">Wedding Coordination</span>
                 </h1>
                 <p className="text-xl text-charcoal/70 mb-8 leading-relaxed">
                   From Pellikuthuru to Mangala Snanam, we honor every sacred moment of your Telugu Kalyanam with
@@ -43,7 +43,7 @@ export default function TeluguWeddingCoordinator() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-8">
                   <Link href="/contact">
-                    <Button size="lg" className="w-full sm:w-auto bg-[#d4a574] hover:bg-[#c49564] text-white">
+                    <Button size="lg" className="w-full sm:w-auto bg-[var(--accent)] hover:bg-[var(--accent)] text-white">
                       Schedule Consultation
                     </Button>
                   </Link>
@@ -215,7 +215,7 @@ export default function TeluguWeddingCoordinator() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-[#d4a574] hover:bg-[#c49564] text-white">
+                <Button size="lg" className="bg-[var(--accent)] hover:bg-[var(--accent)] text-white">
                   Schedule Free Consultation
                 </Button>
               </Link>

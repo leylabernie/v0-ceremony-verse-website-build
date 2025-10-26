@@ -103,12 +103,12 @@ export default function BlogPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-40 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0891b2]/5 to-[#1a4d6d]/5">
+      <section className="pt-40 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#1a4d6d] mb-6">
-            Wedding Planning <span className="text-[#0891b2]">Resources</span>
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
+            Wedding Planning <span className="text-accent">Resources</span>
           </h1>
-          <p className="text-xl text-[#1a4d6d]/70 leading-relaxed max-w-3xl mx-auto font-sans">
+          <p className="text-xl text-foreground/70 leading-relaxed max-w-3xl mx-auto font-sans">
             Expert guides, tips, and insights for planning your perfect Indian-American fusion wedding. Learn from
             experienced planners who understand your unique needs.
           </p>
