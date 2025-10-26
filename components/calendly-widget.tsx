@@ -12,10 +12,10 @@ export function CalendlyWidget() {
       {/* Floating Calendly Button */}
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-24 right-6 z-40 bg-gradient-to-r from-[#0891b2] to-[#1a4d6d] text-white hover:from-[#0891b2]/90 hover:to-[#1a4d6d]/90 shadow-2xl rounded-full h-14 px-6 flex items-center gap-2"
+        className="fixed bottom-24 right-6 z-40 bg-gradient-to-r from-primary via-primary to-accent text-white hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] shadow-2xl rounded-full h-14 px-6 flex items-center gap-2 transition-all duration-300 hover:scale-105 ring-2 ring-accent/20 hover:ring-accent/40"
       >
         <Calendar className="h-5 w-5" />
-        <span className="hidden sm:inline">Book Consultation</span>
+        <span className="hidden sm:inline font-semibold">Book Consultation</span>
       </Button>
 
       {/* Calendly Modal */}

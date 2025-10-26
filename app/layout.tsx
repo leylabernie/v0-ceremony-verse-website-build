@@ -135,13 +135,10 @@ export default function RootLayout({
         <GoogleAnalytics />
         <MetaPixel />
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
-        <LeadCapturePopup />
-        <ExitIntentPopup />
-        <LeadMagnetPopup />
+        {/* Simplified: Only essential widgets to avoid clutter */}
         <WhatsAppWidget />
-        <StickyCTA />
-        <MobileBottomNav />
         <CalendlyWidget />
+        <MobileBottomNav />
       </body>
     </html>
   )

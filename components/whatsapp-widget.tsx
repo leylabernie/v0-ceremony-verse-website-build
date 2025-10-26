@@ -15,14 +15,13 @@ export function WhatsAppWidget() {
 
   return (
     <>
-      {/* WhatsApp Floating Button */}
+      {/* WhatsApp Floating Button - Clean without distracting pulse */}
       <button
         onClick={handleClick}
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all hover:scale-110 group"
         aria-label="Chat on WhatsApp"
       >
         <MessageCircle className="h-7 w-7" />
-        <span className="absolute -top-1 -right-1 h-3 w-3 bg-red-500 rounded-full animate-pulse" />
       </button>
 
       {/* Tooltip */}
