@@ -163,9 +163,9 @@ export default function BookConsultationPage() {
             {/* Right: Calendly Embed */}
             <div className="lg:sticky lg:top-32">
               <div className="bg-white rounded-lg shadow-xl border border-warm-beige/40 overflow-hidden">
-                <div className="bg-gradient-to-r from-primary to-primary/80 text-white p-6">
-                  <h2 className="font-serif text-2xl font-light mb-2">Choose Your Time</h2>
-                  <p className="font-light text-white/90">Select a date and time that works best for you</p>
+                <div className="bg-gradient-to-r from-primary via-primary to-accent text-white p-6">
+                  <h2 className="font-serif text-3xl font-semibold mb-2 text-white drop-shadow-lg">Choose Your Time</h2>
+                  <p className="font-normal text-white text-lg drop-shadow">Select a date and time that works best for you</p>
                 </div>
                 <CalendlyEmbed />
               </div>
