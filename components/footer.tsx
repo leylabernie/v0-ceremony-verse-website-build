@@ -110,6 +110,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/image-library" className="text-white/70 hover:text-accent transition-colors">
+                  Image Library
+                </Link>
+              </li>
+              <li>
                 <Link href="/faq" className="text-white/70 hover:text-accent transition-colors">
                   FAQ
                 </Link>

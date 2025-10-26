@@ -35,130 +35,52 @@ export default function HomePage() {
             </div>
           </FadeInSection>
 
-          {/* 3 Main Services - Larger Images */}
+          {/* 3 Main Services - Clean Text Cards */}
           <div className="grid md:grid-cols-3 gap-10">
             {/* Service Card 1 - Full Planning */}
             <Link href="/services" className="group">
-              <div className="relative overflow-hidden bg-cream">
-                <div className="aspect-[3/4] relative overflow-hidden">
-                  <Image
-                    src="/mehndi-ceremony-bride-green-lehenga.jpg"
-                    alt="Full Wedding Planning"
-                    width={500}
-                    height={667}
-                    loading="lazy"
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-                </div>
-                <div className="p-8 text-center">
-                  <h3 className="font-serif text-3xl font-light mb-3 text-charcoal tracking-wide">Full Planning</h3>
-                  <p className="text-base text-charcoal/70 font-light leading-relaxed">
-                    Complete coordination from vision to celebration
-                  </p>
-                </div>
+              <div className="relative overflow-hidden bg-cream border-2 border-warm-beige/40 hover:border-primary transition-all duration-300 p-12 text-center h-full flex flex-col justify-center min-h-[300px]">
+                <h3 className="font-serif text-4xl font-light mb-4 text-charcoal tracking-wide group-hover:text-primary transition-colors">Full Planning</h3>
+                <p className="text-lg text-charcoal/70 font-light leading-relaxed">
+                  Complete coordination from vision to celebration
+                </p>
               </div>
             </Link>
 
             {/* Service Card 2 - Cultural Fusion */}
             <Link href="/services" className="group">
-              <div className="relative overflow-hidden bg-cream">
-                <div className="aspect-[3/4] relative overflow-hidden">
-                  <Image
-                    src="/garden-couple-traditional-attire.jpg"
-                    alt="Cultural Fusion Weddings"
-                    width={500}
-                    height={667}
-                    loading="lazy"
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-                </div>
-                <div className="p-8 text-center">
-                  <h3 className="font-serif text-3xl font-light mb-3 text-charcoal tracking-wide">Cultural Fusion</h3>
-                  <p className="text-base text-charcoal/70 font-light leading-relaxed">
-                    Blending traditions with modern elegance
-                  </p>
-                </div>
+              <div className="relative overflow-hidden bg-cream border-2 border-warm-beige/40 hover:border-primary transition-all duration-300 p-12 text-center h-full flex flex-col justify-center min-h-[300px]">
+                <h3 className="font-serif text-4xl font-light mb-4 text-charcoal tracking-wide group-hover:text-primary transition-colors">Cultural Fusion</h3>
+                <p className="text-lg text-charcoal/70 font-light leading-relaxed">
+                  Blending traditions with modern elegance
+                </p>
               </div>
             </Link>
 
             {/* Service Card 3 - Virtual Shopping */}
             <Link href="/services" className="group">
-              <div className="relative overflow-hidden bg-cream">
-                <div className="aspect-[3/4] relative overflow-hidden">
-                  <Image
-                    src="/rose-garden-pastel-couple.jpg"
-                    alt="Virtual Shopping from India"
-                    width={500}
-                    height={667}
-                    loading="lazy"
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-                </div>
-                <div className="p-8 text-center">
-                  <h3 className="font-serif text-3xl font-light mb-3 text-charcoal tracking-wide">Virtual Shopping</h3>
-                  <p className="text-base text-charcoal/70 font-light leading-relaxed">
-                    Live shopping from India for outfits & décor
-                  </p>
-                </div>
+              <div className="relative overflow-hidden bg-cream border-2 border-warm-beige/40 hover:border-primary transition-all duration-300 p-12 text-center h-full flex flex-col justify-center min-h-[300px]">
+                <h3 className="font-serif text-4xl font-light mb-4 text-charcoal tracking-wide group-hover:text-primary transition-colors">Virtual Shopping</h3>
+                <p className="text-lg text-charcoal/70 font-light leading-relaxed">
+                  Live shopping from India for outfits & décor
+                </p>
               </div>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Featured Gallery - Kalki Fashion masonry-style grid */}
+      {/* Portfolio CTA Section */}
       <section className="py-32 px-4 sm:px-6 lg:px-8 bg-cream">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto text-center">
           <FadeInSection>
-            {/* Boho minimalist heading with decorative line */}
-            <div className="text-center mb-20">
-              <h2 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-extralight text-charcoal mb-6 tracking-tight">
-                Celebrations
-              </h2>
-              <div className="w-24 h-px bg-accent mx-auto mb-6" />
-              <p className="text-charcoal/60 text-lg font-light max-w-2xl mx-auto">
-                Every moment, beautifully crafted
-              </p>
-            </div>
-          </FadeInSection>
-
-          {/* Large Portfolio Grid - 2 Column Layout */}
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              { img: "/bride-pastel-mint-pink-lehenga.jpg", title: "Elegant Bridal Portrait" },
-              { img: "/sangeet-dance-couple-celebration.jpg", title: "Sangeet Celebration" },
-              { img: "/indian-bride-and-groom-portrait.jpg", title: "Traditional Ceremony" },
-              { img: "/south-asian-couple-wedding-photo.jpg", title: "Couple Portrait" },
-            ].map((item, i) => (
-              <Link
-                key={i}
-                href="/gallery"
-                className="group relative overflow-hidden"
-              >
-                <div className="aspect-[4/5] relative overflow-hidden rounded-lg">
-                  <Image
-                    src={item.img || "/placeholder.svg"}
-                    alt={item.title}
-                    width={700}
-                    height={875}
-                    loading="lazy"
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-8 left-8 right-8">
-                      <h3 className="font-serif text-2xl text-white font-light tracking-wide">{item.title}</h3>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          {/* Minimal CTA button - Boho style */}
-          <div className="text-center mt-16">
+            <h2 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-extralight text-charcoal mb-6 tracking-tight">
+              Our Portfolio
+            </h2>
+            <div className="w-24 h-px bg-accent mx-auto mb-8" />
+            <p className="text-xl text-charcoal/70 font-light leading-relaxed mb-12 max-w-2xl mx-auto">
+              Explore our collection of beautiful celebrations, each uniquely crafted to honor heritage and harmony
+            </p>
             <Button 
               variant="outline" 
               size="lg" 
@@ -166,11 +88,11 @@ export default function HomePage() {
               className="border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white h-14 px-10 font-light tracking-wide bg-transparent"
             >
               <Link href="/gallery">
-                View All Work
+                View Gallery
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-          </div>
+          </FadeInSection>
         </div>
       </section>
 

@@ -7,16 +7,8 @@ import { ArrowRight, Shield, Check, Sparkles, Calendar } from "@/components/icon
 export default function HeroSection() {
   return (
     <section className="relative h-[90vh] min-h-[600px]">
-      {/* Beautiful Hero Image Background */}
-      <div className="absolute inset-0 bg-charcoal">
-        <img
-          src="/rose-garden-pastel-couple.jpg"
-          alt="Beautiful Indian-American fusion wedding"
-          className="w-full h-full object-cover"
-        />
-        {/* Strong dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/60 to-charcoal/80" />
-      </div>
+      {/* Elegant Solid Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-charcoal/95"></div>
 
       {/* Centered Content - Simplified */}
       <div className="relative h-full flex items-center justify-center px-4">
