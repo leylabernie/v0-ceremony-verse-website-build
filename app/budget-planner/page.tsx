@@ -205,8 +205,10 @@ export default function BudgetPlannerPage() {
                     <span>Cost-saving alternatives</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-transparent" variant="outline">
-                  Download Template
+                <Button asChild className="w-full bg-transparent" variant="outline">
+                  <a href="/contact">
+                    Download Template
+                  </a>
                 </Button>
               </Card>
 
@@ -237,7 +239,9 @@ export default function BudgetPlannerPage() {
                     <span>Vendor comparison sheets</span>
                   </li>
                 </ul>
-                <Button className="w-full">Download Template</Button>
+                <Button asChild className="w-full">
+                  <a href="/contact">Download Template</a>
+                </Button>
               </Card>
 
               {/* Luxury Wedding */}
@@ -264,8 +268,10 @@ export default function BudgetPlannerPage() {
                     <span>Luxury service add-ons</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-transparent" variant="outline">
-                  Download Template
+                <Button asChild className="w-full bg-transparent" variant="outline">
+                  <a href="/contact">
+                    Download Template
+                  </a>
                 </Button>
               </Card>
             </div>
