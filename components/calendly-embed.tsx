@@ -34,7 +34,66 @@ export default function CalendlyEmbed() {
 
   // IMPORTANT: Replace this URL with your actual Calendly account URL
   // Example: "https://calendly.com/ceremonyverse/consultation"
-  const calendlyUrl = "https://calendly.com/demo-account/30min" // REPLACE THIS!
+  // Until Calendly is set up, we'll show a contact form fallback
+  const calendlyUrl = "" // Set to empty until you create your Calendly account
+
+  // Show fallback if no Calendly URL is configured
+  if (!calendlyUrl) {
+    return (
+      <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 md:p-12 text-center">
+        <div className="max-w-2xl mx-auto">
+          <svg className="w-16 h-16 text-primary mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <h3 className="font-serif text-3xl text-primary mb-4">Schedule Your Consultation</h3>
+          <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+            Ready to start planning your perfect fusion wedding? Let's connect!
+          </p>
+          
+          <div className="space-y-6">
+            <div className="bg-white rounded-xl p-6 shadow-lg">
+              <h4 className="font-semibold text-xl text-foreground mb-3">Call Us Directly</h4>
+              <a 
+                href="tel:+12153419990" 
+                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                +1-215-341-9990
+              </a>
+              <p className="text-sm text-foreground/60 mt-3">Mon-Fri: 9am-7pm EST | Sat: 10am-4pm EST</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-lg">
+              <h4 className="font-semibold text-xl text-foreground mb-3">Send Us a Message</h4>
+              <a 
+                href="/contact" 
+                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Contact Form
+              </a>
+              <p className="text-sm text-foreground/60 mt-3">We respond within 24 hours</p>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-8 border-t border-foreground/10">
+            <p className="text-sm text-foreground/60 mb-3">
+              📅 <strong>Want to set up online booking?</strong>
+            </p>
+            <ol className="text-left text-sm text-foreground/70 space-y-2 max-w-md mx-auto">
+              <li>1. Create free <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" className="text-primary underline">Calendly account</a></li>
+              <li>2. Set up "Free Wedding Consultation - 30 min" event</li>
+              <li>3. Update <code className="bg-foreground/10 px-2 py-1 rounded text-xs">calendlyUrl</code> in <code className="bg-foreground/10 px-2 py-1 rounded text-xs">components/calendly-embed.tsx</code></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="calendly-inline-widget-container">
@@ -44,38 +103,6 @@ export default function CalendlyEmbed() {
         data-url={calendlyUrl}
         style={{ minWidth: "320px", height: "700px" }}
       />
-
-      {/* Setup Notice (Remove this after configuring your Calendly) */}
-      <div className="bg-accent/10 border border-accent/30 rounded-lg p-6 m-6 text-sm">
-        <div className="flex items-start gap-3">
-          <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-            />
-          </svg>
-          <div>
-            <h4 className="font-semibold text-charcoal mb-2">⚙️ Setup Required</h4>
-            <p className="text-charcoal/70 mb-3">
-              This is using a demo Calendly account. To activate booking:
-            </p>
-            <ol className="list-decimal list-inside space-y-1 text-charcoal/70 ml-1">
-              <li>Create your free account at <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" className="text-primary underline">calendly.com</a></li>
-              <li>Set up "Free Wedding Consultation - 30 min" event</li>
-              <li>Copy your Calendly URL</li>
-              <li>
-                Update <code className="bg-charcoal/10 px-1 py-0.5 rounded text-xs">components/calendly-embed.tsx</code>
-              </li>
-              <li>Replace <code className="bg-charcoal/10 px-1 py-0.5 rounded text-xs">calendlyUrl</code> with your URL</li>
-            </ol>
-            <p className="text-charcoal/70 mt-3 text-xs italic">
-              Alternative: Use Cal.com (open-source), Acuity Scheduling, or Koalendar
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
