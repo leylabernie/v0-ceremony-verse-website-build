@@ -329,6 +329,34 @@
     background: linear-gradient(90deg, transparent 0%, var(--maroon) 50%, transparent 100%);
     opacity: 0.2;
   }
+
+  /* Gradient text with improved readability */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--maroon) 0%, var(--primary) 40%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 1px rgba(45, 41, 38, 0.1);
+  }
+
+  /* Gradient text with stroke for better contrast */
+  .gradient-text-stroke {
+    background: linear-gradient(135deg, var(--maroon) 0%, var(--primary) 40%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px rgba(45, 41, 38, 0.15);
+    position: relative;
+  }
+
+  /* Make sure gradient text is always readable */
+  @supports not (background-clip: text) {
+    .gradient-text,
+    .gradient-text-stroke {
+      color: var(--primary);
+      -webkit-text-fill-color: var(--primary);
+    }
+  }
 }
 
 /* Custom animations */
