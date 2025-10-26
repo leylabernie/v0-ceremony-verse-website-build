@@ -44,9 +44,37 @@ export default function HomePage() {
             </div>
           </FadeInSection>
 
-          {/* Kalki-style grid with image-focused cards - NO DUPLICATE IMAGES */}
+          {/* Kalki-style grid with image-focused cards - WEDDING SHOPPING EMPHASIZED FIRST */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Service Card 1 - Image based like Kalki products */}
+            {/* Service Card 1 - VIRTUAL SHOPPING (EMPHASIZED) */}
+            <Link href="/services" className="group">
+              <div className="relative overflow-hidden bg-cream ring-2 ring-accent/40 shadow-xl">
+                <div className="absolute top-4 right-4 z-10">
+                  <span className="bg-accent text-white px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-sm shadow-lg">
+                    Featured
+                  </span>
+                </div>
+                <div className="aspect-[3/4] relative overflow-hidden">
+                  <Image
+                    src="/rose-garden-pastel-couple.jpg"
+                    alt="Virtual Wedding Shopping from India"
+                    width={400}
+                    height={533}
+                    loading="lazy"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="font-serif text-2xl font-semibold mb-2 text-primary tracking-wide">Virtual Shopping</h3>
+                  <p className="text-sm text-charcoal/70 font-medium leading-relaxed">
+                    Live shopping from India - Outfits, jewelry & décor
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Service Card 2 - Full Planning */}
             <Link href="/services" className="group">
               <div className="relative overflow-hidden bg-cream">
                 <div className="aspect-[3/4] relative overflow-hidden">
@@ -69,13 +97,13 @@ export default function HomePage() {
               </div>
             </Link>
 
-            {/* Service Card 2 */}
+            {/* Service Card 3 - Cultural Fusion */}
             <Link href="/services" className="group">
               <div className="relative overflow-hidden bg-cream">
                 <div className="aspect-[3/4] relative overflow-hidden">
                   <Image
                     src="/garden-couple-traditional-attire.jpg"
-                    alt="Cultural Fusion"
+                    alt="Cultural Fusion Weddings"
                     width={400}
                     height={533}
                     loading="lazy"
@@ -92,13 +120,13 @@ export default function HomePage() {
               </div>
             </Link>
 
-            {/* Service Card 3 */}
+            {/* Service Card 4 - Verified Vendors */}
             <Link href="/services" className="group">
               <div className="relative overflow-hidden bg-cream">
                 <div className="aspect-[3/4] relative overflow-hidden">
                   <Image
                     src="/beach-sunset-wedding-couple.jpg"
-                    alt="Verified Vendors"
+                    alt="Verified Vendors Network"
                     width={400}
                     height={533}
                     loading="lazy"
@@ -110,29 +138,6 @@ export default function HomePage() {
                   <h3 className="font-serif text-2xl font-light mb-2 text-charcoal tracking-wide">Verified Vendors</h3>
                   <p className="text-sm text-charcoal/60 font-light leading-relaxed">
                     Quality-assured partners
-                  </p>
-                </div>
-              </div>
-            </Link>
-
-            {/* Service Card 4 */}
-            <Link href="/services" className="group">
-              <div className="relative overflow-hidden bg-cream">
-                <div className="aspect-[3/4] relative overflow-hidden">
-                  <Image
-                    src="/rose-garden-pastel-couple.jpg"
-                    alt="Virtual Shopping"
-                    width={400}
-                    height={533}
-                    loading="lazy"
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-                </div>
-                <div className="p-6 text-center">
-                  <h3 className="font-serif text-2xl font-light mb-2 text-charcoal tracking-wide">Virtual Shopping</h3>
-                  <p className="text-sm text-charcoal/60 font-light leading-relaxed">
-                    Shop from anywhere
                   </p>
                 </div>
               </div>
@@ -159,12 +164,12 @@ export default function HomePage() {
 
           {/* Kalki-style varied grid layout - UNIQUE IMAGES ONLY */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Large featured image */}
+            {/* Large featured image - DIFFERENT FROM VIDEO POSTER */}
             <Link href="/gallery" className="col-span-2 row-span-2 group relative overflow-hidden">
               <div className="aspect-square relative">
                 <Image
-                  src="/sangeet-dance-couple-celebration.jpg"
-                  alt="Sangeet Celebration"
+                  src="/bride-pastel-mint-pink-lehenga.jpg"
+                  alt="Elegant Bridal Portrait"
                   width={800}
                   height={800}
                   loading="lazy"
@@ -172,15 +177,15 @@ export default function HomePage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-8 left-8 right-8">
-                    <h3 className="font-serif text-3xl text-white font-light tracking-wide">Sangeet Celebration</h3>
+                    <h3 className="font-serif text-3xl text-white font-light tracking-wide">Elegant Bridal Portrait</h3>
                   </div>
                 </div>
               </div>
             </Link>
 
-            {/* Standard images - ALL UNIQUE */}
+            {/* Standard images - ALL UNIQUE, NO DUPLICATES */}
             {[
-              { img: "/bride-pastel-mint-pink-lehenga.jpg", title: "Bridal Portrait" },
+              { img: "/sangeet-dance-couple-celebration.jpg", title: "Sangeet Celebration" },
               { img: "/indian-bride-and-groom-portrait.jpg", title: "Couple Portrait" },
               { img: "/south-asian-couple-wedding-photo.jpg", title: "Traditional Ceremony" },
               { img: "/elegant-wedding-couple-portrait.jpg", title: "Reception" },
