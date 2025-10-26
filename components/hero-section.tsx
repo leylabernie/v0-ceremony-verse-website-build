@@ -7,19 +7,8 @@ import { ArrowRight, Shield, Check, Sparkles, Calendar } from "@/components/icon
 export default function HeroSection() {
   return (
     <section className="relative h-[90vh] min-h-[600px]">
-      {/* Background Video - Optimized Loading with Poster */}
+      {/* Background - No video */}
       <div className="absolute inset-0 bg-charcoal">
-        <video
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edDYlmwPdmgQyNZgdg88F_output-X8anb1c6FUAcekBlxo22B3zxTtG9KH.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/sangeet-dance-couple-celebration.jpg"
-          className="w-full h-full object-cover animate-fade-in"
-          aria-label="Beautiful Indian-American fusion wedding celebration"
-        />
         {/* Elegant dark overlay - Kalki style */}
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/30 to-charcoal/60" />
       </div>

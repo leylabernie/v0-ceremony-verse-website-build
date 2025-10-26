@@ -60,23 +60,6 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="font-serif text-3xl sm:text-4xl text-foreground mb-3">Featured Wedding Video</h2>
-            <p className="text-muted-foreground">Experience the magic of a CeremonyVerse celebration</p>
-          </div>
-          <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl bg-muted">
-            <video
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edDYlmwPdmgQyNZgdg88F_output-X8anb1c6FUAcekBlxo22B3zxTtG9KH.mp4"
-              controls
-              className="w-full h-full object-cover"
-              poster="/beach-wedding-couple-mandap.jpg"
-            />
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
