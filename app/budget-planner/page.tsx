@@ -56,7 +56,7 @@ export default function BudgetPlannerPage() {
                 Free Wedding Budget Tool
               </div>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                Plan Your Dream Wedding <span className="text-secondary">Within Budget</span>
+                Plan Your Dream Wedding <span className="text-primary">Within Budget</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Use our interactive budget calculator designed specifically for Indian-American fusion weddings. Get
