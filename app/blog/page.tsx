@@ -16,6 +16,24 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const articles = [
     {
+      title: "How to Choose Your Perfect Wedding Venue",
+      excerpt:
+        "Complete guide to selecting the ideal venue for your Indian-American fusion wedding. Multi-day event considerations, capacity planning, budget tips, questions to ask, and red flags to avoid when booking your dream location.",
+      date: "January 24, 2025",
+      readTime: "16 min read",
+      category: "Planning Guide",
+      slug: "choosing-perfect-wedding-venue",
+    },
+    {
+      title: "Complete Honeymoon Planning Guide",
+      excerpt:
+        "Plan your perfect post-wedding getaway with confidence. Everything from timing and budgeting to destination ideas, booking timeline, and expert tips to make your honeymoon stress-free and unforgettable.",
+      date: "January 23, 2025",
+      readTime: "14 min read",
+      category: "Planning Guide",
+      slug: "honeymoon-planning-guide",
+    },
+    {
       title: "Complete Wedding Planning Checklist & 12-Month Timeline",
       excerpt:
         "The ultimate month-by-month wedding planning guide for Indian-American fusion weddings. Comprehensive task list from engagement to honeymoon with expert tips, cultural considerations, and deadlines for every phase.",

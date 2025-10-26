@@ -13,43 +13,32 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/98 backdrop-blur-md border-b border-warm-beige/40">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center group transition-all hover:scale-105">
-            <div className="flex items-center gap-4">
-              {/* Stunning Logo Icon with Gradient */}
-              <div className="relative w-14 h-14">
-                {/* Gradient Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-accent rounded-lg shadow-lg group-hover:shadow-xl transition-shadow" />
+          <Link href="/" className="flex items-center group transition-all">
+            <div className="flex items-center gap-3">
+              {/* Elegant Logo Icon */}
+              <div className="relative w-12 h-12">
+                {/* Gradient Background Circle */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full shadow-md group-hover:shadow-lg transition-shadow" />
                 
-                {/* Decorative Border */}
-                <div className="absolute inset-0 border-2 border-accent/30 rounded-lg" />
-                
-                {/* CV Monogram */}
+                {/* CV Monogram - Properly Centered */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative">
-                    {/* C */}
-                    <span className="absolute left-0 top-0 text-white font-serif text-2xl font-bold tracking-tighter drop-shadow-md">
-                      C
-                    </span>
-                    {/* V with slight offset for depth */}
-                    <span className="absolute left-3 top-0 text-accent font-serif text-2xl font-bold tracking-tighter drop-shadow-md">
-                      V
-                    </span>
-                  </div>
+                  <span className="text-white font-serif text-xl font-bold tracking-tight">
+                    CV
+                  </span>
                 </div>
                 
-                {/* Decorative corner elements */}
-                <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-accent/50 rounded-tr-lg" />
-                <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-accent/50 rounded-bl-lg" />
+                {/* Decorative Ring */}
+                <div className="absolute inset-0 border-2 border-accent/20 rounded-full group-hover:border-accent/40 transition-colors" />
               </div>
               
               {/* Text with Better Styling */}
               <div className="flex flex-col">
-                {/* Main brand name with gradient text */}
-                <span className="font-serif text-2xl font-semibold bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent tracking-wide group-hover:tracking-wider transition-all">
+                {/* Main brand name */}
+                <span className="font-serif text-xl font-semibold text-primary tracking-wide">
                   CeremonyVerse
                 </span>
-                {/* Tagline with better contrast */}
-                <span className="text-xs font-sans font-medium text-charcoal/70 tracking-[0.15em] uppercase">
+                {/* Tagline */}
+                <span className="text-[10px] font-sans font-medium text-charcoal/60 tracking-wider uppercase">
                   Wedding Planning
                 </span>
               </div>
