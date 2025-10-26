@@ -29,11 +29,11 @@ export function TrustBadges() {
       {badges.map((badge, index) => (
         <div
           key={index}
-          className="flex flex-col items-center text-center p-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors"
+          className="font-sans flex flex-col items-center text-center p-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors"
         >
-          <badge.icon className="h-8 w-8 text-primary mb-3" />
-          <h3 className="font-semibold text-sm mb-1">{badge.title}</h3>
-          <p className="text-xs text-muted-foreground leading-relaxed">{badge.description}</p>
+          <badge.icon className="font-sans h-8 w-8 text-primary mb-3" />
+          <h3 className="font-sans font-semibold text-sm mb-1">{badge.title}</h3>
+          <p className="font-sans text-xs text-muted-foreground leading-relaxed">{badge.description}</p>
         </div>
       ))}
     </div>

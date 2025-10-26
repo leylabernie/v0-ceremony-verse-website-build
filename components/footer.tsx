@@ -15,7 +15,7 @@ export function Footer() {
             >
               CeremonyVerse
             </Link>
-            <p className="text-white/70 leading-relaxed">
+            <p className="font-sans text-white/70 leading-relaxed">
               Expert wedding planning for Indian-American couples seeking authentic fusion celebrations.
             </p>
             <div className="pt-4">
@@ -26,7 +26,7 @@ export function Footer() {
               </Link>
             </div>
             <div className="pt-4">
-              <p className="text-sm font-medium text-white mb-3">Follow Us</p>
+              <p className="font-sans text-sm font-medium text-white mb-3">Follow Us</p>
               <div className="flex gap-3">
                 <a
                   href="https://instagram.com/ceremonyverse"
@@ -70,25 +70,25 @@ export function Footer() {
 
           {/* Services Column */}
           <div className="space-y-4">
-            <h4 className="font-medium text-white">Services</h4>
+            <h4 className="font-sans font-medium text-white">Services</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/services" className="text-white/70 hover:text-accent transition-colors">
+                <Link href="/services" className="font-sans text-white/70 hover:text-accent transition-colors">
                   All Services
                 </Link>
               </li>
               <li>
-                <Link href="/heritage-harmony" className="text-white/70 hover:text-accent transition-colors">
+                <Link href="/heritage-harmony" className="font-sans text-white/70 hover:text-accent transition-colors">
                   Heritage & Harmony Plan
                 </Link>
               </li>
               <li>
-                <Link href="/budget-planner" className="text-white/70 hover:text-accent transition-colors">
+                <Link href="/budget-planner" className="font-sans text-white/70 hover:text-accent transition-colors">
                   Budget Planner
                 </Link>
               </li>
               <li>
-                <Link href="/how-it-works" className="text-white/70 hover:text-accent transition-colors">
+                <Link href="/how-it-works" className="font-sans text-white/70 hover:text-accent transition-colors">
                   How It Works
                 </Link>
               </li>
@@ -97,37 +97,37 @@ export function Footer() {
 
           {/* Resources Column */}
           <div className="space-y-4">
-            <h4 className="font-medium text-white">Resources</h4>
+            <h4 className="font-sans font-medium text-white">Resources</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/blog" className="text-white/70 hover:text-accent transition-colors">
+                <Link href="/blog" className="font-sans text-white/70 hover:text-accent transition-colors">
                   Blog & Guides
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="text-white/70 hover:text-accent transition-colors">
+                <Link href="/gallery" className="font-sans text-white/70 hover:text-accent transition-colors">
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/image-library" className="text-white/70 hover:text-accent transition-colors">
+                <Link href="/image-library" className="font-sans text-white/70 hover:text-accent transition-colors">
                   Image Library
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-white/70 hover:text-accent transition-colors">
+                <Link href="/faq" className="font-sans text-white/70 hover:text-accent transition-colors">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/guide" className="text-white/70 hover:text-accent transition-colors">
+                <Link href="/guide" className="font-sans text-white/70 hover:text-accent transition-colors">
                   Free Wedding Guide
                 </Link>
               </li>
               <li>
                 <Link
                   href="/marketing-materials"
-                  className="text-white/70 hover:text-accent transition-colors"
+                  className="font-sans text-white/70 hover:text-accent transition-colors"
                 >
                   Marketing Materials
                 </Link>
@@ -137,8 +137,8 @@ export function Footer() {
 
           {/* Contact Column */}
           <div className="space-y-4">
-            <h4 className="font-medium text-white">Get in Touch</h4>
-            <ul className="space-y-3 text-white/70">
+            <h4 className="font-sans font-medium text-white">Get in Touch</h4>
+            <ul className="font-sans space-y-3 text-white/70">
               <li>
                 <a href="mailto:hello@ceremonyverse.com" className="hover:text-accent transition-colors">
                   hello@ceremonyverse.com
@@ -150,17 +150,17 @@ export function Footer() {
                 </a>
               </li>
               <li className="pt-2">
-                <Link href="/our-story" className="text-sm hover:text-accent transition-colors">
+                <Link href="/our-story" className="font-sans text-sm hover:text-accent transition-colors">
                   Our Story
                 </Link>
               </li>
               <li>
-                <Link href="/testimonials" className="text-sm hover:text-accent transition-colors">
+                <Link href="/testimonials" className="font-sans text-sm hover:text-accent transition-colors">
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm hover:text-accent transition-colors">
+                <Link href="/contact" className="font-sans text-sm hover:text-accent transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -170,8 +170,8 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-white/60">© 2025 CeremonyVerse. All rights reserved.</p>
-          <div className="flex items-center gap-6 text-sm text-white/60">
+          <p className="font-sans text-sm text-white/60">© 2025 CeremonyVerse. All rights reserved.</p>
+          <div className="font-sans flex items-center gap-6 text-sm text-white/60">
             <Link href="/privacy-policy" className="hover:text-accent transition-colors">
               Privacy Policy
             </Link>

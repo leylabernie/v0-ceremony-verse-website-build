@@ -92,10 +92,10 @@ export default function ContactForm({ source = "contact_form", className = "" }:
       <div className={`bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-3xl border border-primary/20 text-center ${className}`}>
         <div className="text-6xl mb-4">🎉</div>
         <h3 className="font-serif text-2xl text-foreground mb-3">Thank You!</h3>
-        <p className="text-muted-foreground mb-4">
+        <p className="font-sans text-muted-foreground mb-4">
           We've received your inquiry and will respond within 24 hours. Check your email for confirmation.
         </p>
-        <p className="text-sm text-muted-foreground">
+        <p className="font-sans text-sm text-muted-foreground">
           Need immediate assistance? Call us at{" "}
           <a href="tel:+12153419990" className="text-primary font-medium">
             +1-215-341-9990
@@ -116,7 +116,7 @@ export default function ContactForm({ source = "contact_form", className = "" }:
     <form onSubmit={handleSubmit} className={`space-y-6 ${className}`}>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-foreground mb-2">First Name *</label>
+          <label className="font-sans block text-sm font-medium text-foreground mb-2">First Name *</label>
           <Input
             type="text"
             name="firstName"
@@ -129,7 +129,7 @@ export default function ContactForm({ source = "contact_form", className = "" }:
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-foreground mb-2">Last Name *</label>
+          <label className="font-sans block text-sm font-medium text-foreground mb-2">Last Name *</label>
           <Input
             type="text"
             name="lastName"
@@ -144,7 +144,7 @@ export default function ContactForm({ source = "contact_form", className = "" }:
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-foreground mb-2">Email Address *</label>
+        <label className="font-sans block text-sm font-medium text-foreground mb-2">Email Address *</label>
         <Input
           type="email"
           name="email"
@@ -158,7 +158,7 @@ export default function ContactForm({ source = "contact_form", className = "" }:
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-foreground mb-2">Phone Number *</label>
+        <label className="font-sans block text-sm font-medium text-foreground mb-2">Phone Number *</label>
         <Input
           type="tel"
           name="phone"
@@ -172,7 +172,7 @@ export default function ContactForm({ source = "contact_form", className = "" }:
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-foreground mb-2">Wedding Date (if known)</label>
+        <label className="font-sans block text-sm font-medium text-foreground mb-2">Wedding Date (if known)</label>
         <Input
           type="date"
           name="weddingDate"
@@ -184,7 +184,7 @@ export default function ContactForm({ source = "contact_form", className = "" }:
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-foreground mb-2">Tell Us About Your Vision</label>
+        <label className="font-sans block text-sm font-medium text-foreground mb-2">Tell Us About Your Vision</label>
         <Textarea
           name="message"
           rows={4}
@@ -222,7 +222,7 @@ export default function ContactForm({ source = "contact_form", className = "" }:
         )}
       </Button>
 
-      <p className="text-sm text-muted-foreground text-center">
+      <p className="font-sans text-sm text-muted-foreground text-center">
         We'll respond within 24 hours. Your information is kept confidential.
       </p>
     </form>

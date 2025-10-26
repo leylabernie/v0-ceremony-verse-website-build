@@ -37,19 +37,19 @@ export default function InstagramFeed() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10">
+        <div className="font-sans text-center mb-10">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Instagram className="h-8 w-8 text-primary" />
-            <h2 className="font-serif text-3xl sm:text-4xl font-light text-foreground">Follow Our Journey</h2>
+            <Instagram className="font-sans h-8 w-8 text-primary" />
+            <h2 className="font-sans font-serif text-3xl sm:text-4xl font-light text-foreground">Follow Our Journey</h2>
           </div>
-          <p className="text-muted-foreground text-lg mb-4">
+          <p className="font-sans text-muted-foreground text-lg mb-4">
             See the latest celebrations and behind-the-scenes moments
           </p>
           <Link
             href="https://instagram.com/ceremonyverse"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+            className="font-sans inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
           >
             @ceremonyverse
           </Link>
@@ -71,7 +71,7 @@ export default function InstagramFeed() {
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <Instagram className="h-8 w-8 text-white" />
+                <Instagram className="font-sans h-8 w-8 text-white" />
               </div>
             </Link>
           ))}

@@ -23,14 +23,14 @@ export default function GoogleReviewsWidget() {
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-3xl font-bold text-foreground">New</span>
+                  <span className="font-sans text-3xl font-bold text-foreground">New</span>
                   <div className="flex gap-0.5">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-accent fill-accent" />
+                      <Star key={i} className="font-sans h-5 w-5 text-accent fill-accent" />
                     ))}
                   </div>
                 </div>
-                <p className="text-sm text-muted-foreground">Leave us your first review!</p>
+                <p className="font-sans text-sm text-muted-foreground">Leave us your first review!</p>
               </div>
             </div>
 
@@ -39,11 +39,11 @@ export default function GoogleReviewsWidget() {
                 href="https://g.page/r/YOUR_GOOGLE_PLACE_ID/review"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
+                className="font-sans inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
               >
                 Leave a Review on Google
               </Link>
-              <p className="text-xs text-muted-foreground">Share your experience with us</p>
+              <p className="font-sans text-xs text-muted-foreground">Share your experience with us</p>
             </div>
           </div>
         </div>

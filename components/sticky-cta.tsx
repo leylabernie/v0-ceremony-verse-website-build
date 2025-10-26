@@ -25,8 +25,8 @@ export function StickyCTA() {
       <div className="max-w-7xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between gap-4">
           <div className="hidden sm:block">
-            <p className="font-semibold text-foreground">Ready to start planning?</p>
-            <p className="text-sm text-muted-foreground">Get your free consultation today</p>
+            <p className="font-sans font-semibold text-foreground">Ready to start planning?</p>
+            <p className="font-sans text-sm text-muted-foreground">Get your free consultation today</p>
           </div>
           <div className="flex items-center gap-3 w-full sm:w-auto">
             <Button size="lg" variant="outline" asChild className="flex-1 sm:flex-none bg-transparent">
@@ -38,7 +38,7 @@ export function StickyCTA() {
             <Button
               size="lg"
               asChild
-              className="flex-1 sm:flex-none bg-primary text-primary-foreground hover:bg-primary/90"
+              className="font-sans flex-1 sm:flex-none bg-primary text-primary-foreground hover:bg-primary/90"
             >
               <Link href="/contact">
                 <Calendar className="h-4 w-4 mr-2" />

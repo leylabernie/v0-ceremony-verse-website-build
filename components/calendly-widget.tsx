@@ -12,7 +12,7 @@ export function CalendlyWidget() {
       {/* Floating Calendly Button */}
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-24 right-6 z-40 bg-gradient-to-r from-primary via-primary to-accent text-white hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] shadow-2xl rounded-full h-14 px-6 flex items-center gap-2 transition-all duration-300 hover:scale-105 ring-2 ring-accent/20 hover:ring-accent/40"
+        className="font-sans fixed bottom-24 right-6 z-40 bg-gradient-to-r from-primary via-primary to-accent text-white hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] shadow-2xl rounded-full h-14 px-6 flex items-center gap-2 transition-all duration-300 hover:scale-105 ring-2 ring-accent/20 hover:ring-accent/40"
       >
         <Calendar className="h-5 w-5" />
         <span className="hidden sm:inline font-semibold">Book Consultation</span>
@@ -38,14 +38,14 @@ export function CalendlyWidget() {
               />
               {/* Placeholder message until user adds their Calendly link */}
               <div className="flex items-center justify-center h-full bg-gradient-to-br from-primary/5 to-accent/5 p-8">
-                <div className="text-center max-w-md">
-                  <Calendar className="h-16 w-16 mx-auto mb-4 text-primary" />
-                  <h3 className="text-2xl font-serif text-primary mb-3">Book Your Free Consultation</h3>
-                  <p className="text-gray-600 mb-6">
+                <div className="font-sans text-center max-w-md">
+                  <Calendar className="font-sans h-16 w-16 mx-auto mb-4 text-primary" />
+                  <h3 className="font-sans text-2xl font-serif text-primary mb-3">Book Your Free Consultation</h3>
+                  <p className="font-sans text-gray-600 mb-6">
                     Connect your Calendly account to enable instant booking. Replace the iframe src with your Calendly
                     link in components/calendly-widget.tsx
                   </p>
-                  <p className="text-sm text-gray-500">
+                  <p className="font-sans text-sm text-gray-500">
                     Or call us directly at <strong>(555) 123-4567</strong>
                   </p>
                 </div>

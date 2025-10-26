@@ -52,13 +52,13 @@ export default function ExitIntentPopup() {
 
         <h3 className="font-serif text-3xl text-charcoal text-center mb-4">Wait! Don't Miss Out</h3>
 
-        <p className="text-charcoal/70 text-center mb-6 leading-relaxed text-lg">
+        <p className="font-sans text-charcoal/70 text-center mb-6 leading-relaxed text-lg">
           <strong>Only 3 slots remaining for May 2025 weddings!</strong>
         </p>
 
         <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg p-6 mb-6">
-          <p className="text-sm text-charcoal/80 mb-3 font-medium">Book your free consultation now and get:</p>
-          <ul className="text-sm text-charcoal/70 space-y-2">
+          <p className="font-sans text-sm text-charcoal/80 mb-3 font-medium">Book your free consultation now and get:</p>
+          <ul className="font-sans text-sm text-charcoal/70 space-y-2">
             <li className="flex items-start gap-2">
               <span className="text-secondary mt-0.5 font-bold">✓</span>
               <span>Personalized wedding timeline (worth $500)</span>
@@ -86,7 +86,7 @@ export default function ExitIntentPopup() {
           >
             <Link href="/contact">Book Free Consultation Now</Link>
           </Button>
-          <button onClick={handleClose} className="text-sm text-charcoal/60 hover:text-charcoal transition-colors">
+          <button onClick={handleClose} className="font-sans text-sm text-charcoal/60 hover:text-charcoal transition-colors">
             No thanks, I'll miss this opportunity
           </button>
         </div>
