@@ -30,26 +30,13 @@ export function CalendlyWidget() {
             </button>
             <div className="h-[80vh]">
               <iframe
-                src="https://calendly.com/your-calendly-link/30min"
+                src="https://calendly.com/ceremonyverse/consultation"
                 width="100%"
                 height="100%"
                 frameBorder="0"
                 title="Schedule a consultation with CeremonyVerse"
+                className="rounded-b-2xl"
               />
-              {/* Placeholder message until user adds their Calendly link */}
-              <div className="flex items-center justify-center h-full bg-gradient-to-br from-primary/5 to-accent/5 p-8">
-                <div className="font-sans text-center max-w-md">
-                  <Calendar className="font-sans h-16 w-16 mx-auto mb-4 text-primary" />
-                  <h3 className="font-sans text-2xl font-serif text-primary mb-3">Book Your Free Consultation</h3>
-                  <p className="font-sans text-gray-600 mb-6">
-                    Connect your Calendly account to enable instant booking. Replace the iframe src with your Calendly
-                    link in components/calendly-widget.tsx
-                  </p>
-                  <p className="font-sans text-sm text-gray-500">
-                    Or call us directly at <strong>(555) 123-4567</strong>
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
