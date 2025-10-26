@@ -15,31 +15,27 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center group transition-all">
             <div className="flex items-center gap-3">
-              {/* Elegant Logo Icon */}
-              <div className="relative w-12 h-12">
-                {/* Gradient Background Circle */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full shadow-md group-hover:shadow-lg transition-shadow" />
-                
-                {/* CV Monogram - Properly Centered */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-white font-serif text-xl font-bold tracking-tight">
-                    CV
-                  </span>
-                </div>
-                
-                {/* Decorative Ring */}
-                <div className="absolute inset-0 border-2 border-accent/20 rounded-full group-hover:border-accent/40 transition-colors" />
+              {/* Beautiful Indian-Inspired Logo */}
+              <div className="relative w-16 h-16 flex-shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="CeremonyVerse - Your Heritage Your Harmony"
+                  width={64}
+                  height={64}
+                  className="object-contain group-hover:scale-105 transition-transform duration-300"
+                  priority
+                />
               </div>
               
-              {/* Text with Better Styling */}
-              <div className="flex flex-col">
+              {/* Brand Text - Hidden on Mobile, Shown on Tablet+ */}
+              <div className="hidden sm:flex flex-col">
                 {/* Main brand name */}
                 <span className="font-serif text-xl font-semibold text-primary tracking-wide">
                   CeremonyVerse
                 </span>
-                {/* Tagline */}
-                <span className="text-[10px] font-sans font-medium text-charcoal/60 tracking-wider uppercase">
-                  Wedding Planning
+                {/* Tagline from logo */}
+                <span className="text-[9px] font-sans font-medium text-charcoal/70 tracking-[0.08em] uppercase">
+                  Your Heritage Your Harmony
                 </span>
               </div>
             </div>
