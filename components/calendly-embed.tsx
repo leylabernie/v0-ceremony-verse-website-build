@@ -13,7 +13,7 @@ import { useEffect } from "react"
  * 3. Get your Calendly URL (e.g., https://calendly.com/yourusername/30min)
  * 4. Replace the calendlyUrl below with your actual Calendly URL
  * 5. Customize your availability in Calendly dashboard
- * 
+ * https://calendly.com/newglamour25/new-meeting
  * TEMPORARY DEMO:
  * Currently using a demo Calendly link. You MUST replace this with your real account.
  */
@@ -35,7 +35,7 @@ export default function CalendlyEmbed() {
   // IMPORTANT: Replace this URL with your actual Calendly account URL
   // Example: "https://calendly.com/ceremonyverse/consultation"
   // Until Calendly is set up, we'll show a contact form fallback
-  const calendlyUrl = "" // Set to empty until you create your Calendly account
+  const calendlyUrl = "https://calendly.com/newglamour25/new-meeting" // Set to empty until you create your Calendly account
 
   // Show fallback if no Calendly URL is configured
   if (!calendlyUrl) {
