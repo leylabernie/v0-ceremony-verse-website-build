@@ -9,14 +9,9 @@ export default function ImageLibraryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const images = [
-    { path: "/beach-sunset-wedding-couple.jpg", title: "Beach Sunset Wedding" },
-    { path: "/beach-wedding-couple-mandap.jpg", title: "Beach Wedding Mandap" },
+    {    { path: "/beach-wedding-couple-mandap.jpg", title: "Beach Wedding Mandap" },
     { path: "/bride-pastel-mint-pink-lehenga.jpg", title: "Pastel Bridal Lehenga" },
     { path: "/mehndi-ceremony-bride-green-lehenga.jpg", title: "Mehndi Ceremony" },
-    { path: "/sangeet-dance-couple-celebration.jpg", title: "Sangeet Dance" },
-    { path: "/garden-couple-traditional-attire.jpg", title: "Garden Wedding" },
-    { path: "/rose-garden-pastel-couple.jpg", title: "Rose Garden Portrait" },
-    { path: "/groom-traditional-sherwani-portrait.jpg", title: "Groom Sherwani" },
     { path: "/indian-bride-and-groom-portrait.jpg", title: "Bride & Groom" },
     { path: "/south-asian-couple-wedding-photo.jpg", title: "South Asian Wedding" },
     { path: "/elegant-wedding-couple-portrait.jpg", title: "Elegant Portrait" },
@@ -27,13 +22,6 @@ export default function ImageLibraryPage() {
     { path: "/red-bridal-lehenga-palace-portrait.jpg", title: "Red Bridal Lehenga" },
     { path: "/luxury-designer-bride-red-gold-lehenga.jpg", title: "Designer Red & Gold" },
     { path: "/romantic-couple-sunset-portrait.jpg", title: "Sunset Romance" },
-  ]
-
-  return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-
-      <section className="pt-40 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-foreground mb-6 leading-tight">
