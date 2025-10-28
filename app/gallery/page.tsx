@@ -9,12 +9,6 @@ import Link from "next/link"
 export default function GalleryPage() {
   const weddings = [
     {
-  const weddings = [
-  {
-    image: "/beach-wedding-couple-mandap.jpg",
-    title: "Beach Wedding with Floral Mandap",
-  },
-  {
     image: "/mehndi-ceremony-bride-green-lehenga.jpg",
     title: "Mehndi Ceremony Celebration",
   },
@@ -22,7 +16,7 @@ export default function GalleryPage() {
     image: "/bride-pastel-mint-pink-lehenga.jpg",
     title: "Pastel Bridal Lehenga",
   },
-]
+];]
 
   return (
     <div className="min-h-screen bg-background">
