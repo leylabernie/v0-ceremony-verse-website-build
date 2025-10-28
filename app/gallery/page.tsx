@@ -9,38 +9,20 @@ import Link from "next/link"
 export default function GalleryPage() {
   const weddings = [
     {
-      image: "/beach-wedding-couple-mandap.jpg",
-      title: "Beach Wedding with Floral Mandap",
-    },
-    {
-      image: "/mehndi-ceremony-bride-green-lehenga.jpg",
-      title: "Mehndi Ceremony Celebration",
-    },
-    {
-      image: "/bride-pastel-mint-pink-lehenga.jpg",
-      title: "Pastel Bridal Lehenga",
-    },
-    {
-      image: "/sangeet-dance-couple-celebration.jpg",
-      title: "Sangeet Dance Performance",
-    },
-    {
-      image: "/garden-couple-traditional-attire.jpg",
-      title: "Garden Wedding Portrait",
-    },
-    {
-      image: "/beach-sunset-wedding-couple.jpg",
-      title: "Beach Sunset Ceremony",
-    },
-    {
-      image: "/rose-garden-pastel-couple.jpg",
-      title: "Rose Garden Romance",
-    },
-    {
-      image: "/groom-traditional-sherwani-portrait.jpg",
-      title: "Rahul's Traditional Sherwani",
-    },
-  ]
+  const weddings = [
+  {
+    image: "/beach-wedding-couple-mandap.jpg",
+    title: "Beach Wedding with Floral Mandap",
+  },
+  {
+    image: "/mehndi-ceremony-bride-green-lehenga.jpg",
+    title: "Mehndi Ceremony Celebration",
+  },
+  {
+    image: "/bride-pastel-mint-pink-lehenga.jpg",
+    title: "Pastel Bridal Lehenga",
+  },
+]
 
   return (
     <div className="min-h-screen bg-background">
