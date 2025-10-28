@@ -72,34 +72,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Portfolio CTA Section */}
-      <section className="py-32 px-4 sm:px-6 lg:px-8 bg-cream">
-        <div className="max-w-4xl mx-auto text-center">
-          <FadeInSection>
-            <h2 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-extralight text-charcoal mb-6 tracking-tight">
-              Our Portfolio
-            </h2>
-            <div className="w-24 h-px bg-accent mx-auto mb-8" />
-            <p className="text-xl text-charcoal/70 font-light leading-relaxed mb-12 max-w-2xl mx-auto">
-              Explore our collection of beautiful celebrations, each uniquely crafted to honor heritage and harmony
-            </p>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              asChild 
-              className="border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white h-14 px-10 font-light tracking-wide bg-transparent"
-            >
-              <Link href="/gallery">
-                View Gallery
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </FadeInSection>
-        </div>
-      </section>
-
-      {/* Testimonials - Boho minimalist single column layout */}
       <section className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <FadeInSection>
@@ -118,6 +90,7 @@ export default function HomePage() {
               {
                 quote:
                   "CeremonyVerse made our dream fusion wedding a reality. The escrow system gave us complete peace of mind when ordering from India.",
+                        image: "/beach-mandap-secondary.jpg",
                 author: "Priya & Michael",
                 location: "San Francisco, CA",
                 wedding: "Hindu-Christian Fusion, 250 guests",
@@ -128,6 +101,7 @@ export default function HomePage() {
                 author: "Anjali & Rajesh",
                 location: "Austin, TX",
                 wedding: "Traditional Indian Wedding, 400 guests",
+                        image: "/garden-gazebo-mint.jpg",
               },
               {
                 quote:
@@ -135,10 +109,12 @@ export default function HomePage() {
                 author: "Zara & Omar",
                 location: "Mexico City",
                 wedding: "Muslim-Hindu Fusion, 300 guests",
+                        image: "/rose-garden-red.jpg",
               },
             ].map((testimonial, i) => (
               <div key={i} className="text-center space-y-6 pb-16 border-b border-warm-beige/30 last:border-0">
                 {/* Quote with elegant typography */}
+ 
                 <p className="text-2xl sm:text-3xl font-serif font-light text-charcoal leading-relaxed italic">
                   "{testimonial.quote}"
                 </p>
@@ -152,9 +128,11 @@ export default function HomePage() {
                 
                 {/* Author info - Simplified without images for speed */}
                 <div className="flex flex-col items-center justify-center">
+                          <Image src={testimonial.image} alt={testimonial.author} width={80} height={80} className="rounded-full mb-4" />
                   <p className="font-serif text-lg text-charcoal font-light">{testimonial.author}</p>
                   <p className="text-sm text-charcoal/60 font-light">{testimonial.location}</p>
                 </div>
+
               </div>
             ))}
           </div>
