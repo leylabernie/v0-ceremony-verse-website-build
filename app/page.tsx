@@ -9,7 +9,9 @@ import GoogleReviewsWidget from "@/components/google-reviews-widget"
 import AnimatedStats from "@/components/animated-stats"
 import FadeInSection from "@/components/fade-in-section"
 import InteractiveProcess from "@/components/interactive-process"
-import HeroSection from "@/components/hero-section"
+
+import CustomHero from "@/components/custom-hero"
+import RecentCelebrations from "@/components/recent-celebrations"
 
 export default function HomePage() {
   return (
@@ -17,8 +19,9 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section - Now a Client Component */}
-      <HeroSection />
+<CustomHero />
 
+<RecentCelebrations />
       {/* Services Grid - Kalki Fashion product grid style with large images */}
       <section className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
